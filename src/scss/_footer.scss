@@ -1,0 +1,79 @@
+.footerMain {
+  padding-top: 170px;
+  background: #151c27;
+
+  .fmMenu__item {
+    position: relative;
+    margin: 0 16px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      right: -16px;
+      width: 1px;
+      height: 16px;
+      background: #6b757f;
+      opacity: 0.4;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  .fmMenu__link {
+    color: #6b757f;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 28px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .fmAddr-wrap {
+    height: 36px;
+    margin-top: 40px;
+    background: #1b2432;
+  }
+
+  .fmAddr {
+    color: #6b757f;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  .fmAddr__bar {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 10px;
+    background: #6b757f;
+  }
+
+  .fmAddr__company {
+    color: inherit;
+    font-size: 1em;
+    margin-right: 20px;
+  }
+
+  .fmCopy {
+    height: 28px;
+    color: rgba(107, 117, 127, 0.4);
+    font-size: 10px;
+    font-weight: 300;
+  }
+}
+
+.goTop {
+  position: fixed; 
+  bottom: 40px; 
+  right: 0;
+  width: 80px;
+  height: 64px;
+  border: solid 1px #f8f9fa;
+  background-color: #fff;
+  border-radius: 10px 0 0 10px;
+}
