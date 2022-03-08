@@ -3,7 +3,7 @@ var headerEvt = function () {$()
   var header = $('.header')
   $(window).on('scroll', function () {
     var scTop = $(this).scrollTop()
-    console.log(scTop)
+    console.log('scroll top', scTop)
     if (scTop > 0) {
       header.addClass('scrolled')
     } else {
@@ -30,3 +30,10 @@ var quickMenu = function () {
     }
   })
 }()
+
+// 상단으로 이동
+function goTop() {
+  $('html').animate({
+    scrollTop: 0
+  })
+}

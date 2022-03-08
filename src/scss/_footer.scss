@@ -1,6 +1,9 @@
 .footerMain {
-  padding-top: 170px;
-  background: #151c27;
+
+  &__top {
+    padding: 170px 0 48px;
+    background: #151c27;
+  }
 
   .fmMenu__item {
     position: relative;
@@ -34,8 +37,9 @@
 
   .fmAddr-wrap {
     height: 36px;
-    margin-top: 40px;
-    background: #1b2432;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
   }
 
   .fmAddr {
@@ -48,7 +52,7 @@
   .fmAddr__bar {
     display: inline-block;
     width: 1px;
-    height: 10px;
+    height: 12px;
     margin: 0 10px;
     background: #6b757f;
   }
@@ -61,9 +65,101 @@
 
   .fmCopy {
     height: 28px;
-    color: rgba(107, 117, 127, 0.4);
+    color: #bec2c7;
     font-size: 10px;
     font-weight: 300;
+  }
+
+  &__ban {
+
+    &Inner {
+      position: relative;
+      padding: 0 51px;
+      box-sizing: border-box;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 51px;
+        width: 1px;
+        background: #fff;
+        z-index: 10;
+      }
+    }
+  }
+
+  &__slide {
+    border-right: 1px solid#eee;
+    box-sizing: border-box;
+  }
+
+  &__swiperBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 184px;
+    height: 78px;
+    box-sizing: border-box;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform: translateY(-50%);
+
+    &[aria-disabled="true"] {
+      display: none;
+    }
+
+    &:hover {
+      background: #f8f9fa;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 7px;
+      height: 12px;
+      transform: translate(-50%, -50%);
+      background-repeat: no-repeat;
+      background-size: 28px;
+      background-image: url($imgCommon + 'ico-foot-ban-arrow.png');
+    }
+  }
+
+  &__next {
+    right: 0;
+    &::after {
+      background-position: -21px 0;
+    }
+
+    &:hover {
+      &::after {
+        background-position: -7px 0;
+      }
+    }
+  }
+
+  &__prev {
+    left: 0;
+    &::after {
+      background-position: -14px 0;
+    }
+
+    &:hover {
+      &::after {
+        background-position: 0 0;
+      }
+    }
   }
 }
 
@@ -71,9 +167,44 @@
   position: fixed; 
   bottom: 40px; 
   right: 0;
-  width: 80px;
-  height: 64px;
   border: solid 1px #f8f9fa;
   background-color: #fff;
   border-radius: 10px 0 0 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px rgba(5, 5, 5, 0.2);
+
+  &__btn {
+    width: 80px;
+    height: 64px;
+  }
+
+  &__txt {
+    display: block;
+    position: relative;
+    padding-top: 31px;
+    color: #787e85;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1em;
+
+    &::before {
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      transform: translateX(-50%);
+      background: url($imgCommon + 'ico-btn-top.png') 0 0/48px no-repeat;
+    }
+  }
+  
+  &:hover {
+
+    .goTop__txt {
+      &::before {
+        background-position: -24px 0;
+      }
+    }
+  }
 }

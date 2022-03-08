@@ -153,6 +153,7 @@
     .mainTopCounsel__link {
       width: 388px;
       height: 72px;
+      text-align: center;
       margin-right: 100px;
       box-shadow: 0px 2px 2px 0 rgba(5, 5, 5, 0.2);
       background-color: #fff;
@@ -198,6 +199,11 @@
               }
               $i: $i + 1;
           }
+
+          &:nth-of-type(3),
+          &:nth-of-type(6) {
+            width: 8px;
+          }
         }
       }
       &:hover {
@@ -229,25 +235,33 @@
   }
 }
 
+.mainSection__tit {
+  color: #050505;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1em;
+  text-align: center;
+
+  &.light {
+    color: #fff;
+  }
+}
+
+.mainSection__subTit {
+  margin-top: 30px;
+  color: #787e85;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1em;
+  text-align: center;
+
+  &.light {
+    color: #fff;
+  }
+}
+
 .mainService {
   padding: 95px 0;
-
-  &__tit {
-    color: #050505;
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 1em;
-    text-align: center;
-  }
-
-  &__subTit {
-    margin-top: 30px;
-    color: #787e85;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1em;
-    text-align: center;
-  }
 
   &__col {
     width: 387px;
@@ -291,5 +305,167 @@
       background: #787e85;
       transform: translateX(-50%);
     }
+  }
+}
+
+.mainPower {
+  padding: 95px 0;
+  background: #f9f9fa;
+
+  &__list {
+    margin-top: 80px;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    a {
+      display: block;
+      font-size: 0;
+    }
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    line-height: 52px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  &__btn {
+    width: 388px;
+    height: 64px;
+    margin: 0 10px;
+    border-radius: 32px;
+    box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.18);
+
+    &.direct {
+      background: $themeColor01;
+    }
+
+    &.recommend {
+      background: $themeColor03;
+    }
+
+    &:hover {
+      background: $themeColor04;
+    }
+
+    &Txt {
+      color: #fff;
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+
+  &__btnWrap {
+    margin-top: 80px;
+  }
+}
+
+.mainService2 {
+  padding: 95px 0;
+  background: url($imgMain + 'bg-service2.jpg') 50% 0/cover no-repeat;
+
+  &__list {
+    margin-top: 77px;
+  }
+
+  &__item {
+    position: relative;
+    text-align: center;
+  }
+
+  &__icon {
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+
+    &.icon01 {
+      background: $themeColor01;
+
+      &::before {
+        width: 38px;
+        height: 44px;
+        background-position: -6px -5px;
+      }
+    }
+
+    &.icon02 {
+      background: $themeColor02;
+
+      &::before {
+        width: 38px;
+        height: 38px;
+        background-position: -54px -5px;
+      }
+    }
+
+    &.icon03 {
+      background: $themeColor03;
+
+      &::before {
+        width: 44px;
+        height: 30px;
+        background-position: -103px -5px;
+      }
+    }
+
+    &.icon04 {
+      background: $themeColor04;
+
+      &::before {
+        width: 36px;
+        height: 45px;
+        background-position: -5px -59px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-repeat: no-repeat;
+      background-size: 152px;
+      background-image: url($imgMain + 'sprite-service2.png');
+    }
+  }
+
+  &__colTit {
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+  }
+
+  &__colTxt {
+    margin-top: 18px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__view {
+    margin-top: 31px;
+    color: #fff;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 22px;
+    border: 1px solid #fff;
   }
 }
