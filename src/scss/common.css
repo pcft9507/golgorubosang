@@ -97,6 +97,11 @@ img {
   font-family: 'S-CoreDream', serif;
 }
 
+figcaption {
+  height: 0;
+  overflow: hidden;
+}
+
 body {
   line-height: 1;
 }
@@ -193,4 +198,8 @@ button {
 .d-flex-sb-e {
   justify-content: space-between;
   align-items: end;
+}
+
+.d-flex.wrap {
+  flex-wrap: wrap;
 }

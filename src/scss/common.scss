@@ -38,6 +38,11 @@ img {
   font-family: 'S-CoreDream', serif;
 }
 
+figcaption {
+  height: 0;
+  overflow: hidden;
+}
+
 body {
 	line-height: 1;
 }
@@ -123,5 +128,8 @@ button {
   &-sb-e {
     justify-content: space-between;
     align-items: end;
+  }
+  &.wrap {
+    flex-wrap: wrap;
   }
 }
