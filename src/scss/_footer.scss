@@ -1,5 +1,6 @@
 .footerMain {
-
+  margin-top: -80px;
+  
   &__top {
     padding: 40px 0;
     background: #151c27;
@@ -32,6 +33,7 @@
 
     &:hover {
       color: #fff;
+      text-decoration: underline;
     }
   }
 

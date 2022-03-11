@@ -1,0 +1,56 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &.w-m {
+      width: 894px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+  }
+
+  &__close {
+    position: absolute;
+    top: -42px;
+    right: -42px;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(248, 249, 250, 0.2);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 20px;
+      transform: translate(-50%, -50%);
+      background: url($imgCommon + 'sprites-modal.png') 0 -20px/20px no-repeat;
+    }
+
+    &:hover {
+      background: #fff;
+
+      &::before {
+        background-position: 0 0;
+      }      
+    }
+  }
+}

@@ -127,6 +127,11 @@ button {
   background: none;
 }
 
+.is-blind {
+  position: absolute;
+  left: -9999em;
+}
+
 .wrap {
   min-width: 1200px;
 }
@@ -202,4 +207,100 @@ button {
 
 .d-flex.wrap {
   flex-wrap: wrap;
+}
+
+.tac {
+  text-align: center !important;
+}
+
+.btn-step-chg {
+  display: flex;
+  outline: none;
+  text-decoration: none;
+  font-size: var(--font-size);
+  letter-spacing: .5px;
+  background: var(--background);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transform: translateY(var(--y)) translateZ(0);
+  transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+  box-sizing: border-box;
+}
+
+.btn-step-chg.theme03 {
+  --background: $themeColor03;
+  --text: #fff;
+}
+
+.btn-step-chg.theme03:hover {
+  --background: $themeColor04;
+}
+
+.btn-step-chg div {
+  display: flex;
+  overflow: hidden;
+  text-shadow: 0 var(--font-shadow) 0 var(--text);
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-step-chg div span {
+  display: block;
+  backface-visibility: hidden;
+  font-style: normal;
+  transition: transform var(--duration) ease;
+  transform: translateY(var(--m)) translateZ(0);
+}
+
+.btn-step-chg div span:nth-child(1) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg div span:nth-child(2) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg div span:nth-child(3) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg div span:nth-child(4) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg div span:nth-child(5) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg div span:nth-child(6) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg div span:nth-child(7) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg div span:nth-child(8) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg div span:nth-child(9) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg div span:nth-child(10) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg div span:nth-child(11) {
+  transition-delay: calc($i / 20)s;
+}
+
+.btn-step-chg:hover {
+  --y: var(--move-hover);
+  --shadow: var(--shadow-hover);
+}
+
+.btn-step-chg:hover span {
+  --m: calc(var(--font-size) * -1);
 }

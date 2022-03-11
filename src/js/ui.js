@@ -37,3 +37,12 @@ function goTop() {
     scrollTop: 0
   })
 }
+
+// 버튼 텍스트 애니효과
+document.querySelectorAll('.btn-step-chg')
+.forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+
+// 모달 닫기
+function closeModal(modal) {
+  $('.modal[data-modal=' + modal + ']').hide()
+}

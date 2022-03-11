@@ -1,0 +1,37 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.modal__container.w-m {
+  width: 894px;
+}
+
+.modal__content {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.modal__close {
+  position: absolute;
+  top: -42px;
+  right: -42px;
+  z-index: 1;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(248, 249, 250, 0.2);
+}
