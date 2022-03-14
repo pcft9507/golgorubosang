@@ -3,7 +3,7 @@ var headerEvt = function () {$()
   var header = $('.header')
   $(window).on('scroll', function () {
     var scTop = $(this).scrollTop()
-    console.log('scroll top', scTop)
+    // console.log('scroll top', scTop)
     if (scTop > 0) {
       header.addClass('scrolled')
     } else {
@@ -39,10 +39,42 @@ function goTop() {
 }
 
 // 버튼 텍스트 애니효과
-document.querySelectorAll('.btn-step-chg')
-.forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+$.fn.btnAni = function () {
+  var thisBtn = document.querySelectorAll('.btn-step-chg')
+  thisBtn
+  .forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+}
+
+// 모달 열기
+function openModal(modalPage) {
+  $('.wrap').append('<div class="modal" data-modal="' + modalPage + '"></div>')
+  $('.modal').load('../html/modal/' + modalPage + '.html', function () {
+    loadUi ()
+  })
+}
 
 // 모달 닫기
 function closeModal(modal) {
-  $('.modal[data-modal=' + modal + ']').hide()
+  $('.modal[data-modal=' + modal + ']').remove()
 }
+
+// 칩 토글
+$.fn.chipToggle = function () {
+  var chipWrap = []
+  return this.each(function (i) {
+    chipWrap[i] = $(this)
+    var chipBtn = chipWrap[i].find('.chip')
+    chipBtn.on('click', function (e) {
+      e.preventDefault()
+      $(this).toggleClass('checked')
+    })
+  })
+}
+
+// 플러그인 불러오기
+function loadUi () {
+  $('.btn-step-chg').btnAni();
+  $('[data-chip="toggle"]').chipToggle()
+  $('.c-scroll-bar').niceScroll();
+}
+loadUi ()

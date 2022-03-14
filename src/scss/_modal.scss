@@ -12,16 +12,20 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+  }
+
+  &__content {
+    position: relative;
 
     &.w-m {
       width: 894px;
     }
   }
 
-  &__content {
-    position: relative;
-    background: #fff;
+  &__inner {
     border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
   }
 
   &__close {
@@ -52,5 +56,136 @@
         background-position: 0 0;
       }      
     }
+  }
+
+  // 추천서비스팝업
+  .rcmd {
+
+    .rcmd-slogan {
+      width: 286px;
+    }
+
+    .rcmd-select {
+      width: 608px;
+      padding-top: 66px;
+      background: #f2f2f3;
+
+      .select-tit {
+        color: #050505;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1em;
+        letter-spacing: -0.45px;
+        text-align: center;
+      }
+
+      .select-sub-tit {
+        margin-top: 10px;
+        color: #050505;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1em;
+        letter-spacing: -0.35px;
+        text-align: center;
+      }
+
+      .select-col-wrap {
+        margin-top: 45px;
+        padding: 0 46px 0 37px;
+      }
+
+      .select-col {
+
+        .col-tit {
+          color: #050505;
+          font-size: 1em;
+        }
+
+        .chipList {
+          margin-top: 14px;
+
+          &__item {
+            margin: 6px 2px 0;
+          }
+        }
+      }
+
+      .btn-wrap {
+        display: flex;
+
+        .btn-apply {
+          width: 204px;
+          height: 48px;
+          padding-left: 28px;
+          box-sizing: border-box;
+          background: $themeColor03;
+          border-radius: 24px 0 0 24px;
+        }
+
+        .btn-txt {
+          color: #fff;
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  // 접수 1단계
+  .reception-guide {
+    padding: 80px 50px;
+
+    .title {
+      color: $themeColor03;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 1em;
+      letter-spacing: -0.95px;
+    }
+
+    .sub-tit {
+      margin-top: 15px;
+      color: $themeColor01;
+      font-weight: 200;
+      font-size: 18px;
+      line-height: 1em;
+      letter-spacing: -0.45px;
+    }
+
+    .txt01 {
+      margin-top: 60px;
+      padding-top: 170px;
+      color: #394048;
+      font-size: 13px;
+      font-weight: 200;
+      letter-spacing: -0.33px;
+      background: url($imgModal + 'modal-receipt-guide.jpg') 50% 0/auto 111px no-repeat;
+    }
+
+    .txt02 {
+      margin-top: 15px;
+
+      &-sub {
+        display: inline-block;
+        color: #050505;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: -0.33px;
+        border-bottom: 1px solid #050505;
+      }
+    }
+
+    .chipList {
+      margin: 48px 0 0 -8px;
+
+      &__item {
+        margin: 12px 0 0 8px;
+      }
+    }
+  }
+
+  .chipList {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
