@@ -112,6 +112,7 @@
   overflow: hidden;
   background: #fff;
   
+  &.chip-form,
   &.rg {
     --width: 81px;
     --height: 32px;
@@ -190,13 +191,27 @@
   }
 }
 
+.checkBox {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url($imgCommon + 'bg-checkbox.png');
+
+  &:checked {
+    background-position: -24px 0;
+  }
+}
+
 .radioLabel {
 	display: flex;
 	cursor: pointer;
 	font-weight: 500;
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 0.375em;
 	/* Accessible outline */
 	/* Remove comment to use */ 
 	/*
@@ -204,6 +219,11 @@
 				outline: .125em solid $primary-color;
 		}
 	*/
+
+  & + .radioLabel {
+    margin-left: 10px;
+  }
+
 	&__inp {
 		position: absolute;
 		left: -9999px;
@@ -218,6 +238,8 @@
 		display: flex;
 		align-items: center;
 		padding: 0.375em 0.75em 0.375em 0.375em;
+    color: #050505;
+    font-size: 15px;
 		border-radius: 99em; // or something higher...
 		transition: 0.25s ease;
 		&:hover {
@@ -236,4 +258,256 @@
 			box-shadow: inset 0 0 0 0.125em $radio-color;
 		}
 	}
+}
+
+
+.formInp {
+
+  & + .formInp {
+    margin-left: 20px;
+  }
+
+  &.col-single {
+    width: 285px;
+
+    & + .col-dbl {
+      width: calc(100% - 305px);
+    }
+  }
+
+  &.col-full {
+    width: 100%;
+  }
+
+  &__label {
+    display: block;
+    position: relative;
+    color: #787e85;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 1em;
+
+    &.required {
+      padding-left: 8px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        background: #f70f66;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 9px;
+
+    &:first-child {
+      margin-top: 22px;
+    }
+  }
+
+  &__txt {
+    width: 100%;
+    height: 38px;
+    padding: 0 20px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    background: #fff;
+    box-sizing: border-box;
+
+    &.has-btn {
+      border-right: 0;
+      border-radius: 4px 0 0 4px;
+    }
+  }
+
+  &__btn {
+    width: calc(100% - 164px);
+    height: 38px;
+    background: #787e85;
+    border-radius: 0 4px 4px 0;
+    box-sizing: border-box;
+
+    &Txt {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+
+  &__guide {
+    color: #787e85;
+    font-weight: 200;
+    font-size: 12px;
+
+    &.code-guide {
+      margin: 32px 0 0 20px;
+    }
+  }
+}
+
+.textArea {
+  position: relative;
+  width: 100%;
+
+  &__text {
+    appearance: none;
+    resize: none;
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+  }
+
+  &__cntChar {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    color: #787e85;
+    font-weight: 200;
+    font-size: 12px;
+  }
+}
+
+.attachPhoto {
+
+  &__file {
+    overflow: hidden;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__container {
+    margin-top: 7px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  &__head {
+    height: 31px;
+    padding: 0 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dadada;
+
+    &Txt {
+      color: #787e85;
+      font-weight: 200;
+      font-size: 12px;
+    }
+  }
+
+  &__dropArea {
+    height: 210px;
+  }
+
+  &__dropTxt {
+    position: relative;
+    padding-top: 65px;
+    color: #aaa;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 49px;
+      height: 56px;
+      transform: translateX(-50%);
+      background: url($imgModal + 'modal-sprites-form-apply.png') -5px -5px/80px no-repeat;
+    }
+  }
+
+  &__foot {
+    height: 30px;
+    background: #394048;
+
+    &Txt {
+      padding: 0 20px;
+      color: #fff;
+      font-weight: 200;
+      font-size: 11px;
+    }
+  }
+}
+
+.btnForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 73px;
+  height: 31px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0px 1px 0 0 rgba(0, 0, 0, 0.25);
+
+  &__txt {
+    color: #394048;
+    font-size: 12px;
+  }
+}
+
+.fileList {
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+    padding: 0 18px;
+
+    &:hover {
+      background: #f8f9fa;
+
+      .fileList__name {
+        border-bottom: 1px solid #050505;
+      }
+    }
+  }
+
+  &__name {
+    color: #050505;
+    font-size: 14px;
+  }
+
+  &__del {
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 11px;
+      height: 14px;
+      transform: translate(-50%, -50%);
+      background-size: 80px;
+      background-position: -64px -29px;
+      background-image: url($imgModal + 'modal-sprites-form-apply.png');
+    }
+
+    &:hover {
+      &::before {
+        background-position: -64px -5px;
+      }
+    }
+  }
 }

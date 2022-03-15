@@ -3693,8 +3693,16 @@ img {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   color: #000;
   font-family: 'S-CoreDream', serif;
+}
+
+*::placeholder {
+  color: #c4c4c4;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 figcaption {
@@ -3811,4 +3819,8 @@ button {
 
 .tac {
   text-align: center !important;
+}
+
+.ovh {
+  overflow: hidden;
 }
