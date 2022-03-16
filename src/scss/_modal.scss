@@ -21,6 +21,10 @@
     &.w-m {
       width: 894px;
     }
+
+    &.w-s {
+      width: 794px;
+    }
   }
 
   &__inner {
@@ -286,6 +290,93 @@
           }
         }
       }
+    }
+  }
+
+  // 접수 이용동의
+  .reception-agree {
+    padding: 35px 30px 30px;
+
+    .title {
+      color: #050505;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1em;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+
+    &-cont {
+      margin-top: 33px;
+      border: 1px solid #dadada;
+      padding: 41px 35px 27px;
+      background: #f2f2f3;
+    }
+
+    .tbl-caption {
+      margin-bottom: 20px;
+      color: #394048;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1em;
+      letter-spacing: -0.45px;
+      text-align: center;
+    }
+
+    &-txt {
+      height: 30px;
+      padding: 0 17px;
+      color: #394048;
+      font-weight: 200;
+      font-size: 11px;
+      letter-spacing: -0.55px;
+      background: #E7E7E9;
+      border: 1px solid #dadada;
+      border-top: 0;
+    }
+  }
+
+  // 접수 완료
+  .reception-done {
+    padding: 160px 0 120px;
+
+    .title {
+      position: relative;
+      padding-top: 194px;
+      color: $themeColor03;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1em;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 164px;
+        height: 164px;
+        background: url($imgModal + 'modal-sprites-form-apply.png') -75px 0/239px no-repeat;
+        transform: translateX(-50%);
+      }
+
+      .italic {
+        font-size: 1em;
+        color: $themeColor03;
+      }
+    }
+
+    .sub-title {
+      margin-top: 20px;
+      color: #394048;
+      font-size: 20px;
+      line-height: 1em;
+    }
+
+    .guide-txt {
+      color: #394048;
+      font-weight: 200;
+      font-size: 14px;
+      line-height: 2;
     }
   }
 

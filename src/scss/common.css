@@ -3749,6 +3749,10 @@ button {
   margin: 0 auto;
 }
 
+.italic {
+  font-style: italic;
+}
+
 [class*="d-flex"] {
   display: flex;
 }

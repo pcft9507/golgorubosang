@@ -38,6 +38,11 @@ function goTop() {
   })
 }
 
+// 숫자 천단위 콤마
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+}
+
 // 버튼 텍스트 애니효과
 $.fn.btnAni = function () {
   var thisBtn = document.querySelectorAll('.btn-step-chg')
@@ -48,12 +53,17 @@ $.fn.btnAni = function () {
 // 모달 열기
 function openModal(modalName) {
   console.log('openModal')
+  $('html').addClass('ovh')
   $('.modal[data-modal="' + modalName + '"]').show()
+  if (modalName == 'reception02') {
+    $('.reception-form .form').css('overflow' , 'initial').css('overflow' , 'hidden')
+  }
 }
 
 // 모달 닫기
 function closeModal(modal) {
   $('.modal[data-modal=' + modal + ']').hide()
+  $('html').removeClass('ovh')
 }
 
 // 칩 토글
@@ -88,60 +98,9 @@ $.fn.textArea = function () {
   })
 }
 
-// 사진 첨부
-$.fn.attachPhoto = function () {
-  return this.each(function (i) {
-    var attachPhoto = []
-    attachPhoto[i] = $(this)
-    var files
-    var inpFile = attachPhoto[i].find('.js-file')
-    var btnAttach = attachPhoto[i].find('.attachPhoto__add')
-    var btnDel = attachPhoto[i].find('.js-delete')
-    var dropArea = attachPhoto[i].find('.attachPhoto__dropArea')
-    var fileList = attachPhoto[i].find('.fileList')
-    var fileListRow = attachPhoto[i].find('.fileList__row')
-
-    // 파일첨부 버튼
-    btnAttach.on('click', function () {
-      console.log('file attach')
-      inpFile.click()
-    })
-    // 드래그 이벤트
-    dropArea.on('dragover drop', function (e) {
-      console.log('dragover drop')
-      e.preventDefault();
-    })
-
-    // 리스트에서 파일 삭제
-    $(document).on('click', '.js-delete', function () {
-      console.log('file delete')
-      var curIdx = $(this).parents('.fileList__row').index()
-      console.log(files[curIdx])
-      files.splice(curIdx, 1)
-      fileRefresh ()
-    })
-
-    // file 업로드 이벤트
-    inpFile.on('change', function () {
-      console.log('file change')
-      fileRefresh ()
-    })
-
-    function fileRefresh () {
-      files = inpFile.get(0).files;
-      var file;
-      for (var i = 0; i < files.length; i++) {
-        file = files[i];
-        fileList.append(`<li class="fileList__row">
-          <span class="fileList__name">` + file.name + `</span>
-          <button type="button" class="fileList__del js-delete">
-            <span class="is-blind">삭제</span>
-          </button>
-        </li>`)
-        console.log(file.name);
-      }
-    }
-  })
+// formInp 
+$.fn.formInpTxt = function () {
+  
 }
 
 // 플러그인 불러오기
@@ -150,6 +109,6 @@ function loadUi () {
   $('[data-chip="toggle"]').chipToggle()
   $('.c-scroll-bar').niceScroll();
   $('.textArea').textArea();
-  $('.attachPhoto').attachPhoto();
+  $('.formInp__wrap').formInpTxt();
 }
 loadUi ()
