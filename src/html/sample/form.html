@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/jquery-3.6.0.min.js"></script>
+  <script src="../../js/jquery.nicescroll.min.js"></script>
+  <script defer src="../../js/ui.js"></script>
+  <title>골고루 보상</title>
+</head>
+
+<div class="sample-wrap" style="padding: 50px; background-color: #F8F9FA;">
+
+  <div class="form c-scroll-bar">
+    <div class="formRow d-flex f-wrap">
+      <div class="formRow__col col-single">
+        <label for="name" class="formInp__label required">(필수) 성명</label>
+        <div class="formInp">
+          <input type="text" id="name" class="formInp__txt" placeholder="예) 홍 길 동">
+          <button type="button" class="formInp__del js-del" title="입력창 내용 삭제">
+            <span class="is-blind">삭제</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="formRow d-flex f-wrap">
+      <div class="formRow__col col-single">
+        <label for="name" class="formInp__label required">(필수) 성명</label>
+        <div class="formInp is-success">
+          <input type="text" id="name" class="formInp__txt" placeholder="예) 홍 길 동">
+          <button type="button" class="formInp__del js-del" title="입력창 내용 삭제">
+            <span class="is-blind">삭제</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="formRow d-flex f-wrap">
+      <div class="formRow__col col-single">
+        <label for="name" class="formInp__label required">(필수) 성명</label>
+        <div class="formInp is-error">
+          <input type="text" id="name" class="formInp__txt" placeholder="예) 홍 길 동">
+          <button type="button" class="formInp__del js-del" title="입력창 내용 삭제">
+            <span class="is-blind">삭제</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="formRow">
+      <div class="formRow__col col-last">
+        <label for="gender" class="formInp__label required">성별</label>
+        <div class="formInp">
+          <label class="radioLabel">
+            <input type="radio" name="gender" class="radioLabel__inp"/>
+            <span class="radioLabel__txt">남자</span>
+          </label>
+          <label class="radioLabel">
+            <input type="radio" name="gender" class="radioLabel__inp"/>
+            <span class="radioLabel__txt">여자</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  
+    <div class="formRow d-flex f-wrap">
+      <div class="formRow__col col-single">
+        <label for="postNum" class="formInp__label required">(필수) 우편번호</label>
+        <div class="formInp has-btn">
+          <input type="text" id="postNum" class="formInp__txt" placeholder="우편번호">
+          <button type="button" class="formInp__del js-del" title="입력창 내용 삭제">
+            <span class="is-blind">삭제</span>
+          </button>
+          <button type="button" class="formInp__btn">
+            <span class="formInp__btnTxt">검색</span>
+          </button>
+        </div>
+      </div>
+      <div class="formRow__col col-dbl">
+        <label for="addr" class="formInp__label required">(필수) 주소</label>
+        <div class="formInp">
+          <input type="text" id="addr" class="formInp__txt" placeholder="주소">
+        </div>
+      </div>
+    </div>
+  
+    <div class="formRow d-flex f-wrap">
+      <div class="formRow__col col-full">
+        <label for="addrDetail" class="formInp__label">(선택) 나머지 상세 주소</label>
+        <div class="formInp">
+          <input type="text" id="addrDetail" class="formInp__txt s-f" placeholder="나머지 주소">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

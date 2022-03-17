@@ -1,4 +1,4 @@
-.header {
+.l-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,7 +8,7 @@
   box-sizing: border-box;
   transition: 0.3s;
 
-  &__inner {
+  .header-inner {
     position: relative;
     height: 90px;
   }
@@ -23,23 +23,24 @@
       width: 100%;
     }
 
-    &__imgDefault {
+    .img-def {
       display: block;
     }
 
-    &__imgScrolled {
+    .img-scrolled {
       display: none;
     }
   }
 
+  &.header-sub,
   &.scrolled {
     background: #fff;
 
-    .logo__imgDefault {
+    .img-def {
       display: none;
     }
 
-    .logo__imgScrolled {
+    .img-scrolled {
       display: block;
     }
 
@@ -48,6 +49,7 @@
       &List {
 
         &__item {
+          &.active,
           &:hover {
             &::after {
               background: #050505;
@@ -80,6 +82,7 @@
       padding: 0 12px;
       height: 90px;
 
+      &.active,
       &:hover {
         &::after {
           content: '';
@@ -98,7 +101,6 @@
     }
 
     &__link {
-      color: #fff;
       font-weight: 400;
       font-size: 18px;
       line-height: 1em;

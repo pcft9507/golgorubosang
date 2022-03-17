@@ -3757,6 +3757,10 @@ button {
   display: flex;
 }
 
+[class*="d-flex"].f-wrap {
+  flex-wrap: wrap;
+}
+
 .d-flex-s-s {
   justify-content: flex-start;
   align-items: flex-start;
@@ -3815,10 +3819,6 @@ button {
 .d-flex-sb-e {
   justify-content: space-between;
   align-items: end;
-}
-
-.d-flex.f-wrap {
-  flex-wrap: wrap;
 }
 
 .tac {

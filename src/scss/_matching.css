@@ -1,0 +1,21 @@
+.l-container {
+  position: relative;
+}
+
+.l-container-sub {
+  padding-top: 91px;
+}
+
+.l-container-sub.matching-container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background: #f2f2f3;
+}
+
+.speed-matching-wrap {
+  padding: 30px 0 120px;
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery.nicescroll.min.js"></script>
+  <script defer src="../js/ui.js"></script>
+  <title>골고루 보상</title>
+</head>
+
+
+<body>
+  <div class="wrap">
+    <header class="l-header header-sub">
+  <div class="header-inner rowContent__inner">
+    <h1 class="logo">
+      <a href="/" title="홈으로 이동">
+        <figure>
+          <img class="img" src="../images/common/logo-scrolled.png" alt="골고루보상">
+        </figure>
+      </a>
+    </h1>
+    <nav class="gnb">
+      <ul class="gnbList">
+        <li class="gnbList__item"><a href="#" class="gnbList__link">손해사정사 매칭 받기</a></li>
+        <li class="gnbList__item"><a href="#" class="gnbList__link">서비스 소개</a></li>
+        <li class="gnbList__item"><a href="#" class="gnbList__link">이벤트</a></li>
+        <li class="gnbList__item"><a href="#" class="gnbList__link">고객센터</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="quickMenu">
+    <button class="quickMenu__toggle"><span class="quickMenu__toggleTxt">퀵 숨기기</span></button>
+    <div class="quickMenu__cont">
+      <ul class="qMenuList">
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">보상 사고 사례</span></a></li>
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">전국 제휴 현황</span></a></li>
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">전국 병원 검색</span></a></li>
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">스피드 매칭</span></a></li>
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">카카오톡 상담</span></a></li>
+      </ul>
+      <span class="quickMenu__callNum">1670 - 2456</span>
+    </div>
+  </div>
+</header>
+
+    <div class="l-container-sub matching-container">
+      <h2 class="is-blind">손해사정사 매칭 받기</h2>
+      <div class="matching-content rowContent__inner d-flex f-wrap">
+        <aside class="speed-matching-wrap">
+          <div class="speed-matching">
+            <div class="mc-row-cont">
+              <h3 class="matching-title theme02">손해사정사 <i class="txt-bg">추천 서비스</i></h3>
+              <p class="guide-txt">
+                누구를 선택해야할지 모르겠다고요? 걱정마세요!<br>
+                고객님께 필요한 손해사정사를 매칭해드립니다.
+              </p>
+              <button class="btn-recommend d-flex-c-c mt-23">
+                <span class="txt">무료 추천 받기</span>
+              </button>
+            </div>
+            <div class="mc-row-cont">
+              <h3 class="matching-title theme03">손해사정사 <i class="txt-bg">스피드 검색</i></h3>
+              <p class="guide-txt">
+                상담받고 싶은 분야와 지역을 선택해보세요!<br>
+                전국의 독립 손해사정사가 여러분을 기다립니다.
+              </p>
+              <div class="speed-sch">
+                <div class="cont">
+                  <h4 class="cont-title">01. &nbsp;&nbsp;상담 분야를 선택해주세요</h4>
+                  <ul class="chipList d-flex-s-s f-wrap" data-chip="toggle">
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">실손</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">질병</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">상해</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">어린이</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">태아</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt fs-xxs">차량파손(대물)</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt fs-xxs">교통사고(대인)</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">배상책임</span>
+                      </a>
+                    </li>                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">근로재해</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt fs-xxs">학교안전사고</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">여행자</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">골프</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">치아</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">연금</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">도난</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">화재</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">재난</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">생명</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">침수</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">기타</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cont">
+                  <h4 class="cont-title">02. &nbsp;&nbsp;상담 지역을 선택해주세요</h4>
+                  <ul class="chipList d-flex-s-s f-wrap" data-chip="toggle">
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">서울</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">경기</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">부산</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">대구</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">인천</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">광주</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">대전</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">울산</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">세종</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">강원</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">전북</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">전남</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">충북</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">충남</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">경북</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">경남</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">제주</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="bot-btn-wrap d-flex">
+                  <button class="btn-speed-sch d-flex-c-c js-reset">
+                    <span class="txt">초기화</span>
+                  </button>
+                  <button class="btn-speed-sch d-flex-c-c js-go-sch">
+                    <span class="txt">검색하기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="matching-result c-scroll-bar">
+          <div class="matching-result-ban">
+            <div class="swiper ban-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <figure>
+                    <figcaption>매칭 받기 검색 상단 배너</figcaption>
+                    <img src="../images/banner/ban-matching-result01.png" alt="차량 파손? 보험금 제대로 받을 수 있을까? 사진 첨부만으로도 OK 무료상담 GO">
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <!-- matching-result-ban end -->
+
+          <div class="matchingSch">
+            <div class="dropMenu matching-ctr">
+              <a href="#" class="dropMenu__selected js-open">
+                <span class="dropMenu__txt">전체</span>
+              </a>
+              <ul class="dropMenu__list">
+                <li class="dropMenu__item">
+                  <a href="#" class="dropMenu__btn js-select">
+                    <span class="dropMenu__btnTxt">전체</span>
+                  </a>
+                </li>
+                <li class="dropMenu__item">
+                  <a href="#" class="dropMenu__btn js-select">
+                    <span class="dropMenu__btnTxt">손해사정사 이름</span>
+                  </a>
+                </li>
+                <li class="dropMenu__item">
+                  <a href="#" class="dropMenu__btn js-select">
+                    <span class="dropMenu__btnTxt">이력</span>
+                  </a>
+                </li>
+                <li class="dropMenu__item">
+                  <a href="#" class="dropMenu__btn js-select">
+                    <span class="dropMenu__btnTxt">해시 태그</span>
+                  </a>
+                </li>
+                <li class="dropMenu__item">
+                  <a href="#" class="dropMenu__btn js-select">
+                    <span class="dropMenu__btnTxt">지역</span>
+                  </a>
+                </li>
+                <li class="dropMenu__item">
+                  <a href="#" class="dropMenu__btn js-select">
+                    <span class="dropMenu__btnTxt">분야</span>
+                  </a>
+                </li>
+                <li class="dropMenu__item">
+                  <a href="#" class="dropMenu__btn js-select">
+                    <span class="dropMenu__btnTxt">자기소개</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="matchingSch__inp">
+              <input type="text" class="matchingSch__inpTxt" placeholder="키워드를 검색하세요">
+              <button class="matchingSch__inpBtn" title="키워드 삭제">
+                <span class="is-blind">삭제</span>
+              </button>
+            </div>
+          </div>
+          <!-- matchingSch end -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="l-footer-sub">
+  <div class="fs-top">
+    <div class="fs-top-inner rowContent__inner d-flex-sb-c">
+      <ul class="fs-board-link d-flex-s-c">
+        <li class="link-item"><a href="notice.html" class="btn-link">공지사항</a></li>
+        <li class="link-item"><a href="notice.html" class="btn-link">자주 묻는 질문</a></li>
+        <li class="link-item"><a href="notice.html" class="btn-link">고객센터</a></li>
+      </ul>
+      <ul class="fs-quick d-flex-e-c">
+        <li class="link-item"><a href="matching.html" class="btn-link btn-link1 btn-step-chg">손해사정사 무료 상담</a></li>
+        <li class="link-item"><a href="https://www.golgorubosang.co.kr/partner/newpartnerregister" target="_blank" class="btn-link btn-link2 btn-step-chg">제휴 문의</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fs-center">
+    <div class="fs-center-inner rowContent__inner d-flex-sb-c">
+      <div class="menu-wrap d-flex-s-s">
+        <div class="menu-col-box">
+          <ul class="center-menu">
+            <li class="item"><a href="#" class="link-btn">회사 소개</a></li>
+            <li class="item"><a href="#" class="link-btn">서비스 소개</a></li>
+            <li class="item"><a href="#" class="link-btn">서비스 이용방법</a></li>
+          </ul>
+        </div>
+        <div class="menu-col-box">
+          <ul class="center-menu">
+            <li class="item"><a href="#" class="link-btn">안심거래 서비스</a></li>
+            <li class="item"><a href="#" class="link-btn">친절한 용어사전</a></li>
+            <li class="item"><a href="#" class="link-btn">보상 사고 사례</a></li>
+          </ul>
+        </div>
+        <div class="menu-col-box">
+          <ul class="center-menu">
+            <li class="item"><a href="#" class="link-btn">전국 제휴 현황</a></li>
+            <li class="item"><a href="#" class="link-btn">전국 병원 검색</a></li>
+            <li class="item"><a href="#" class="link-btn">제휴 및 이벤트</a></li>
+          </ul>
+        </div>
+        <div class="menu-col-box">
+          <ul class="center-menu">
+            <li class="item"><a href="#" class="link-btn">이용약관</a></li>
+            <li class="item"><a href="#" class="link-btn">개인정보 처리방침</a></li>
+            <li class="item"><a href="#" class="link-btn">파트너사 전용</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="download-menu d-flex-s-c">
+        <li class="item">
+          <p class="os-name">Android 다운로드</p>
+          <div class="os-imgs d-flex-s-s">
+            <figure class="fig">
+              <figcaption>앱 다운로드 QR코드</figcaption>
+              <img class="fig-qr-img" src="../images/common/qr-android.png" alt="안드로이드 QR이미지">
+            </figure>
+            <figure class="fig">
+              <figcaption>OS 스토어 이미지</figcaption>
+              <img class="fig-store-img" src="../images/common/img-google-play.png" alt="다운로드하기 구글플레이">
+            </figure>
+          </div>
+        </li>
+        <li class="item">
+          <p class="os-name">IOS 다운로드</p>
+          <div class="os-imgs d-flex-s-s">
+            <figure class="fig">
+              <figcaption>앱 다운로드 QR코드</figcaption>
+              <img class="fig-qr-img" src="../images/common/qr-android.png" alt="IOS QR이미지">
+            </figure>
+            <figure class="fig">
+              <figcaption>OS 스토어 이미지</figcaption>
+              <img class="fig-store-img" src="../images/common/img-app-store.png" alt="앱스토어에서 다운로드하기">
+            </figure>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="fs-bottom">
+    <div class="fs-bottom-inner rowContent__inner d-flex-s-c">
+      <p class="fs-logo"><img src="../images/common/logo-fs.png" alt="골고루보상"></p>
+      <address class="fs-addr">
+        대표이사 : 유태석  |  사업자등록번호 : 205-81-43321  |  통신판매번호 : 2020-서울금천-2366  |  이메일 : bosang@golgoru.co.kr<br>
+        주소 : 서울시 금천구 가산디지털1로 181 가산W센터 1603호
+      </address>
+      <p class="fs-copy">Copyright 2022. GOLGORUBOSANG inc. all rights reserved.</p>
+    </div>
+  </div>
+  
+  <div class="goTop">
+    <button class="goTop__btn d-flex-c-c" onclick="goTop()">
+      <span class="goTop__txt">TOP</span>
+    </button>
+  </div>
+</footer>
+  </div>
+
+  <script src="../js/swiper.min.js"></script>
+  <script>
+    // gnb 현재 페이지 활성화
+    var page = 'matching'
+
+    // 상단 배너 롤링 
+    var matchingBanSwiper = new Swiper(".ban-swiper", {
+      slideWidth: 793
+    });
+  </script>
+</body>
+</html>

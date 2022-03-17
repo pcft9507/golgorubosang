@@ -1,4 +1,4 @@
-<div class="modal" data-modal="reception02" style="display: block;">
+<div class="modal" data-modal="reception02">
   <div class="modal__container">
     <div class="modal__content w-m">
       <div class="modal__inner reception-form">
@@ -14,14 +14,10 @@
               <label for="name" class="formInp__label required">(필수) 성명</label>
               <div class="formInp">
                 <input type="text" id="name" class="formInp__txt" placeholder="예) 홍 길 동">
-                <button type="button" class="formInp__del js-inp-val-del" title="입력창 내용 삭제">
+                <button type="button" class="formInp__del js-del" title="입력창 내용 삭제">
                   <span class="is-blind">삭제</span>
                 </button>
               </div>
-              <!-- is-error, is-success 에러 성공 -->
-              <!-- <div class="formInp is-error is-success">
-                <input type="text" id="name" class="formInp__txt" placeholder="예) 홍 길 동">
-              </div> -->
             </div>
             <div class="formRow__col col-single">
               <label for="birthDay" class="formInp__label required">(필수) 생년월일</label>
@@ -49,6 +45,9 @@
               <label for="postNum" class="formInp__label required">(필수) 우편번호</label>
               <div class="formInp has-btn is-success">
                 <input type="text" id="postNum" class="formInp__txt" placeholder="우편번호">
+                <button type="button" class="formInp__del js-del" title="입력창 내용 삭제">
+                  <span class="is-blind">삭제</span>
+                </button>
                 <button type="button" class="formInp__btn">
                   <span class="formInp__btnTxt">검색</span>
                 </button>
@@ -294,14 +293,14 @@
           <div class="agree">
             <input type="checkbox" id="agreeChk" name="agreeChk" class="checkBox">
             <label for="agreeChk" class="agree__txt">비회원 개인정보수집 및 이용안내에 동의합니다.</label>
-            <button type="button" class="agree__btn" onclick="openModal('reception03')"><span class="agree__btnTxt">내용보기</span></button>
+            <button type="button" class="btnForm sm ml-12" onclick="openModal('reception03')"><span class="btnForm__txt">내용보기</span></button>
           </div>
           <div class="btnWrap d-flex-c-s mt-36">
             <button class="compBtn btn-step-chg modal-confirm fz-18">접수 (인증 전)</button>
           </div>
         </div>
       </div>
-      <button class="modal__close" onclick="openModal('reception04')"><span class="is-blind">닫기</span></button>
+      <button class="modal__close" onclick="closeModal('reception02')"><span class="is-blind">닫기</span></button>
     </div>
   </div>
 </div>
