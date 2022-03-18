@@ -1,0 +1,21 @@
+.l-container {
+  position: relative;
+
+  &-sub {
+    padding-top: 91px;
+
+    &.matching-container {
+    
+      &:after {
+        content: '';
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        width: 50%;
+        background: #f2f2f3;
+      }
+    }
+  }
+}

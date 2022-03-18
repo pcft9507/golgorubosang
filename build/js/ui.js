@@ -1,4 +1,4 @@
-// GNB활성화를
+// GNB활성화
 if (page == 'matching') {
   $('.gnbList__item').eq(0).addClass('active')
 } else if (page == 'service') {
@@ -124,27 +124,76 @@ $.fn.formInpTxt = function () {
   })
 }
 
-// 버튼 이벤트
-// $.fn.buttonInnerAni = function () {
-//   var curBtn = this
-//   curBtn.on('hover', function () {
-//     var parentOffset = $(this).offset(); 
-   
-//     var relX = e.pageX - parentOffset.left;
-//     var relY = e.pageY - parentOffset.top;
-//     $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
-//     $(this).prev(".su_button_circle").removeClass("desplode-circle");
-//     $(this).prev(".su_button_circle").addClass("explode-circle");
-//   }, function () {
-//     var parentOffset = $(this).offset(); 
+// 손해사 매칭 키워드 검색
+$.fn.matchingSch = function () {
+  var schBody = this
+  var inpTxt = schBody.find('.matchingSch__inpTxt')
+  var inpDel = schBody.find('.js-del')
+  var submit = schBody.find('.matchingSch__submit')
+  inpTxt.on('focus', function () {
+    schBody.addClass('focus')
+  })
+  inpTxt.on('blur', function () {
+    schBody.removeClass('focus')
+  })
+  inpTxt.on('keyup', function () {
+    var thisVal = $(this).val()
+    if (thisVal.length > 0) {
+      inpDel.show()
+    } else {
+      inpDel.hide()
+    }
+  })
+  inpDel.on('click', function () {
+    inpTxt.val('')
+    inpDel.hide()
+  })
+  submit.on('click', function () {
+    console.log('키워드 검색 submit')
+  })
+}
 
-//     var relX = e.pageX - parentOffset.left;
-//     var relY = e.pageY - parentOffset.top;
-//     $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
-//     $(this).prev(".su_button_circle").removeClass("explode-circle");
-//     $(this).prev(".su_button_circle").addClass("desplode-circle");
-//   })
-// }
+// 드롭메뉴
+$.fn.dropMenu = function () {
+  var dropBody = Array
+  return this.each(function (i) {
+    dropBody[i] = $(this)
+    var openBtn = dropBody[i].find('.js-open')
+    var selectedTxt = dropBody[i].find('.dropMenu__txt')
+    var dropList = dropBody[i].find('.dropMenu__list')
+    var selBtn = dropBody[i].find('.js-select')
+    openBtn.on('click', function (e) {
+      e.preventDefault()
+      dropList.slideDown('fast')
+      // 손해사 매칭 검색 드롭메뉴일 경우
+      if (dropBody[i].hasClass('matching-ctr')) {
+        dropBody[i].parent().addClass('matchingSch--drop-menu')
+      }
+    })
+    openBtn.blur(function () {
+      setTimeout(function () {
+        dropList.slideUp('fast')
+        // 손해사 매칭 검색 드롭메뉴일 경우
+        if (dropBody[i].hasClass('matching-ctr')) {
+          dropBody[i].parent().removeClass('matchingSch--drop-menu')
+        }
+      }, 100)
+    })
+    selBtn.on('click', function (e) {
+      e.preventDefault()
+      selBtn.removeClass('selected')
+      $(this).addClass('selected')
+      var text = $(this).children().text()
+      selectedTxt.text(text)
+      dropList.slideUp('fast')
+      dropBody[i].attr('data-value', text)
+      // 손해사 매칭 검색 드롭메뉴일 경우
+      if (dropBody[i].hasClass('matching-ctr')) {
+        dropBody[i].parent().removeClass('matchingSch--drop-menu')
+      }
+    })
+  })
+}
 
 // 플러그인 불러오기
 function loadUi () {
@@ -153,5 +202,7 @@ function loadUi () {
   $('.c-scroll-bar').niceScroll();
   $('.textArea').textArea();
   $('.formInp').formInpTxt();
+  $('.dropMenu').dropMenu();
+  $('.matchingSch').matchingSch();
 }
 loadUi ()

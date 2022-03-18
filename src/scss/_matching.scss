@@ -1,25 +1,3 @@
-.l-container {
-  position: relative;
-
-  &-sub {
-    padding-top: 91px;
-
-    &.matching-container {
-    
-      &:after {
-        content: '';
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        width: 50%;
-        background: #f2f2f3;
-      }
-    }
-  }
-}
-
 .matching-content {
   background: #f2f2f3;
 
@@ -155,13 +133,17 @@
   }
 
   .matching-result {
+    width: 826px;
     height: 920px;
     padding: 30px 0 100px 33px;
     box-sizing: border-box;
   }
 
   .matchingSch {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
+    z-index: 101;
     height: 36px;
     border: 1px solid #dadada;
     border-radius: 18px;
@@ -169,6 +151,7 @@
     box-shadow: 0px 1px 2px 0 rgba(5, 5, 5, 0.25);
     box-sizing: border-box;
 
+    &.focus,
     &:hover {
       border-color: #787e85;
       box-shadow: none;
@@ -178,6 +161,65 @@
       border-color: #dadada;
       box-shadow: none;
       border-radius: 18px 18px 18px 0;
+
+      &:hover {
+        border-color: #dadada;
+        box-shadow: none;
+      }
+      .dropMenu__list {
+        left: -1px;
+      }
     }
+
+    &__submit {
+      position: absolute;
+      top: 8px;
+      right: 16px;
+      width: 19px;
+      height: 19px;
+      background: url($imgCommon + 'sprites-matching-search.png') -5px -53px/89px no-repeat;
+
+      &:hover {
+        background-position: -65px -5px;
+      }
+    }
+  }
+
+  .matchingSch__inp {
+    position: relative;
+    width: 614px;
+
+    &Txt {
+      width: 100%;
+      height: 34px;
+      padding: 0 30px;
+      border: 0;
+      text-align: center;
+    }
+
+    &Del {
+      display: none;
+      position: absolute;
+      top: 9px;
+      right: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #787e85;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 8px;
+        height: 8px;
+        background: url($imgCommon + 'sprites-matching-search.png') -10px -30px/89px no-repeat;
+      }
+    }
+  }
+
+  .matching-card-list {
+    margin-top: 30px;
   }
 }

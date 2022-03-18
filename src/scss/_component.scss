@@ -13,7 +13,7 @@
     --background: #105de1;
     --text: #fff;
     --font-size: 18px;
-    --duration: .44s;
+    --duration: .22s;
     --move-hover: -4px;
     --shadow: 0 2px 8px -1px #{rgba(#275efe, .32)};
     --shadow-hover: 0 4px 20px -2px #{rgba(#275efe, .5)};
@@ -29,7 +29,7 @@
     --background: #105de1;
     --text: #fff;
     --font-size: 18px;
-    --duration: .44s;
+    --duration: .22s;
     --move-hover: -5px;
     --shadow: 0 2px 8px -1px #{rgba(#275efe, .32)};
     --shadow-hover: 0 4px 20px -2px #{rgba(#275efe, .5)};
@@ -322,6 +322,7 @@
   }
 
   &__list {
+    display: none;
     position: absolute;
     top: var(--height);
     left: 0;
