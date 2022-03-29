@@ -50,6 +50,11 @@ input {
   outline: none;
 }
 
+table caption {
+  position: absolute;
+  left: -99999999vw;
+}
+
 *::placeholder {
   color: #c4c4c4;
   font-weight: 200;

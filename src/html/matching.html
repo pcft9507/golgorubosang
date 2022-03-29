@@ -4,10 +4,10 @@
   <div class="wrap">
     @@include('header_sub.html')
 
-    <div class="l-container-sub matching-container">
+    <div class="l-container-sub matching-container fixed">
       <h2 class="is-blind">손해사정사 매칭 받기</h2>
       <div class="matching-content rowContent__inner d-flex f-wrap">
-        <aside class="speed-matching-wrap">
+        <aside class="speed-matching-wrap c-scroll-bar">
           <div class="speed-matching">
             <div class="mc-row-cont">
               <h3 class="matching-title theme02">손해사정사 <i class="txt-bg">추천 서비스</i></h3>
@@ -233,110 +233,401 @@
           </div>
         </aside>
 
-        <div class="matching-result c-scroll-bar">
-          <div class="matching-result-ban">
-            <div class="swiper ban-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <figure>
-                    <figcaption>매칭 받기 검색 상단 배너</figcaption>
-                    <img src="../images/banner/ban-matching-result01.png" alt="차량 파손? 보험금 제대로 받을 수 있을까? 사진 첨부만으로도 OK 무료상담 GO">
-                  </figure>
-                </div>
+        <div class="matching-result">
+          <div class="matching-sticky-wrap">
+            <div class="matchingSch">
+              <div class="dropMenu matching-ctr" data-value="전체">
+                <a href="#" class="dropMenu__selected js-open">
+                  <span class="dropMenu__txt">전체</span>
+                </a>
+                <ul class="dropMenu__list">
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">전체</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">손해사정사 이름</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">이력</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">해시 태그</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">지역</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">분야</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">자기소개</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
-            </div>  
-          </div>
-          <!-- matching-result-ban end -->
-
-          <div class="matchingSch">
-            <div class="dropMenu matching-ctr" data-value="전체">
-              <a href="#" class="dropMenu__selected js-open">
-                <span class="dropMenu__txt">전체</span>
-              </a>
-              <ul class="dropMenu__list">
-                <li class="dropMenu__item">
-                  <a href="#" class="dropMenu__btn js-select">
-                    <span class="dropMenu__btnTxt">전체</span>
-                  </a>
-                </li>
-                <li class="dropMenu__item">
-                  <a href="#" class="dropMenu__btn js-select">
-                    <span class="dropMenu__btnTxt">손해사정사 이름</span>
-                  </a>
-                </li>
-                <li class="dropMenu__item">
-                  <a href="#" class="dropMenu__btn js-select">
-                    <span class="dropMenu__btnTxt">이력</span>
-                  </a>
-                </li>
-                <li class="dropMenu__item">
-                  <a href="#" class="dropMenu__btn js-select">
-                    <span class="dropMenu__btnTxt">해시 태그</span>
-                  </a>
-                </li>
-                <li class="dropMenu__item">
-                  <a href="#" class="dropMenu__btn js-select">
-                    <span class="dropMenu__btnTxt">지역</span>
-                  </a>
-                </li>
-                <li class="dropMenu__item">
-                  <a href="#" class="dropMenu__btn js-select">
-                    <span class="dropMenu__btnTxt">분야</span>
-                  </a>
-                </li>
-                <li class="dropMenu__item">
-                  <a href="#" class="dropMenu__btn js-select">
-                    <span class="dropMenu__btnTxt">자기소개</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="matchingSch__inp">
-              <input type="text" class="matchingSch__inpTxt" placeholder="키워드를 검색하세요">
-              <button class="matchingSch__inpDel js-del" title="키워드 삭제">
-                <span class="is-blind">삭제</span>
+              <div class="matchingSch__inp">
+                <input type="text" class="matchingSch__inpTxt" placeholder="키워드를 검색하세요">
+                <button class="matchingSch__inpDel js-del" title="키워드 삭제">
+                  <span class="is-blind">삭제</span>
+                </button>
+              </div>
+              <button class="matchingSch__submit">
+                <span class="is-blind">검색하기</span>
               </button>
             </div>
-            <button class="matchingSch__submit">
-              <span class="is-blind">검색하기</span>
-            </button>
-          </div>
-          <!-- matchingSch end -->
-
-          <!-- <div class="matching-card-list">
-            <ul class="cardList half-col">
-              <li class="cardList__item">
-                <div class="profileCard">
-                  <figure class="profileCard-fig">
-                    <figcaption>손해사정사 사진</figcaption>
-                    <img class="profileCard-img" src="../images/sample/layer-524@2x.jpg">
-                  </figure>
-                  <div class="profileCard__info">
-                    <div class="profileCard__chipRow">
-                      <span class="chip-pc">후유장애</span>
-                      <span class="chip-pc">사망</span>
-                      <span class="chip-pc">면책사고</span>
+            <!-- matchingSch end -->
+  
+            <div class="matching-card-list">
+              <ul class="cardList grid-2 d-flex-s-s f-wrap matching-scroll">
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
                     </div>
-                    <ul class="profileCard__summary">
-                      <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
-                      <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
-                      <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
-                    </ul>
-                    <div class="profileCard__btnWrap">
-                      <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
-                      <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </div> -->
-          <!-- matching-card-list end -->
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../images/sample/layer-524@2x.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: void(0)" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+  
+              <div class="matching-more">
+                <button class="more-btn"><span class="txt">더 보 기</span></button>
+              </div>
+            </div>
+            <!-- matching-card-list end -->
+          </div>
+          <!-- matching-sticky-wrap -->
         </div>
       </div>
     </div>
-
-    @@include('footer_sub.html')
   </div>
 
   <script src="../js/swiper.min.js"></script>
@@ -344,10 +635,13 @@
     // gnb 현재 페이지 활성화
     var page = 'matching'
 
-    // 상단 배너 롤링 
-    var matchingBanSwiper = new Swiper(".ban-swiper", {
-      slideWidth: 793
+    // 매칭리스트 영역 스크롤
+    $('.matching-scroll').niceScroll({
+      cursorcolor: "#bec2c7",
+      cursorwidth: "10px",
+      cursorborder: 0,
     });
+
   </script>
 </body>
 </html>

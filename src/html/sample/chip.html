@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../js/jquery-3.6.0.min.js"></script>
+  <script src="../../js/jquery.nicescroll.min.js"></script>
+  <script defer src="../../js/ui.js"></script>
+  <title>골고루 보상</title>
+</head>
+<style>
+  .sample-tit {font-size: 30px;}
+  .sample-tit02 {margin: 20px 0 10px; font-size: 20px;}
+  .space {margin: 50px 0;}
+  .chipList {margin: -10px;}
+  .chipList li {margin: 10px;}
+</style>
+<div class="sample-wrap" style="padding: 50px; background-color: #F8F9FA;">
+  <h1 class="sample-tit">칩 샘플</h1>
+
+  <h2 class="sample-tit02">기본형</h2>
+  <a href="#" class="chip rg">
+    <span class="chip__txt">실손</span>
+  </a>
+
+  <h2 class="sample-tit02">작은 기본형</h2>
+  <a href="#" class="chip rd">
+    <span class="chip__txt">실손</span>
+  </a>
+
+  <h2 class="sample-tit02">리스트(간격 임의 조정)</h2>
+  <ul class="chipList d-flex f-wrap" data-chip="toggle">
+    <li class="chipList__item">
+      <a href="#" class="chip rg">
+        <span class="chip__txt">실손</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rg">
+        <span class="chip__txt">질병</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rg">
+        <span class="chip__txt">상해</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rg">
+        <span class="chip__txt">어린이</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rg">
+        <span class="chip__txt">태아</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rg">
+        <span class="chip__txt fs-s">차량파손<br>(대물)</span>
+      </a>
+    </li>
+  </ul>
+
+  <h2 class="sample-tit02">스몰사이즈 리스트(간격 임의 조정)</h2>
+  <ul class="chipList d-flex-s-s f-wrap" data-chip="toggle">
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">실손</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">질병</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">상해</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">어린이</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">태아</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt fs-xxs">차량파손(대물)</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt fs-xxs">교통사고(대인)</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">배상책임</span>
+      </a>
+    </li>                    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">근로재해</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt fs-xxs">학교안전사고</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">여행자</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">골프</span>
+      </a>
+    </li>                    
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">치아</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">연금</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">도난</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">화재</span>
+      </a>
+    </li>                    
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">재난</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">생명</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">침수</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip rd">
+        <span class="chip__txt">기타</span>
+      </a>
+    </li>
+  </ul>
+
+  <h2 class="sample-tit02">프로필 카테고리</h2>
+  <span class="chip-pc">후유장애</span>
+
+  <h2 class="sample-tit02">리스트(간격 임의 조정)</h2>
+  <ul class="chipList d-flex f-wrap">
+    <li><span class="chip-pc">후유장애</span></li>
+    <li><span class="chip-pc">후유장애</span></li>
+    <li><span class="chip-pc">후유장애</span></li>
+    <li><span class="chip-pc">후유장애</span></li>
+    <li><span class="chip-pc">후유장애</span></li>
+  </ul>
+</div>

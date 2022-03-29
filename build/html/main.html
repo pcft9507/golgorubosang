@@ -345,7 +345,7 @@
                   <a href="https://www.youtube.com/channel/UCbxamrb4B-ALQkZfLgy_zwQ/videos" target="_blank" class="link-btn btn-step-chg">유튜브채널 바로가기</a>
                 </li>
                 <li class="btn-item">
-                  <a href="javascript: void(0)" class="link-btn btn-step-chg">무료 상담받기</a>
+                  <a href="matching.html" class="link-btn btn-step-chg">무료 상담받기</a>
                 </li>
               </ul> 
             </div>
@@ -1227,7 +1227,7 @@
             <button type="button" class="btnForm sm ml-12" onclick="openModal('reception03')"><span class="btnForm__txt">내용보기</span></button>
           </div>
           <div class="btnWrap d-flex-c-s mt-36">
-            <button class="compBtn btn-step-chg modal-confirm fz-18">접수 (인증 전)</button>
+            <button class="compBtn btn-step-chg modal-confirm fz-18" onclick="openModal('reception-done')">접수 (인증 전)</button>
           </div>
         </div>
       </div>
@@ -1561,7 +1561,7 @@ function uploadFile() {
   </div>
 </div>
 
-  <div class="modal" data-modal="reception03">
+  <div class="modal" data-modal="reception-done">
   <div class="modal__container">
     <div class="modal__content w-m">
       <div class="modal__inner reception-done">
@@ -1572,7 +1572,7 @@ function uploadFile() {
           <button class="compBtn btn-step-chg modal-confirm fz-18" onclick="closeModal('reception03')">확인</button>
         </div>
       </div>
-      <button class="modal__close" onclick="closeModal('reception03')"><span class="is-blind">닫기</span></button>
+      <button class="modal__close" onclick="closeModal('reception-done')"><span class="is-blind">닫기</span></button>
     </div>
   </div>
 </div>

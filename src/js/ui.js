@@ -1,12 +1,14 @@
 // GNB활성화
-if (page == 'matching') {
-  $('.gnbList__item').eq(0).addClass('active')
-} else if (page == 'service') {
-  $('.gnbList__item').eq(1).addClass('active')
-} else if (page == 'event') {
-  $('.gnbList__item').eq(2).addClass('active')
-} else if (page == 'cs-center') {
-  $('.gnbList__item').eq(3).addClass('active')
+if (typeof page != 'undefined') {
+  if (page == 'matching') {
+    $('.gnbList__item').eq(0).addClass('active')
+  } else if (page == 'service') {
+    $('.gnbList__item').eq(1).addClass('active')
+  } else if (page == 'event') {
+    $('.gnbList__item').eq(2).addClass('active')
+  } else if (page == 'cs-center') {
+    $('.gnbList__item').eq(3).addClass('active')
+  }
 }
 
 // 헤더
@@ -195,11 +197,27 @@ $.fn.dropMenu = function () {
   })
 }
 
+// 텍스트 클립보드 복사
+function copyText(element){
+  var content = $(element).text()
+  navigator.clipboard.writeText(content)
+    .then(() => {
+    console.log("Text copied to clipboard...")
+  })
+    .catch(err => {
+    console.log('Something went wrong', err);
+  })
+  alert('복사되었습니다.')
+  console.log('복사된 텍스트:', content)
+}
+
 // 플러그인 불러오기
 function loadUi () {
   $('.btn-step-chg').btnAni();
   $('[data-chip="toggle"]').chipToggle()
-  $('.c-scroll-bar').niceScroll();
+  $('.c-scroll-bar').niceScroll({
+    cursorcolor: "#bec2c7",
+  });
   $('.textArea').textArea();
   $('.formInp').formInpTxt();
   $('.dropMenu').dropMenu();

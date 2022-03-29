@@ -1,0 +1,215 @@
+// 버튼 행 공통
+.btn-row-wrap {
+  display: flex;
+}
+
+// 버튼 계단 변경
+.btn-step-chg {
+
+  // 폰트 사이즈
+  @for $i from 1 through 100 {
+    &.fs-#{$i} {
+      font-size: 1px * $i;
+    }
+  }  
+
+  &.theme03 {
+    --background: #105de1;
+    --text: #fff;
+    --font-size: 18px;
+    --duration: .22s;
+    --move-hover: -4px;
+    --shadow: 0 2px 8px -1px #{rgba(#275efe, .32)};
+    --shadow-hover: 0 4px 20px -2px #{rgba(#275efe, .5)};
+    --font-shadow: var(--font-size);
+  }
+
+  &.modal-confirm {
+    min-width: 204px;
+    height: 46px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+    --background: #105de1;
+    --text: #fff;
+    --font-size: 18px;
+    --duration: .22s;
+    --move-hover: -5px;
+    --shadow: 0 2px 8px -1px #{rgba(#275efe, .32)};
+    --shadow-hover: 0 4px 20px -2px #{rgba(#275efe, .5)};
+    --font-shadow: var(--font-size);
+    --hover-background: #013ca0;
+
+    div {
+      height: 18px;
+    }
+
+    span {
+      color: #fff;
+    }
+  }
+
+  // --background: #275efe;
+  // --text: #fff;
+  // --font-size: 16px;
+  // --duration: .44s;
+  // --move-hover: -4px;
+  // --shadow: 0 2px 8px -1px #{rgba(#275efe, .32)};
+  // --shadow-hover: 0 4px 20px -2px #{rgba(#275efe, .5)};
+  // --font-shadow: var(--font-size);
+  // padding: 16px 32px;
+  // font-family: 'Roboto';
+  // font-weight: 500;
+  // line-height: var(--font-size);
+  // border-radius: 24px;
+  display: flex;
+  outline: none;
+  text-decoration: none;
+  font-size: var(--font-size);
+  letter-spacing: .5px;
+  background: var(--background);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transform: translateY(var(--y)) translateZ(0);
+  transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+  box-sizing: border-box;
+  line-height: var(--font-size);
+  div {
+      display: flex;
+      overflow: hidden;
+      text-shadow: 0 var(--font-shadow) 0 var(--text);
+      justify-content: center;
+      align-items: center;
+      span {
+          display: block;
+          backface-visibility: hidden;
+          font-style: normal;
+          transition: transform var(--duration) ease;
+          transform: translateY(var(--m)) translateZ(0);
+          $i: 1;
+          @while $i < 12 {
+              &:nth-child(#{$i}) {
+                  transition-delay: calc($i / 20) + s;
+              }
+              $i: $i + 1;
+          }
+      }
+  }
+  &:hover {
+      --y: var(--move-hover);
+      --shadow: var(--shadow-hover);
+      background: var(--hover-background);
+      span {
+          --m: calc(var(--font-size) * -1);
+      }
+  }
+  &.reverse {
+      --font-shadow: calc(var(--font-size) * -1);
+      &:hover {
+          span {
+              --m: calc(var(--font-size));
+          }
+      }
+  }
+}
+
+.btnForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 73px;
+  height: 31px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0px 1px 0 0 rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    background: #394048;
+    border-color: #394048;
+    box-shadow: none;
+
+    .btnForm__txt {
+      color: #fff;
+    }
+  }
+  
+  .btnForm__txt {
+    color: #394048;
+    font-size: 12px;
+  }
+
+  &.sm {
+    width: 64px;
+    height: 24px;
+
+    .btnForm__txt {
+      color: #394048;
+      font-size: 11px;
+    }
+
+    &:hover {
+
+      .btnForm__txt {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.btn-cross-fill{
+  border: 1px solid transparent; 
+   -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+}
+
+.btn-cross-fill::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  width: 0%;
+  height:1px;
+  transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+
+.btn-cross-fill:hover::before {
+  width:100%;
+}
+
+.btn-cross-fill::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: -1px;
+  width: 0%;
+  height:1px;
+  transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+.btn-cross-fill:hover::after {
+  width:100%;
+}
+
+.btn-primary-chg {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  --background: #006df6;
+  --text: #fff;
+  --duration: .22s;
+  --move-hover: -5px;
+  --font-shadow: var(--font-size);
+  --hover-background: #013ca0;
+
+  &.s-big {
+    height: 64px;
+    --font-size: 20px;
+    border-radius: 32px;
+
+  }
+
+  span {
+    color: #fff;
+  }  
+}
