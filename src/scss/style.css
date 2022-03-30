@@ -3630,7 +3630,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 110;
+  z-index: 60;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
@@ -5124,6 +5124,10 @@
   background-position: -24px 0;
 }
 
+.btn-row-wrap {
+  display: flex;
+}
+
 .btn-step-chg {
   display: flex;
   outline: none;
@@ -5727,6 +5731,33 @@
 
 .btn-cross-fill:hover::after {
   width: 100%;
+}
+
+.btn-primary-chg {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  --background: #006df6;
+  --text: #fff;
+  --duration: .22s;
+  --move-hover: -5px;
+  --font-shadow: var(--font-size);
+  --hover-background: #013ca0;
+}
+
+.btn-primary-chg.s-big {
+  height: 64px;
+  --font-size: 20px;
+  border-radius: 32px;
+}
+
+.btn-primary-chg span {
+  color: #fff;
+}
+
+.fixedTab {
+  position: absolute;
+  top: 0;
 }
 
 /**
@@ -7102,7 +7133,7 @@ button.swiper-pagination-bullet {
 
 .detailCard__tm {
   position: absolute;
-  top: 112px;
+  top: 132px;
   right: -86px;
   color: #d8d9db;
   font-weight: 900;
@@ -7516,7 +7547,7 @@ button.swiper-pagination-bullet {
 .matching-content .speed-matching-wrap {
   width: 362px;
   height: 100%;
-  padding: 30px 0 120px;
+  padding: 30px 0 0;
   background: #fff;
   box-sizing: border-box;
 }
@@ -7645,19 +7676,19 @@ button.swiper-pagination-bullet {
   height: 100%;
   padding: 30px 0 0 33px;
   box-sizing: border-box;
-  overflow-y: auto;
 }
 
 .matching-content .matching-sticky-wrap {
-  position: sticky;
-  top: 0;
+  position: relative;
   height: 100%;
 }
 
 .matching-content .matchingSch {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 101;
   width: 793px;
   height: 36px;
@@ -7736,12 +7767,18 @@ button.swiper-pagination-bullet {
 }
 
 .matching-content .matching-card-list {
-  height: calc(100% - 66px);
-  margin-top: 30px;
+  height: 100%;
+  padding-top: 67px;
 }
 
 .matching-content .matching-card-list .cardList {
-  height: calc(100% - 30px);
+  width: calc(100% + 20px);
+  height: calc(100% - 120px);
+  margin-right: -20px;
+}
+
+.matching-content .matching-more {
+  width: 793px;
 }
 
 .matching-content .more-btn {
@@ -7946,5 +7983,166 @@ button.swiper-pagination-bullet {
 
 .matching-content .matching-detail-content {
   width: 827px;
-  padding: 30px 0 0 33px;
+  padding: 30px 0 60px 33px;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .summary-tbl-wrap {
+  padding: 0 80px 80px;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .summary-tbl-wrap .summary-tbl {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .summary-tbl-wrap .summary-tbl th {
+  padding: 20px;
+  color: #050505;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  background: #f9f9fa;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .summary-tbl-wrap .summary-tbl td {
+  padding: 20px;
+  color: #050505;
+  font-size: 14px;
+  line-height: 1.71;
+  background: #fff;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .location-wrap {
+  padding: 60px 92px;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .location-map {
+  width: 610px;
+  height: 334px;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .location-map * {
+  box-sizing: content-box;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .location-map .info-window {
+  width: 150px;
+  height: 20px;
+  font-size: 12px;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .location-tit {
+  text-align: center;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .location-tit .txt {
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1em;
+  letter-spacing: -0.6px;
+  font-style: italic;
+  border-bottom: 1px solid #fff;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .location {
+  margin-top: 27px;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .location .location-txt {
+  padding-left: 25px;
+  color: #f9f9fa;
+  font-size: 12px;
+  line-height: 24px;
+  background: url("../images/common/ico-location02.png") 0 50%/14px no-repeat;
+}
+
+.matching-content .matching-detail-content .agent-summary-wrap .location .copy-location {
+  width: 64px;
+  height: 24px;
+  color: rgba(249, 249, 250, 0.6);
+  font-weight: 200;
+  font-size: 12px;
+  border: solid 1px #a7aab5;
+  border-radius: 4px;
+}
+
+.matching-content .matching-detail-content .btn-row-wrap {
+  margin-top: 30px;
+}
+
+.introduce {
+  padding-top: 90px;
+}
+
+.introduce .visual {
+  position: relative;
+  height: 575px;
+  background: url("../images/about/v-introduce.jpg") 50% 0/auto 100% no-repeat;
+}
+
+.introduce .visual .visual-sub {
+  position: absolute;
+  top: 50%;
+  width: 645px;
+  transform: translateY(-50%);
+}
+
+.introduce .visual .visual-tit {
+  color: #fff;
+  font-weight: 200;
+  font-size: 46px;
+  text-align: center;
+  letter-spacing: -3.45px;
+}
+
+.introduce .visual .visual-tit strong {
+  display: block;
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -4.8px;
+}
+
+.introduce .visual .visual-txt {
+  margin-top: 27px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.35px;
+  text-align: center;
+}
+
+.introduce .visual .visual-btn {
+  position: absolute;
+  bottom: 62px;
+  left: 50%;
+  width: 388px;
+  height: 72px;
+  transform: translateX(-50%);
+  border: solid 1px rgba(251, 251, 252, 0.6);
+  --background: rgba(5, 5, 5, 0.2);
+  --text: #fff;
+  --font-size: 24px;
+  --duration: .22s;
+  --move-hover: -4px;
+  --font-shadow: var(--font-size);
+  --hover-background: rgba(5, 5, 5, 0.2);
+  border-radius: 36px;
+}
+
+.introduce .visual .visual-btn span {
+  color: #fff;
 }

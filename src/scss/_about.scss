@@ -1,0 +1,65 @@
+.introduce {
+  padding-top: 90px;
+
+  .visual {
+    position: relative;
+    height: 575px;
+    background: url($imgAbout + 'v-introduce.jpg') 50% 0/auto 100% no-repeat;
+
+    .visual-sub {
+      position: absolute;
+      top: 50%;
+      width: 645px;
+      transform: translateY(-50%);
+    }
+
+    .visual-tit {
+      color: #fff;
+      font-weight: 200;
+      font-size: 46px;
+      text-align: center;
+      letter-spacing: -3.45px;
+      
+      strong {
+        display: block;
+        margin-top: 15px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1;
+        letter-spacing: -4.8px;
+      }
+    }
+
+    .visual-txt {
+      margin-top: 27px;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: -0.35px;
+      text-align: center;
+    }
+
+    .visual-btn {
+      position: absolute;
+      bottom: 62px;
+      left: 50%;
+      width: 388px;
+      height: 72px;
+      transform: translateX(-50%);
+      border: solid 1px rgba(251, 251, 252, 0.6);
+      --background: rgba(5, 5, 5, 0.2);
+      --text: #fff;
+      --font-size: 24px;
+      --duration: .22s;
+      --move-hover: -4px;
+      --font-shadow: var(--font-size);
+      --hover-background: rgba(5, 5, 5, 0.2);
+      border-radius: 36px;
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
