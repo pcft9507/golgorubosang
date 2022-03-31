@@ -36,3 +36,29 @@ $radio-color: #00005c;
     font-size: 1px * $i;
   }
 }
+
+// 넓이 사이즈
+@for $i from 1 through 10000 {
+  .w-px-#{$i} {
+    width: 1px * $i !important;
+  }
+}
+
+@for $i from 1 through 100 {
+  .w-pc-#{$i} {
+    width: 1% * $i;
+  }
+}
+
+// 높이 사이즈
+@for $i from 1 through 10000 {
+  .h-px-#{$i} {
+    height: 1px * $i;
+  }
+}
+
+@for $i from 1 through 100 {
+  .h-pc-#{$i} {
+    height: 1% * $i;
+  }
+}

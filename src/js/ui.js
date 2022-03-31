@@ -2,7 +2,7 @@
 if (typeof page != 'undefined') {
   if (page == 'matching') {
     $('.gnbList__item').eq(0).addClass('active')
-  } else if (page == 'service') {
+  } else if (page == 'about') {
     $('.gnbList__item').eq(1).addClass('active')
   } else if (page == 'event') {
     $('.gnbList__item').eq(2).addClass('active')
@@ -210,6 +210,20 @@ function copyText(element){
   alert('복사되었습니다.')
   console.log('복사된 텍스트:', content)
 }
+
+// 서브 상단탭
+var fixedTab = function () {
+  var fixedTab = $('.fixedTab')
+  $(window).on('scroll', function () {
+    var scTop = $(this).scrollTop()
+    // console.log('scroll top', scTop)
+    if (scTop > 0) {
+      fixedTab.addClass('scrolled')
+    } else {
+      fixedTab.removeClass('scrolled')
+    }
+  })
+}()
 
 // 플러그인 불러오기
 function loadUi () {

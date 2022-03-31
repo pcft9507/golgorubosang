@@ -1,0 +1,108 @@
+@@include('head.html')
+
+<body>
+  <div class="wrap">
+    @@include('header_sub.html')
+
+    <div class="l-container">
+      @@include('fixed_tab_about.html')
+      <div class="safe-t">
+        <!-- visual -->
+        <div class="visual">
+          <div class="visual-inner-box">
+            <p class="visual-txt ani">안심거래서비스</p>
+            <p class="visual-txt2 ani"><strong>보상과</strong>조금더<strong>가까이</strong></p>
+          </div>
+        </div>
+        <!-- visual -->
+        <!-- section01 -->
+        <div class="section01">
+          <div class="section01-inner rowContent__inner">
+            <ul class="section01-list d-flex-sb-s f-wrap">
+              <li class="section01-item ani">
+                <span class="num">01.</span>
+                <p class="title-txt">합법 플랫폼 서비스</p>
+                <p class="info-txt">
+                  고객에게 중개수수료를 받지 않는 합법적<br>
+                  플랫폼 서비스로 투명하고 안전한 서비스
+                </p>
+              </li>
+              <li class="section01-item ani">
+                <span class="num">012.</span>
+                <p class="title-txt">실시간 무료 매칭</p>
+                <p class="info-txt">
+                  24시간 이내 고객과 독립손해사정사 간의 실시간<br>
+                  무료 매칭을 통해 고객만족도 향상 
+                </p>
+              </li>
+              <li class="section01-item ani">
+                <span class="num">03.</span>
+                <p class="title-txt">검증된 정식 독립손해사정사</p>
+                <p class="info-txt">
+                  전국 각지 독립손해사정사들과 직접 대면 및 1:1<br>
+                  제휴로 검증체계 고도화 서비스
+                </p>
+              </li>
+              <li class="section01-item ani">
+                <span class="num">04.</span>
+                <p class="title-txt">간편 상담/접수 시스템</p>
+                <p class="info-txt">
+                  회원가입없이 본인인증만으로 간편 상담/접수가<br>
+                  가능하며 복잡한 절차가 최소화된 플랫폼
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- section01 -->
+        <!-- section02 -->
+        <div class="section02">
+          <div class="section02-inner rowContent__inner">
+            <div class="section02-cont">
+              <p class="section02-txt01">이런 일은 처음이죠?  괜찮아요?</p>
+              <p class="section02-txt02">해피바이러스!  고객이 만족하는 그 날까지!</p>
+              <p class="section02-txt03">
+                전문 상담사가 항시 대기하여 고객 응대 및 고객센터 운영으로<br>
+                더 편리하고 빠른 진행이 가능합니다.<br><br>
+                안전하고, 확실하게 보상 받으세요~
+              </p>
+              <div class="btn-row-wrap d-flex-s-s">
+                <a href="matching.html" class="btn-primary-chg normal-confirm-m btn-step-chg d-flex-c-c">무료 상담 받기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- section02 -->
+      </div>
+    </div>
+    @@include('footer_sub.html')
+  </div>
+  <!-- wrap -->
+
+  <script src="../js/swiper.min.js"></script>
+  <script>
+    // gnb 현재 페이지 활성화
+    var page = 'about'
+
+    // 탭 메뉴 활성화
+    $('.fixedTab__btn').eq(1).addClass('fixedTab__btn--active')
+
+    // 애니메이션 효과
+    var safeAni = function () {
+      var aniIdx = 0
+      setInterval(function () {
+        $('.visual .ani').eq(aniIdx).addClass('ani-show')
+        aniIdx ++
+      }, 500)
+      setTimeout(function () {
+        var aniIdx2 = 0
+        setInterval(function () {
+          $('.section01 .ani').eq(aniIdx2).addClass('ani-show')
+          aniIdx2 ++
+        }, 500)
+      }, 1000)
+    }()
+
+  </script>
+</body>
+</html>
