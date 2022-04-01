@@ -15,7 +15,7 @@ var src = {
     imgs : ['src/images/**','images/**/**','images/**/**/*']
 }
 var paths = {
-    html: 'build/html/',
+    html: 'build/',
     js : 'build/js/',
     css : 'build/css/',
     imgs : 'build/images/'
