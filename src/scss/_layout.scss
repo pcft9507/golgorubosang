@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 90px;
 
-  &-sub {
+  &-matching {
     padding-top: 91px;
 
     &.matching-container {
@@ -26,5 +26,9 @@
         background: #f2f2f3;
       }
     }
+  }
+
+  &-sub {
+    padding: 91px 0 100px;
   }
 }

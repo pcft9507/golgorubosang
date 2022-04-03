@@ -12,13 +12,17 @@ var src = {
     html : ['src/html/**/*.html'],
     js : ['src/js/*.js'],
     css : ['src/scss/*.scss'],
+    fonts : ['src/fonts/**'],
     imgs : ['src/images/**','images/**/**','images/**/**/*']
 }
 var paths = {
-    html: 'build/',
-    js : 'build/js/',
-    css : 'build/css/',
-    imgs : 'build/images/'
+    html: 'build',
+    assets: {
+      js : 'build/assets/js/',
+      css : 'build/assets/css/',
+      fonts : 'build/assets/fonts/',
+      imgs : 'build/assets/images/'
+    }
 }
  
 var scssOptions = {
@@ -39,69 +43,73 @@ var scssOptions = {
 };
  
 function htmlComplie() {
-    return gulp.src(src.html)
-        .pipe(fileinclude({
-            prefix: '@@',
-            basepath: '@file'
-        }))
-        .pipe(gulp.dest(paths.html))
-        .pipe(browserSync.reload({stream:true}));
- 
+  return gulp.src(src.html)
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest(paths.html))
+    .pipe(browserSync.reload({stream:true}));
 };
  
  
 function scssCompile() {
-    return gulp.src(src.css)
- 
-        // 소스맵 초기화(소스맵을 생성)
-        .pipe(sourcemaps.init())
- 
-        // SCSS 함수에 옵션갑을 설정, SCSS 작성시 watch 가 멈추지 않도록 logError 를 설정
-        .pipe(sass(scssOptions).on('error', sass.logError))
- 
-        // 위에서 생성한 소스맵을 사용한다.
-        .pipe(sourcemaps.write())
- 
-        // 목적지(destination)을 설정
-        .pipe(gulp.dest(paths.css))
- 
-        //browserSync 로 브라우저에 반영;
-        .pipe(browserSync.reload({stream:true}));
- 
+  return gulp.src(src.css)
+
+    // 소스맵 초기화(소스맵을 생성)
+    .pipe(sourcemaps.init())
+
+    // SCSS 함수에 옵션갑을 설정, SCSS 작성시 watch 가 멈추지 않도록 logError 를 설정
+    .pipe(sass(scssOptions).on('error', sass.logError))
+
+    // 위에서 생성한 소스맵을 사용한다.
+    .pipe(sourcemaps.write())
+
+    // 목적지(destination)을 설정
+    .pipe(gulp.dest(paths.assets.css))
+
+    //browserSync 로 브라우저에 반영;
+    .pipe(browserSync.reload({stream:true}));
 };
  
  
 function concatJs() {
-    return gulp.src(src.js)
-        // .pipe(concat('ui.js'))
-        // .pipe(gulp.dest(paths.js))
-        // .pipe(uglify())
-        // .pipe(rename('ui.min.js'))
-        // .pipe(gulp.dest(paths.js))
-        .pipe(gulp.dest(paths.js))
-        .pipe(browserSync.reload({stream:true}));
+  return gulp.src(src.js)
+    // .pipe(concat('ui.js'))
+    // .pipe(gulp.dest(paths.js))
+    // .pipe(uglify())
+    // .pipe(rename('ui.min.js'))
+    // .pipe(gulp.dest(paths.js))
+    .pipe(gulp.dest(paths.assets.js))
+    .pipe(browserSync.reload({stream:true}));
+}
  
+function fonts() {
+  return gulp.src(src.fonts)
+    .pipe(gulp.dest(paths.assets.fonts))
+    .pipe(browserSync.reload({stream:true}));
 }
  
 function imgs() {
-    return gulp.src(src.imgs)
-        .pipe(gulp.dest(paths.imgs))
-        .pipe(browserSync.reload({stream:true}));
+  return gulp.src(src.imgs)
+    .pipe(gulp.dest(paths.assets.imgs))
+    .pipe(browserSync.reload({stream:true}));
 }
  
 function watchFiles(){
-    gulp.watch(src.html).on('change',htmlComplie);
-    gulp.watch(src.css, scssCompile);
-    gulp.watch(src.js, concatJs);
-    gulp.watch(src.imgs, imgs);
+  gulp.watch(src.html).on('change',htmlComplie);
+  gulp.watch(src.css, scssCompile);
+  gulp.watch(src.js, concatJs);
+  gulp.watch(src.fonts, fonts);
+  gulp.watch(src.imgs, imgs);
 }
  
 function brwSync(){
-    browserSync.init({
-        server:{
-            baseDir:'build/'
-        }
-    });
+  browserSync.init({
+    server:{
+        baseDir:'build'
+    }
+  });
 }
   
-gulp.task('default', gulp.parallel(gulp.series(htmlComplie, scssCompile, concatJs, imgs),brwSync, watchFiles));
+gulp.task('default', gulp.parallel(gulp.series(htmlComplie, scssCompile, concatJs, fonts, imgs),brwSync, watchFiles));

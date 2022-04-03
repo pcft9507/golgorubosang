@@ -1,0 +1,59 @@
+@@include('../include/head.html')
+
+<body>
+  <div class="wrap">
+    @@include('../include/header_sub.html')
+
+    <div class="l-container-sub">
+      @@include('../include/fixed_tab_about.html')
+      <div class="branch rowContent__inner">
+        <div class="searchTool d-flex-sb-s">
+          <div class="searchTool__sch">
+            <input type="text" class="searchTool__schInp" placeholder="손해사정사를 검색하세요">
+            <button class="searchTool__schBtn"><img src="@@webRoot/assets/images/common/ico-sch-tool-sch.png" alt="검색"></button>
+          </div>
+          <div class="searchTool__rst d-flex-c-c">
+            <p class="searchTool__rstTxt">
+              <span class="point">‘홍길수’</span> 검색결과 <span class="point">‘0건’</span>을 찾았습니다.
+            </p>
+          </div>
+        </div>
+        <!-- searchTool -->
+        <div class="branch-content d-flex-s-s f-wrap mt-48">
+          <div class="map"><img src="@@webRoot/assets/images/about/img-national-map.jpg"></div>
+          <div class="desc">
+            <div class="branch-txt01">
+              <p class="branch-txt01-sub">전국 독립손해사정사 <strong class="sub1">TOTAL</strong> <strong class="sub2">“ 7,000</strong> <strong class="sub1">명</strong><strong class="sub2">”</strong></p>
+            </div>
+            <p class="branch-txt02">전국의 고객님을 모두 골고루보상 해드리는 날까지 !</p>
+            <p class="branch-txt03">
+              골고루보상은 오늘도 전국에 계신 고객님을 위해 열심히 뛰고 있습니다.<br>
+              전국 각지에 계신 손해사정사님 모두 골고루보상을 통해 매칭해드릴 수 있도록 기다려주세요!<br><br>            
+              우리동네에는 손해사정사가 없어서 걱정되시나요?<br><br>              
+              이미 전국 어디서나 손해사정사가 고객님께 달려갈 수 있도록 대기 중입니다.<br>
+              지금 바로 골고루보상을 통해 손해사정사를 매칭해보세요~
+            </p>
+            <div class="btn-row-wrap mt-55">
+              <a href="matching.html" class="btn-primary-chg normal-confirm-l fs-20 btn-step-chg d-flex-c-c">우리동네 손해사정사 매칭받기</a>
+            </div>
+            <div class="btn-row-wrap mt-12">
+              <a href="matching.html" class="btn-primary-chg white normal-confirm-l fs-18 btn-step-chg d-flex-c-c">골고루보상 독립손해사정사 제휴/문의</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- dictionary -->
+    </div>
+    @@include('../include/footer_sub.html')
+  </div>
+  <!-- wrap -->
+
+  <script>
+    // gnb 현재 페이지 활성화
+    var page = 'about'
+
+    // 탭 메뉴 활성화
+    $('.fixedTab__btn').eq(4).addClass('fixedTab__btn--active')
+  </script>
+</body>
+</html>

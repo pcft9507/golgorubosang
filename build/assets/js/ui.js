@@ -225,6 +225,24 @@ var fixedTab = function () {
   })
 }()
 
+// 게시판 리스트 
+$.fn.boardList = function () {
+  console.log('boardList')
+  var listBody = []
+  return this.each(function (i) {
+    listBody[i] = $(this)
+    var btnOpen = listBody[i].find('.js-board-open')
+    var btnClose = listBody[i].find('.js-board-close')
+    btnOpen.on('click', function () {
+      $(this).parent().addClass('open')
+    })
+    btnClose.on('click', function (e) {
+      e.stopPropagation();
+      $(this).parents('.boardList__row').removeClass('open')
+    })
+  })
+}
+
 // 플러그인 불러오기
 function loadUi () {
   $('.btn-step-chg').btnAni();
@@ -236,5 +254,6 @@ function loadUi () {
   $('.formInp').formInpTxt();
   $('.dropMenu').dropMenu();
   $('.matchingSch').matchingSch();
+  $('.boardList').boardList();
 }
 loadUi ()

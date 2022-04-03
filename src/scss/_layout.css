@@ -3,11 +3,11 @@
   padding-top: 90px;
 }
 
-.l-container-sub {
+.l-container-matching {
   padding-top: 91px;
 }
 
-.l-container-sub.matching-container.fixed {
+.l-container-matching.matching-container.fixed {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -15,7 +15,7 @@
   right: 0;
 }
 
-.l-container-sub.matching-container:after {
+.l-container-matching.matching-container:after {
   content: '';
   position: fixed;
   top: 0;
@@ -24,4 +24,8 @@
   z-index: -1;
   width: 50%;
   background: #f2f2f3;
+}
+
+.l-container-sub {
+  padding: 91px 0 100px;
 }
