@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/jquery.nicescroll.min.js"></script>
+  <script defer src="../assets/js/ui.js"></script>
+  <title>골고루 보상</title>
+</head>
+
+
+<body>
+  <div class="wrap">
+    <header class="l-header header-sub">
+  <div class="header-inner rowContent__inner">
+    <h1 class="logo">
+      <a href=".." title="홈으로 이동">
+        <figure>
+          <img class="img" src="../assets/images/common/logo-scrolled.png" alt="골고루보상">
+        </figure>
+      </a>
+    </h1>
+    <nav class="gnb">
+      <ul class="gnbList">
+        <li class="gnbList__item"><a href="#" class="gnbList__link">손해사정사 매칭 받기</a></li>
+        <li class="gnbList__item"><a href="#" class="gnbList__link">서비스 소개</a></li>
+        <li class="gnbList__item"><a href="#" class="gnbList__link">이벤트</a></li>
+        <li class="gnbList__item"><a href="#" class="gnbList__link">고객센터</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="quickMenu">
+    <button class="quickMenu__toggle"><span class="quickMenu__toggleTxt">퀵 숨기기</span></button>
+    <div class="quickMenu__cont">
+      <ul class="qMenuList">
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">보상 사고 사례</span></a></li>
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">전국 제휴 현황</span></a></li>
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">전국 병원 검색</span></a></li>
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">스피드 매칭</span></a></li>
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">카카오톡 상담</span></a></li>
+      </ul>
+      <span class="quickMenu__callNum">1670 - 2456</span>
+    </div>
+  </div>
+</header>
+
+    <div class="l-container-matching matching-container fixed">
+      <h2 class="is-blind">손해사정사 매칭 받기</h2>
+      <div class="matching-content rowContent__inner d-flex f-wrap">
+        <aside class="speed-matching-wrap c-scroll-bar">
+          <div class="speed-matching">
+            <div class="mc-row-cont">
+              <h3 class="matching-title theme02">손해사정사 <i class="txt-bg">추천 서비스</i></h3>
+              <p class="guide-txt">
+                누구를 선택해야할지 모르겠다고요? 걱정마세요!<br>
+                고객님께 필요한 손해사정사를 매칭해드립니다.
+              </p>
+              <button class="btn-recommend d-flex-c-c mt-23">
+                <span class="txt">무료 추천 받기</span>
+              </button>
+            </div>
+            <div class="mc-row-cont">
+              <h3 class="matching-title theme03">손해사정사 <i class="txt-bg">스피드 검색</i></h3>
+              <p class="guide-txt">
+                상담받고 싶은 분야와 지역을 선택해보세요!<br>
+                전국의 독립 손해사정사가 여러분을 기다립니다.
+              </p>
+              <div class="speed-sch">
+                <div class="cont">
+                  <h4 class="cont-title">01. &nbsp;&nbsp;상담 분야를 선택해주세요</h4>
+                  <ul class="chipList d-flex-s-s f-wrap" data-chip="toggle">
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">실손</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">질병</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">상해</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">어린이</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">태아</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt fs-xxs">차량파손(대물)</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt fs-xxs">교통사고(대인)</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">배상책임</span>
+                      </a>
+                    </li>                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">근로재해</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt fs-xxs">학교안전사고</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">여행자</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">골프</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">치아</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">연금</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">도난</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">화재</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">재난</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">생명</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">침수</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">기타</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cont">
+                  <h4 class="cont-title">02. &nbsp;&nbsp;상담 지역을 선택해주세요</h4>
+                  <ul class="chipList d-flex-s-s f-wrap" data-chip="toggle">
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">서울</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">경기</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">부산</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">대구</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">인천</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">광주</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">대전</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">울산</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">세종</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">강원</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">전북</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">전남</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">충북</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">충남</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">경북</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">경남</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">제주</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="bot-btn-wrap d-flex">
+                  <button class="btn-speed-sch d-flex-c-c js-reset">
+                    <span class="txt">초기화</span>
+                  </button>
+                  <button class="btn-speed-sch d-flex-c-c js-go-sch">
+                    <span class="txt">검색하기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="matching-result">
+          <div class="matching-sticky-wrap">
+            <div class="matchingSch">
+              <div class="dropMenu matching-ctr" data-value="전체">
+                <a href="#" class="dropMenu__selected js-open">
+                  <span class="dropMenu__txt">전체</span>
+                </a>
+                <ul class="dropMenu__list">
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">전체</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">손해사정사 이름</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">이력</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">해시 태그</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">지역</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">분야</span>
+                    </a>
+                  </li>
+                  <li class="dropMenu__item">
+                    <a href="#" class="dropMenu__btn js-select">
+                      <span class="dropMenu__btnTxt">자기소개</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="matchingSch__inp">
+                <input type="text" class="matchingSch__inpTxt" placeholder="키워드를 검색하세요">
+                <button class="matchingSch__inpDel js-del" title="키워드 삭제">
+                  <span class="is-blind">삭제</span>
+                </button>
+              </div>
+              <button class="matchingSch__submit">
+                <span class="is-blind">검색하기</span>
+              </button>
+            </div>
+            <!-- matchingSch end -->
+  
+            <div class="matching-card-list">
+              <ul class="cardList grid-2 d-flex-s-s f-wrap matching-scroll">
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cardList__item">
+                  <div class="profileCard">
+                    <div class="profileCard__figWrap">
+                      <figure class="profileCard__fig">
+                        <figcaption>손해사정사 사진</figcaption>
+                        <img class="profileCard__img" src="../assets/images/sample/img-card-detail-sample.jpg">
+                      </figure>
+                      <span class="profileCard__name">홍길동</span>
+                    </div>
+                    <div class="profileCard__info">
+                      <div class="profileCard__chipRow">
+                        <span class="chip-pc">후유장애</span>
+                        <span class="chip-pc">사망</span>
+                        <span class="chip-pc">면책사고</span>
+                      </div>
+                      <ul class="profileCard__summary">
+                        <li class="profileCard__summaryItem">활동 지역 : 서울, 경기, 인천</li>
+                        <li class="profileCard__summaryItem">자격 : 종합 손해보험사</li>
+                        <li class="profileCard__summaryItem">분야 : 실손, 질병, 배상책임, 생명, 교통사고, 교통사고</li>
+                      </ul>
+                      <div class="profileCard__btnWrap">
+                        <a href="matching_detail.html" class="profileCard__btn">상세보기</a>
+                        <a href="javascript: openModal('reception01')" class="profileCard__btn">상담하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+  
+              <div class="matching-more">
+                <button class="more-btn" onclick="viewMoreList()"><span class="txt">더 보 기</span></button>
+              </div>
+            </div>
+            <!-- matching-card-list end -->
+          </div>
+          <!-- matching-sticky-wrap -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" data-modal="reception01">
+  <div class="modal__container">
+    <div class="modal__content w-m">
+      <div class="modal__inner reception-guide">
+        <h3 class="title tac">“ 어떤 상황이신가요? ”</h3>
+        <p class="sub-tit tac">한 번에 해결해야하는 경우라면?</p>
+        <p class="txt01 tac">차량, 신체, 재물 보상이 필요하신 상황인가요? 고객님의 상황에 맞게 논스톱 서비스로 편리하게 해결하세요~</p>
+        <p class="txt02 tac"><span class="receptionGuide__txt02-sub">▼ &nbsp;&nbsp;상담이 필요한 분야를 선택해주세요.(복수 선택 가능)&nbsp;&nbsp; ▼</span></p>
+        <ul class="chipList" data-chip="toggle">
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">실손</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">질병</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">상해</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">어린이</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">태아</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt fs-s">차량파손<br>(대물)</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt fs-s">차량파손<br>(대인)</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">배상책임</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">근로재해</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt fs-s">학교안전사고</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">여행자</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">골프</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">치아</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">연금</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">도난</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">화재</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">재난</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">생명</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">침수</span>
+            </a>
+          </li>
+          <li class="chipList__item">
+            <a href="#" class="chip rg">
+              <span class="chip__txt">기타</span>
+            </a>
+          </li>
+        </ul>
+        <div class="btnWrap d-flex-c-s mt-36">
+          <button class="compBtn btn-step-chg modal-confirm fz-18" onclick="openModal('reception02')">상담하기</button>
+        </div>
+      </div>
+      <button class="modal__close" onclick="closeModal('reception01')"><span class="is-blind">닫기</span></button>
+    </div>
+  </div>
+</div>
+
+  <div class="modal" data-modal="reception02">
+  <div class="modal__container">
+    <div class="modal__content w-m">
+      <div class="modal__inner reception-form">
+        <div class="reception-form-head">
+          <h3 class="title">오직 ‘고객을 위한’ 무료 상담<i class="italic">!</i>  <em class="theme02">고객님과 독립 손해사정사 간의 매칭을 무료로 제공<i class="italic">!</i></em></h3>
+          <p class="sub-tit">
+            접수 후, 모든 손해사정 업무는 손해사정사가 직접 수행해드립니다. 골고루보상은 통신판매/불법수수료 등을 지원하지 않으니, 안심하셔도 됩니다.
+          </p>
+        </div>
+        <div class="form c-scroll-bar">
+          <div class="formRow d-flex f-wrap">
+            <div class="formRow__col col-single">
+              <label for="name" class="formInp__label required">(필수) 성명</label>
+              <div class="formInp">
+                <input type="text" id="name" class="formInp__txt" placeholder="예) 홍 길 동">
+                <button type="button" class="formInp__del js-del" title="입력창 내용 삭제">
+                  <span class="is-blind">삭제</span>
+                </button>
+              </div>
+            </div>
+            <div class="formRow__col col-single">
+              <label for="birthDay" class="formInp__label required">(필수) 생년월일</label>
+              <div class="formInp">
+                <input type="text" id="birthDay" class="formInp__txt" placeholder="예) 1980 - 01 - 01">
+              </div>
+            </div>
+            <div class="formRow__col col-last">
+              <label for="gender" class="formInp__label required">성별</label>
+              <div class="formInp">
+                <label class="radioLabel">
+                  <input type="radio" name="gender" class="radioLabel__inp"/>
+                  <span class="radioLabel__txt">남자</span>
+                </label>
+                <label class="radioLabel">
+                  <input type="radio" name="gender" class="radioLabel__inp"/>
+                  <span class="radioLabel__txt">여자</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="formRow d-flex f-wrap">
+            <div class="formRow__col col-single">
+              <label for="postNum" class="formInp__label required">(필수) 우편번호</label>
+              <div class="formInp has-btn is-success">
+                <input type="text" id="postNum" class="formInp__txt" placeholder="우편번호">
+                <button type="button" class="formInp__del js-del" title="입력창 내용 삭제">
+                  <span class="is-blind">삭제</span>
+                </button>
+                <button type="button" class="formInp__btn">
+                  <span class="formInp__btnTxt">검색</span>
+                </button>
+              </div>
+            </div>
+            <div class="formRow__col col-dbl">
+              <label for="addr" class="formInp__label required">(필수) 주소</label>
+              <div class="formInp">
+                <input type="text" id="addr" class="formInp__txt" placeholder="주소">
+              </div>
+            </div>
+          </div>
+
+          <div class="formRow d-flex f-wrap">
+            <div class="formRow__col col-full">
+              <label for="addrDetail" class="formInp__label">(선택) 나머지 상세 주소</label>
+              <div class="formInp">
+                <input type="text" id="addrDetail" class="formInp__txt s-f" placeholder="나머지 주소">
+              </div>
+            </div>
+          </div>
+
+          <div class="formRow d-flex f-wrap">
+            <div class="formRow__col col-single">
+              <label for="phone" class="formInp__label required">(필수) 휴대전화</label>
+              <div class="formInp has-btn">
+                <input type="text" id="phone" class="formInp__txt" placeholder="휴대폰 번호">
+                <button type="button" class="formInp__btn">
+                  <span class="formInp__btnTxt">인증</span>
+                </button>
+              </div>
+            </div>
+            <div class="formRow__col col-single">
+              <div class="formInp has-btn">
+                <input type="text" id="name" title="인증 번호 입력" class="formInp__txt" placeholder="인증 번호">
+                <button type="button" class="formInp__btn">
+                  <span class="formInp__btnTxt">인증 확인</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="formRow d-flex f-wrap">
+            <div class="formRow__col">
+              <span class="formInp__label required">(필수) 보험가입 종류</span>
+              <ul class="chipList" data-chip="toggle">
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">실손</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">질병</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">상해</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">어린이</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">태아</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt fs-s">차량파손<br>(대물)</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt fs-s">교통사고<br>(대인)</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">배상책임</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">근로재해</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt fs-s">학교안전사고</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">여행자</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">골프</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">치아</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">연금</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">도난</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">화재</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">재난</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">생명</span>
+                  </a>
+                </li> 
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">침수</span>
+                  </a>
+                </li>
+                <li class="chipList__item">
+                  <a href="#" class="chip chip-form">
+                    <span class="chip__txt">기타</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="formRow d-flex f-wrap">
+            <div class="formRow__col col-single">
+              <label for="code" class="formInp__label">(선택) 진단명</label>
+              <div class="formInp">
+                <input type="text" id="code" class="formInp__txt" placeholder="진단명 또는 진단코드">
+              </div>
+            </div>
+            <p class="formInp__guide code-guide">:  진단코드 기입 시, 좀 더 정확한 상담이 이루어질 수 있습니다.</p>
+          </div>
+
+          <div class="formRow d-flex f-wrap">
+            <div class="formRow__col col-full d-flex f-wrap">
+              <label for="consultation" class="formInp__label">(선택) 상담내용</label>
+              <div class="formInp">
+                <div class="textArea" data-limit="300">
+                  <textarea id="consultation" class="textArea__text" placeholder="상담 내용을 입력해 주세요"></textarea>
+                  <div class="textArea__cntChar">
+                    <span class="textArea__cntCurrent">0</span>
+                    /
+                    <span class="textArea__cntLimit"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="formRow d-flex f-wrap">
+            <div class="formRow__col col-full">
+              <div class="attachPhoto">
+                <div class="d-flex-sb-c">
+                  <!-- 차량일때 -->
+                  <label for="attachPhoto" class="formInp__label required">(필수) 사진 첨부</label>
+                  <!-- 신체 -->
+                  <!-- <label for="attachPhoto" class="formInp__label">(선택) 사진 첨부  : 진단서 사진이 첨부될 경우 좀 더 빠른 대응이 가능합니다.</label> -->
+                  <!-- 재물 -->
+                  <!-- <label for="attachPhoto" class="formInp__label">(선택) 사진 첨부  : 현장 사진첨부 시에 좀 더 빠른 대응이 가능합니다.</label> -->
+                  <button type="button" id="photo" class="attachPhoto__add btnForm js-attach-photo" title="사진 첨부하기">
+                    <span class="attachPhoto__addTxt btnForm__txt">파일 첨부</span>
+                  </button>
+                  <input type="file" id="attachPhoto" multiple class="attachPhoto__file js-file" accept=".gif, .jpg, .png">
+                </div>
+                <div class="attachPhoto__container">
+                  <div class="attachPhoto__head d-flex-sb-c">
+                    <p class="attachPhoto__headTxt">파일명</p>
+                    <p class="attachPhoto__headTxt">
+                      <span class="attachPhoto__fileSize">0</span> / 10.00 MB | 이미지 5장까지 첨부 가능
+                    </p>
+                  </div>
+                  <ul id="fileList" class="fileList">
+                    <!-- <li class="fileList__row">
+                      <span class="fileList__name"></span>
+                      <button type="button" class="fileList__del js-delete">
+                        <span class="is-blind">삭제</span>
+                      </button>
+                    </li>
+                    <li class="fileList__row">
+                      <span class="fileList__name"></span>
+                      <button type="button" class="fileList__del js-delete">
+                        <span class="is-blind">삭제</span>
+                      </button>
+                    </li>
+                    <li class="fileList__row">
+                      <span class="fileList__name"></span>
+                      <button type="button" class="fileList__del js-delete">
+                        <span class="is-blind">삭제</span>
+                      </button>
+                    </li>
+                    <li class="fileList__row">
+                      <span class="fileList__name"></span>
+                      <button type="button" class="fileList__del js-delete">
+                        <span class="is-blind">삭제</span>
+                      </button>
+                    </li>
+                    <li class="fileList__row">
+                      <span class="fileList__name"></span>
+                      <button type="button" class="fileList__del js-delete">
+                        <span class="is-blind">삭제</span>
+                      </button>
+                    </li> -->
+                  </ul>
+                  <div id="dropZone" class="attachPhoto__dropArea d-flex-c-c">
+                    <p class="attachPhoto__dropTxt">여기에 파일을 끌어 놓거나 파일 첨부 버튼을 클릭하세요</p>
+                  </div>
+                  <div class="attachPhoto__foot d-flex-s-c">
+                    <p class="attachPhoto__footTxt">※ &nbsp;&nbsp;사건에 따라 출장이 필요할 수 있으며, 출장 시에 손해사정사에 의해 출장비가 청구될 수 있습니다. 상담 시에 손해사정사에게 문의 및 확인 바랍니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reception-form-foot">
+          <div class="agree">
+            <input type="checkbox" id="agreeChk" name="agreeChk" class="checkBox">
+            <label for="agreeChk" class="agree__txt">비회원 개인정보수집 및 이용안내에 동의합니다.</label>
+            <button type="button" class="btnForm sm ml-12" onclick="openModal('reception03')"><span class="btnForm__txt">내용보기</span></button>
+          </div>
+          <div class="btnWrap d-flex-c-s mt-36">
+            <button class="compBtn btn-step-chg modal-confirm fz-18" onclick="openModal('reception-done')">접수 (인증 전)</button>
+          </div>
+        </div>
+      </div>
+      <button class="modal__close" onclick="closeModal('reception02')"><span class="is-blind">닫기</span></button>
+    </div>
+  </div>
+</div>
+
+<script>
+// 사진첨부
+// 파일 첨부 버튼
+$('.js-attach-photo').on('click', function () {
+  $("#attachPhoto").click()
+})
+
+// 파일 첨부할 때 
+$("#attachPhoto").on('change', function() {
+    selectFile(this.files);
+    //this.files[0].size gets the size of your file.
+    //alert(this.files[0].size);
+});
+// 파일 리스트 번호
+var fileIndex = 0;
+// 등록할 전체 파일 사이즈
+var totalFileSize = 0;
+// 파일 리스트
+var fileList = new Array();
+// 파일 사이즈 리스트
+var fileSizeList = new Array();
+// 등록 가능한 파일 사이즈 MB
+var uploadSize = 10;
+// 등록 가능한 총 파일 사이즈 MB
+var maxUploadSize = 10;
+
+$(function() {
+  // 파일 드롭 다운
+  fileDropDown();
+});
+
+// 파일 드롭 다운
+function fileDropDown() {
+  var dropZone = $("#dropZone");
+  //Drag기능 
+  dropZone.on('dragenter', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    dropZone.css('background-color', '#eee')
+  });
+  dropZone.on('dragleave', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    dropZone.css('background-color', '#fff')
+  });
+  dropZone.on('dragover', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    dropZone.css('background-color', '#eee')
+  });
+  dropZone.on('drop', function(e) {
+    e.preventDefault();
+    dropZone.css('background-color', '#fff')
+
+    var files = e.originalEvent.dataTransfer.files;
+    if (files != null) {
+      if (files.length < 1) {
+        /* alert("폴더 업로드 불가"); */
+        console.log("폴더 업로드 불가");
+        return;
+      } else {
+        selectFile(files)
+      }
+    } else {
+      alert("ERROR");
+    }
+  });
+}
+
+// 파일 선택시
+function selectFile(fileObject) {
+  var files = null;
+
+  if (fileObject != null) {
+    // 파일 Drag 이용하여 등록시
+    files = fileObject;
+  } else {
+    // 직접 파일 등록시
+    files = $('#multipaartFileList_' + fileIndex)[0].files;
+  }
+
+  if (files.length > 5) {
+    alert('파일 첨부는 5개까지 가능합니다.')
+  } else {
+    // 기존등록된 파일 갯수
+    var registeredLeng = $('#fileList .fileList__row').length;
+    console.log('files.length', files.length, registeredLeng)
+
+    if ((registeredLeng + files.length) > 5) {
+      alert('파일 첨부는 5개까지 가능합니다.')
+    } else {
+      // 다중파일 등록
+      if (files != null) {
+        
+        for (var i = 0; i < files.length; i++) {
+          // 파일 이름
+          var fileName = files[i].name;
+          var fileNameArr = fileName.split("\.");
+          // 확장자
+          var ext = fileNameArr[fileNameArr.length - 1];
+          
+          var fileSize = files[i].size; // 파일 사이즈(단위 :byte)
+          console.log("fileSize="+fileSize);
+          if (fileSize <= 0) {
+            console.log("0kb file return");
+            return;
+          }
+          
+          var fileSizeKb = fileSize / 1024; // 파일 사이즈(단위 :kb)
+          var fileSizeMb = fileSizeKb / 1024;    // 파일 사이즈(단위 :Mb)
+          
+          var fileSizeStr = "";
+          if ((1024*1024) <= fileSize) {    // 파일 용량이 1메가 이상인 경우 
+            console.log("fileSizeMb="+fileSizeMb.toFixed(2));
+            fileSizeStr = fileSizeMb.toFixed(2) + " Mb";
+          } else if ((1024) <= fileSize) {
+            console.log("fileSizeKb="+parseInt(fileSizeKb));
+            fileSizeStr = parseInt(fileSizeKb) + " kb";
+          } else {
+            console.log("fileSize="+parseInt(fileSize));
+            fileSizeStr = parseInt(fileSize) + " byte";
+          }
+
+          /* if ($.inArray(ext, [ 'exe', 'bat', 'sh', 'java', 'jsp', 'html', 'js', 'css', 'xml' ]) >= 0) {
+            // 확장자 체크
+            alert("등록 불가 확장자");
+            break; */
+          if ($.inArray(ext, [ 'jpg', 'jpeg', 'gif', 'png'  ]) < 0) {
+            // 확장자 체크
+            /* alert("등록이 불가능한 파일 입니다.");
+            break; */
+            alert("등록이 불가능한 파일 입니다.("+fileName+")");
+          } else if (fileSizeMb > uploadSize) {
+            // 파일 사이즈 체크
+            alert("용량 초과\n업로드 가능 용량 : " + uploadSize + " MB");
+            break;
+          } else {
+            // 전체 파일 사이즈
+            totalFileSize += fileSizeMb;
+
+            // 파일 배열에 넣기
+            fileList[fileIndex] = files[i];
+
+            // 파일 사이즈 배열에 넣기
+            fileSizeList[fileIndex] = fileSizeMb;
+
+            // 업로드 파일 목록 생성
+            addFileList(fileIndex, fileName, fileSizeStr);
+
+            // 파일 번호 증가
+            fileIndex++;
+          }
+        }
+      } else {
+        alert("ERROR");
+      }
+      $('.attachPhoto__fileSize').text(fileSizeStr)
+    }
+  }
+}
+
+// 업로드 파일 목록 생성
+function addFileList(fIndex, fileName, fileSizeStr) {
+  /* if (fileSize.match("^0")) {
+      alert("start 0");
+  } */
+
+  // var html = "";
+  // html += "<tr id='fileTr_" + fIndex + "'>";
+  // html += "    <td id='dropZone' class='left' >";
+  // html += fileName + " (" + fileSizeStr +") " 
+  //         //+ "<a href='#' onclick='deleteFile(" + fIndex + "); return false;' class='btn small bg_02'> 삭제</a>"
+          
+  //         + "<input value='삭제' type='button' href='#' onclick='deleteFile(" + fIndex + "); return false;'>"
+  // html += "    </td>"
+  // html += "</tr>"
+  var html = `<li id="fileRow_` + fIndex + `" class="fileList__row">
+                <span class="fileList__name">` + fileName + `</span>
+                <button type="button" class="fileList__del js-delete" onclick="deleteFile(` + fIndex + `)">
+                  <span class="is-blind">삭제</span>
+                </button>
+              </li>`
+
+  $('#fileList').append(html);
+  $('.form.c-scroll-bar').css('overflow', 'initial')
+  $('.form.c-scroll-bar').css('overflow', 'hidden')
+}
+
+// 업로드 파일 삭제
+function deleteFile(fIndex) {
+  console.log("deleteFile.fIndex=" + fIndex);
+  // 전체 파일 사이즈 수정
+  totalFileSize -= fileSizeList[fIndex];
+
+  // 파일 배열에서 삭제
+  delete fileList[fIndex];
+
+  // 파일 사이즈 배열 삭제
+  delete fileSizeList[fIndex];
+
+  // 업로드 파일 테이블 목록에서 삭제
+  $("#fileRow_" + fIndex).remove();
+  
+  console.log("totalFileSize="+totalFileSize);
+  
+  if (totalFileSize > 0) {
+    console.log('totalFileSize over zero')
+    //$("#fileDragDesc").hide(); 
+    //$("fileListTable").show();
+  } else {
+    console.log('totalFileSize zero')
+    //$("#fileDragDesc").show(); 
+    //$("fileListTable").hide();
+  }
+  $('.form.c-scroll-bar').css('overflow', 'initial')
+  $('.form.c-scroll-bar').css('overflow', 'hidden')
+}
+
+// 파일 등록
+function uploadFile() {
+  // 등록할 파일 리스트
+  var uploadFileList = Object.keys(fileList);
+
+  // 파일이 있는지 체크
+  if (uploadFileList.length == 0) {
+    // 파일등록 경고창
+    alert("파일이 없습니다.");
+    return;
+  }
+
+  // 용량을 넘을 경우 업로드 불가
+  if (totalFileSize > maxUploadSize) {
+    // 파일 사이즈 초과 경고창
+    alert("총 용량 초과\n총 업로드 가능 용량 : " + maxUploadSize + " MB");
+    return;
+  }
+
+  if (confirm("등록 하시겠습니까?")) {
+    // 등록할 파일 리스트를 formData로 데이터 입력
+    var form = $('#uploadForm');
+    var formData = new FormData(form);
+    for (var i = 0; i < uploadFileList.length; i++) {
+      formData.append('files', fileList[uploadFileList[i]]);
+    }
+
+    $.ajax({
+      url : "업로드 경로",
+      data : formData,
+      type : 'POST',
+      enctype : 'multipart/form-data',
+      processData : false,
+      contentType : false,
+      dataType : 'json',
+      cache : false,
+      success : function(result) {
+        if (result.data.length > 0) {
+            alert("성공");
+            location.reload();
+        } else {
+            alert("실패");
+            location.reload();
+        }
+      }
+    });
+  }
+}
+</script>
+  <div class="modal" data-modal="reception03">
+  <div class="modal__container">
+    <div class="modal__content w-s">
+      <div class="modal__inner reception-agree">
+        <h3 class="title">개인정보 수집 · 이용 및 제 3자 제공 사전 동의서</h3>
+        <div class="reception-agree-cont">
+          <h4 class="tbl-caption">▶ &nbsp;&nbsp;개인정보 수집 · 이용 내역&nbsp;&nbsp; ◀</h4>
+          <div class="agree-tbl-wrap">
+            <table class="agree-tbl fs-s">
+              <thead>
+                <tr>
+                  <th scope="col">수집 · 이용 개인정보의 항목</th>
+                  <th scope="col">개인정보의 수집 · 이용 목적</th>
+                  <th scope="col">개인정보 이용기간 및 보유기간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ID, 성명, 생년월일, 주소, 전화번호<br>보험종류, 상담 내용 일체</td>
+                  <td>손해사정 서비스 등</td>
+                  <td>문의등록 및 서비스 시점으로부터<br>5년까지</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h4 class="tbl-caption mt-30">▶ &nbsp;&nbsp;개인정보 제3자 제공 내역&nbsp;&nbsp; ◀</h4>
+          <div class="agree-tbl-wrap">
+            <table class="agree-tbl fs-xs">
+              <thead>
+                <tr>
+                  <th scope="col">개인정보를 제공받는자</th>
+                  <th scope="col">개인정보를 제공받는 자의<br>개인정보 이용목적</th>
+                  <th scope="col">제공하는 개인정보의 항목</th>
+                  <th scope="col">개인정보를 제공받는 자의<br>개인정보 이용기간및 보유기간 </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>매칭 손해사정사</td>
+                  <td>손해사정 서비스 등</td>
+                  <td>ID,성명,생년월일,주소,<br>전화번호,보험종류,상담 내용 일체</td>
+                  <td>문의 등록 및 서비스 시점으로부터
+                    5년까지</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="reception-agree-txt d-flex-s-c">※  위의 개인정보 수집·이용 및 제공에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 손해사정 서비스 등의 이용에 제한을 받을 수 있습니다.</p>
+        <div class="btnWrap d-flex-c-s mt-36">
+          <button class="compBtn btn-step-chg modal-confirm fz-18" onclick="closeModal('reception03')">확인</button>
+        </div>
+      </div>
+      <button class="modal__close" onclick="closeModal('reception03')"><span class="is-blind">닫기</span></button>
+    </div>
+  </div>
+</div>
+
+  <div class="modal" data-modal="reception-done">
+  <div class="modal__container">
+    <div class="modal__content w-m">
+      <div class="modal__inner reception-done">
+        <h3 class="title tac">접수가 완료되었습니다<i class="italic">!</i></h3>
+        <p class="sub-title tac">모든 손해사정 업무는 손해사정사가 직접 수행해드립니다.</p>
+        <p class="guide-txt mt-35 tac">상담연결은 24시간 이내 사정에 따라 답변이 늦어질 수 있습니다.<br>주말 및 공휴일, 저녁시간대는 상담이 다음날 이루어질 수 있습니다.</p>
+        <div class="btnWrap d-flex-c-s mt-80">
+          <button class="compBtn btn-step-chg modal-confirm fz-18" onclick="closeModal('reception03')">확인</button>
+        </div>
+      </div>
+      <button class="modal__close" onclick="closeModal('reception-done')"><span class="is-blind">닫기</span></button>
+    </div>
+  </div>
+</div>
+
+
+  <script src="../assets/js/swiper.min.js"></script>
+  <script>
+    // gnb 현재 페이지 활성화
+    var page = 'matching'
+
+    // 매칭리스트 영역 스크롤
+    $('.matching-scroll').niceScroll({
+      cursorcolor: "#bec2c7",
+      cursorwidth: "10px",
+      cursorborder: 0,
+    });
+
+    function viewMoreList() {
+      console.log('viewMoreList')
+      $('.cardList').css('overflow' , 'initial').css('overflow' , 'hidden')
+    }
+
+  </script>
+</body>
+</html>
