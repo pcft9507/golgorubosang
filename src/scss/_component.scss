@@ -206,9 +206,8 @@
 
     .cardList__item {
       width: 387px;
-      height: 156px;
       margin-bottom: 16px;
-      padding: 16px 11px 10px 14px;
+      padding: 16px;
       border-radius: 10px;
       box-shadow: 0px 1px 2px 0 rgba(5, 5, 5, 0.25);
       border: solid 1px #e9eaee;
@@ -229,12 +228,11 @@
   flex-wrap: wrap;
 
   &__figWrap {
-    width: 92px;
+    width: 94px;
   }
 
   &__img {
-    width: 92px;
-    height: 92px;
+    height: 94px;
     border-radius: 50%;
   }
 
@@ -250,11 +248,11 @@
   }
 
   &__info {
-    width: 244px;
+    width: 243px;
   }
 
   .profileCard__figWrap + .profileCard__info {
-    margin-left: 24px;
+    margin-left: 16px;
   }
 
   &__chipRow {
@@ -328,7 +326,6 @@
 .detailCard {
   overflow: hidden;
   width: 285px;
-  height: 378px;
   border-radius: 10px;
   box-shadow: 0px 1px 2px 0 rgba(5, 5, 5, 0.25);
   border: solid 1px #e9eaee;
@@ -336,15 +333,15 @@
 
   &__body {
     position: relative;
-    height: 298px;
+    height: 240px;
     padding: 20px;
-    background: url($imgCommon + 'bg-card-detail.png') 0 100%/275px no-repeat;
+    background: url($imgCommon + 'bg-card-detail.png') 0 48px/275px no-repeat;
   }
 
   &__img {
-    width: 142px;
-    height: 142px;
-    border-radius: 10px;
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
   }
 
   &__company {
@@ -376,17 +373,23 @@
   }
 
   &__tm {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    top: 132px;
-    right: -86px;
+    top: 0;
+    bottom: 0;
+    right: 23px;
+    padding: 20px 0;
     color: #d8d9db;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 13px;
     font-family: 'arial', sans-serif;
     line-height: 1em;
     letter-spacing: 4.8px;
     text-transform: uppercase;
-    transform: rotate(90deg);
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
   }
 
   &__foot {

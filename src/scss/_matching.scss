@@ -3,7 +3,7 @@
   background: #f2f2f3;
 
   .speed-matching-wrap {
-    width: 362px;
+    width: 372px;
     height: 100%;
     padding: 30px 0 0;
     background: #fff;
@@ -136,31 +136,44 @@
 
   .matching-result {
     position: relative;
-    width: 838px;
+    width: 833px;
     height: 100%;
-    padding: 30px 0 0 33px;
-    box-sizing: border-box;
+    margin: 0 -40px 0 33px;
+
+    &-in {
+      position: relative;
+      height: 100%;
+      padding-right: 40px;
+    }
   }
 
   .matching-sticky-wrap {
     position: relative;
+    width: 100%;
     height: 100%;
   }
 
   .matchingSch {
+    position: sticky;
+    top: 0;
+    left: -1px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 -1px;
+    padding: 30px 1px;
+    background: #f2f2f3;
+  }
+
+  .matchingSch__in {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 101;
-    width: 793px;
+    width: 100%;
     height: 36px;
     border: 1px solid #dadada;
     border-radius: 18px;
     background: #fff;
     box-shadow: 0px 1px 2px 0 rgba(5, 5, 5, 0.25);
-    box-sizing: border-box;
 
     &.focus,
     &:hover {
@@ -196,9 +209,19 @@
     }
   }
 
+  .searched-key {
+    margin-top: 30px;
+
+    .chipList__item {
+      margin-right: 6px;
+    }
+  }
+
   .matchingSch__inp {
     position: relative;
-    width: 614px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 18px;
 
     &Txt {
       width: 100%;
@@ -231,13 +254,10 @@
   }
 
   .matching-card-list {
-    height: 100%;
-    padding-top: 67px;
+    padding-bottom: 30px;
 
     .cardList {
       width: calc(100% + 20px);
-      height: calc(100% - 120px);
-      margin-right: -20px;
     }
   }
 
