@@ -36,6 +36,11 @@
         color: #fff;
       }
     }
+
+    &.del {
+      --width: auto;
+      padding: 0 10px 0 15px;
+    }
   }
   
   display: flex;
@@ -60,6 +65,7 @@
     color: var(--color);
     font-size: var(--font-size);
     text-align: center;
+    white-space: nowrap;
   }
 
   &:hover {
@@ -68,6 +74,13 @@
 
   &.checked {
     border-color: #394048;
+  }
+
+  &__del {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    background: url($imgCommon + 'ico-chips-del.png') 0 0/9px no-repeat;
   }
 }
 
@@ -619,5 +632,48 @@
     font-size: 16px;
     border: 1px solid #d0d3db;
     background: #fff;
+  }
+}
+
+.reset {
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 18px;
+    padding-left: 25px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background: url($imgCommon + 'ico-reset.png') 0 0/36px no-repeat;
+    }
+  }
+
+  &__txt {
+    color: #787e85;
+    font-size: 12px;
+  }
+
+  &:hover {
+
+    .reset__btn {
+
+      &::before {
+        background-position: -18px 0;
+      }
+    }
+
+    .reset__txt {
+      color: #787e85;
+      font-weight: 500;
+      line-height: 14px;
+      border-bottom: 1px solid #787e85;
+    }
   }
 }

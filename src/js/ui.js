@@ -82,10 +82,20 @@ $.fn.chipToggle = function () {
   return this.each(function (i) {
     chipWrap[i] = $(this)
     var chipBtn = chipWrap[i].find('.chip')
+    var chipBtnDel = chipWrap[i].find('.chip__del')
     chipBtn.on('click', function (e) {
       e.preventDefault()
       $(this).toggleClass('checked')
     })
+    chipBtnDel.on('click', function (e) {
+      e.stopPropagation()
+      $(this).parents('.chipList__item').remove()
+      chipDel ()
+    })
+
+    function chipDel () {
+      console.log('삭제')
+    }
   })
 }
 

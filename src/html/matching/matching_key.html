@@ -263,27 +263,33 @@
                 </div>
                 
                 <!-- 검색후 키워드 -->
-                <div class="searched-key">
+                <div class="searched-key d-flex-sb-c">
                   <ul class="chipList d-flex-s-s f-wrap" data-chip="toggle">
                     <li class="chipList__item">
-                      <a href="#" class="chip rd">
+                      <a href="#" class="chip rd del">
                         <span class="chip__txt">배상책임</span>
-                        <button class="chip__del" onclick="chipDel(this)"><span class="is-blind">삭제</span></button>
+                        <button class="chip__del"><span class="is-blind">삭제</span></button>
                       </a>
                     </li>
                     <li class="chipList__item">
-                      <a href="#" class="chip rd">
+                      <a href="#" class="chip rd del">
                         <span class="chip__txt">여행자</span>
-                        <button class="chip__del" onclick="chipDel(this)"><span class="is-blind">삭제</span></button>
+                        <button class="chip__del"><span class="is-blind">삭제</span></button>
                       </a>
                     </li>
                     <li class="chipList__item">
-                      <a href="#" class="chip rd">
+                      <a href="#" class="chip rd del">
                         <span class="chip__txt">서울</span>
-                        <button class="chip__del" onclick="chipDel(this)"><span class="is-blind">삭제</span></button>
+                        <button class="chip__del"><span class="is-blind">삭제</span></button>
                       </a>
                     </li>
                   </ul>
+
+                  <div class="reset">
+                    <button class="reset__btn" onclick="keyReset()">
+                      <span class="reset__txt">초기화</span>
+                    </button>
+                  </div>
                 </div>
               </div>
               <!-- matchingSch end -->
@@ -649,6 +655,11 @@
     function viewMoreList() {
       console.log('viewMoreList')
       $('.cardList').css('overflow' , 'initial').css('overflow' , 'hidden')
+    }
+
+    // 키워드 리셋
+    function keyReset () {
+      console.log('키워드 리셋')
     }
 
   </script>
