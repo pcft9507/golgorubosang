@@ -1,0 +1,79 @@
+@@include('../include/head.html')
+
+<body>
+  <div class="wrap">
+    @@include('../include/header_sub.html')
+
+    <div class="l-container-sub">
+      <div class="event-container rowContent__inner">
+        <h2 class="is-blind">이벤트</h2>
+        <section class="event-section">
+          <div class="section-header d-flex-sb-c">
+            <h3 class="section-tit">[이벤트] 골고루보상 설문 응답 고객 감사 이벤트</h3>
+            <div class="chip event on-going"><span class="chip__txt">진행중</span></div>
+          </div>
+          <figure class="section-ban">
+            <figcaption>이벤트 배너</figcaption>
+            <img src="@@webRoot/assets/images/main/img-main-event03.jpg" alt="스타벅스 아메리카노 100% 증정 매달 설문에 응해주신 모든 고객분들께 스타벅스 아메리카노를 한 잔씩 제공하는 이벤트를 진행중입니다.">
+          </figure>
+        </section>
+        <section class="event-section">
+          <div class="section-header d-flex-sb-c">
+            <h3 class="section-tit">[제휴] 제목제목제목제목제목영역</h3>
+            <div class="chip event on-going"><span class="chip__txt">진행중</span></div>
+          </div>
+          <figure class="section-ban">
+            <figcaption>이벤트 배너</figcaption>
+            <img src="@@webRoot/assets/images/main/img-main-event01.jpg" alt="공항, 웨딩, 골프, 여행 등 다양한 목적으로 내가 직접 선택 골라타는 벤차량 예약 플랫폼, 타고가요 ~">
+          </figure>
+        </section>
+        <section class="event-section">
+          <div class="section-header d-flex-sb-c">
+            <h3 class="section-tit">[제휴] 제목제목제목제목제목영역가나다라마바사아자차카타파하제목제목제목제목제목영역 가나다라마바사아자차카 가나다라마바사아자차카  가나다라마바사아자차카 </h3>
+            <div class="chip event on-going"><span class="chip__txt">진행중</span></div>
+          </div>
+          <figure class="section-ban">
+            <figcaption>이벤트 배너</figcaption>
+            <img src="@@webRoot/assets/images/main/img-main-event02.jpg" alt="재난배상 다중이용업자 화재배상책임보험, 1분이면 가입완료 의무보험가입 플랫폼, 보다">
+          </figure>
+        </section>
+        <section class="event-section">
+          <div class="section-header d-flex-sb-c">
+            <h3 class="section-tit">[이벤트] 이벤트 마감일 경우</h3>
+            <div class="chip event ended"><span class="chip__txt">마감</span></div>
+          </div>
+          <figure class="section-ban ended">
+            <figcaption>이벤트 배너</figcaption>
+            <img src="@@webRoot/assets/images/main/img-main-event03.jpg" alt="스타벅스 아메리카노 100% 증정 매달 설문에 응해주신 모든 고객분들께 스타벅스 아메리카노를 한 잔씩 제공하는 이벤트를 진행중입니다.">
+          </figure>
+        </section>
+        <section class="event-section">
+          <div class="section-header d-flex-sb-c">
+            <h3 class="section-tit">[이벤트] 이벤트 마감일 경우</h3>
+            <div class="chip event ended"><span class="chip__txt">마감</span></div>
+          </div>
+          <figure class="section-ban ended">
+            <figcaption>이벤트 배너</figcaption>
+            <img src="@@webRoot/assets/images/main/img-main-event03.jpg" alt="스타벅스 아메리카노 100% 증정 매달 설문에 응해주신 모든 고객분들께 스타벅스 아메리카노를 한 잔씩 제공하는 이벤트를 진행중입니다.">
+          </figure>
+        </section>
+        <div class="btn-row-wrap mt-40">
+          <button class="more-btn" onclick="viewMoreList()"><span class="txt">더 보 기</span></button>
+        </div>
+      </div>
+    </div>
+    @@include('../include/footer_sub.html')
+  </div>
+  <!-- wrap -->
+
+  <script>
+    // gnb 현재 페이지 활성화
+    var page = 'event'
+
+    // 더보기
+    function viewMoreList() {
+      console.log('viewMoreList')
+    }
+  </script>
+</body>
+</html>

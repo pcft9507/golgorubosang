@@ -6,7 +6,7 @@ if (typeof page != 'undefined') {
     $('.gnbList__item').eq(1).addClass('active')
   } else if (page == 'event') {
     $('.gnbList__item').eq(2).addClass('active')
-  } else if (page == 'cs-center') {
+  } else if (page == 'cs') {
     $('.gnbList__item').eq(3).addClass('active')
   }
 }

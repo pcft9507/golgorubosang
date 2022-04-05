@@ -55,7 +55,7 @@ function htmlComplie() {
  
 function scssCompile() {
   return gulp.src(src.css)
-    // 소스맵 초기화(소스맵을 생성)
+  // 소스맵 초기화(소스맵을 생성)
     .pipe(sourcemaps.init())
 
     // SCSS 함수에 옵션갑을 설정, SCSS 작성시 watch 가 멈추지 않도록 logError 를 설정
@@ -63,8 +63,6 @@ function scssCompile() {
 
     // 위에서 생성한 소스맵을 사용한다.
     .pipe(sourcemaps.write())
-
-    .pipe(uglify())
 
     // 목적지(destination)을 설정
     .pipe(gulp.dest(paths.assets.css))

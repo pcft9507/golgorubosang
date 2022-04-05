@@ -1,0 +1,36 @@
+.event-container .event-section {
+  margin-top: 60px;
+}
+
+.event-container .section-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.event-container .section-tit {
+  padding-right: 100px;
+  color: #050505;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.event-container .section-ban {
+  position: relative;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-container .section-ban.ended::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(5, 5, 5, 0.7);
+}

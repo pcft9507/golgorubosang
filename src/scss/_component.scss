@@ -43,6 +43,24 @@
     }
   }
   
+  &.event {
+    --width: 84px;
+    --height: 29px;
+    border: 0;
+
+    &.on-going {
+      background: $themeColor03;
+    }
+
+    &.ended {
+      background: rgba(5, 5, 5, 0.6);
+    }
+
+    .chip__txt {
+      color: #fff;
+    }
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
