@@ -677,3 +677,26 @@
     }
   }
 }
+
+.noData {
+  text-align: center;
+
+  &__txtHead {
+    color: #787e85;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1em;
+  }
+
+  &__txtSub {
+    margin-top: 44px;
+    color: #787e85;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  &.key-searched {
+    padding-top: 154px;
+    background: url($imgCommon + 'ico-key-result-is-no.png') 50% 0/96px no-repeat;
+  }
+}

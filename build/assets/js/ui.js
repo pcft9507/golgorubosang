@@ -237,7 +237,6 @@ var fixedTab = function () {
 
 // 게시판 리스트 
 $.fn.boardList = function () {
-  console.log('boardList')
   var listBody = []
   return this.each(function (i) {
     listBody[i] = $(this)
