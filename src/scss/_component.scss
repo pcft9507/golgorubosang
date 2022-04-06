@@ -751,3 +751,305 @@
     background: url($imgCommon + 'ico-key-result-is-no.png') 50% 0/96px no-repeat;
   }
 }
+
+.contactUs {
+  padding: 95px 0 80px;
+  background: #151c27 url($imgMain + 'bg-contact-us.jpg') 50% 0/auto 600px no-repeat;
+
+  .contactUs__tit {
+    mix-blend-mode: overlay;
+    color: #fff;
+    font-family: Arial;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 74px;
+    text-align: center;
+  }
+
+  &__box {
+    height: 466px;
+    margin-top: 96px;
+    border-radius: 15px;
+    overflow: hidden;
+  
+    .contactUs__cont {
+      width: 813px;
+      background: #fff;
+    }
+  }
+  
+  &__about {
+    height: 188px;
+    padding-left: 40px;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+    .contactUs__logo {
+      width: 184px;
+    }
+
+    .contactUs__aboutTxt {
+      margin-top: 44px;
+      color: #050505;
+      font-size: 16px;
+      letter-spacing: -0.8px;
+    }
+  }
+
+    
+  &__cs {
+    padding: 40px;
+    border-top: 1px solid #eee;
+
+    &Item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 234px;
+      height: 60px;
+      border-radius: 4px;
+      border: 1px solid #eee;
+      background: #f9f9fa;
+      box-sizing: border-box;
+
+      .contactUs__csTxt {
+        color: #787e85;
+        font-weight: 600;
+        font-size: 16px;
+  
+      }
+
+      &.contactUs__csLink {
+        .contactUs__csTxt {
+          color: #050505;
+        }
+      }
+
+      &.kakao {
+
+        &:hover {
+          background: #fde50f;
+          border-color: #fde50f;
+
+          .contactUs__csTxt {
+            border-bottom: 1px solid #050505;
+          }
+        }
+      }
+
+      &.partner {
+
+        &:hover {
+          background: $themeColor03;
+          border-color: $themeColor03;
+
+          .contactUs__csTxt {
+            color: #fff;
+            border-bottom: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__guide {
+    margin-top: 42px;
+
+    &Txt {
+      position: relative;
+      color: #787e85;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1em;
+      margin-left: 20px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: -10px;
+        width: 1px;
+        height: 13px;
+        background: #787e85;
+      }
+
+      &:first-child {
+        margin-left: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .contactUs__guideBox {
+    height: 386px;
+    padding: 52px 0 0 42px;
+
+    &1 {
+      color: #394048;
+      font-weight: 700;
+      font-size: 32px;
+      letter-spacing: -0.8px;
+    }
+
+    &2 {
+      margin-top: 47px;
+      color: #394048;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: -0.8px;
+
+      strong {
+        font-weight: 800;
+        font-size: 1em;
+      }
+    }
+
+    &3 {
+      margin-top: 22px;
+      color: #394048;
+      font-size: 14px;
+    }
+
+    &4 {
+      position: relative;
+      margin-top: 45px;
+      padding-top: 20px;
+      color: #787e85;
+      font-size: 14px;
+      line-height: 28px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 1px;
+        background: #787e85;
+      }
+    }
+
+    &5 {
+      display: inline-block;
+      margin-top: 22px;
+      color: #394048;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1em;
+      letter-spacing: -0.4px;
+      border-bottom: 1px solid #394048;
+
+      &:hover,
+      &:active {
+        color: #1b2432;
+      }
+    }
+  }
+  
+  .sns {
+    width: 100%;
+    height: 80px;
+    padding: 0 40px;
+    background: #f9f9fa;
+    box-sizing: border-box;
+
+    .snsTxt {
+      color: #787e85;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1em;
+      white-space: nowrap;
+    }
+    
+    .snsItem {
+      margin-left: 20px;
+    }
+
+    .snsBtn {
+      display: block;
+      width: 58px;
+      height: 42px;
+      background-size: 100%;
+
+      &.youtube {
+        background-image: url($imgCommon + 'ico-youtube-gray.png');
+      }
+
+      &:hover {
+        &.youtube {
+          background-image: url($imgCommon + 'ico-youtube.png');
+        }
+      }
+
+      &.blog {
+        background-image: url($imgCommon + 'ico-blog-gray.png');
+      }
+
+      &:hover {
+        &.blog {
+          background-image: url($imgCommon + 'ico-blog.png');
+        }
+      }
+    }
+  }
+
+  .app-down {
+    padding: 53px 45px 0;
+    background: #1b2432;
+
+    &-tit {
+      color: #fff;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1em;
+      text-align: center;
+    }
+
+    &-sub {
+      margin-top: 56px;
+
+      .type-title {
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1em;
+      }
+    }
+
+    .sub-row {
+      margin-top: 20px;
+
+      .qr-img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .type-img {
+        width: 207px;
+        height: 61px;
+        margin-left: 34px;
+        background-size: 217px;
+        background-image: url($imgMain + 'sprites-contact-us.png');
+
+        &.ios {
+          background-position: -5px -76px;
+        }
+
+        &.android {
+          background-position: -5px -5px;
+        }
+      }
+    }
+
+    .app-down-txt {
+      margin-top: 38px;
+      color: #9ea3a8;
+      font-weight: 200;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

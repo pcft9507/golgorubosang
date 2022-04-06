@@ -1,7 +1,6 @@
 @charset 'utf-8';
 
 @import 'font.scss';
-@import 'var.scss';
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -97,7 +96,7 @@ button {
 }
 
 .wrap {
-  min-width: $minW;
+  min-width: 1200px;
 }
 
 .rowContent__inner {

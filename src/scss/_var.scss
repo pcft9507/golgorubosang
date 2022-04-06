@@ -7,6 +7,7 @@ $imgAbout: $img + 'about/';
 $imgBanner: $img + 'banner/';
 $imgSample: $img + 'sample/';
 $imgVisual: $img + 'visual/';
+$imgCs: $img + 'cs/';
 
 $guideW: 1200px;
 $minW: 1200px;
@@ -23,7 +24,7 @@ $radio-color: #00005c;
 // margin and paddings in separate directions i.e: mt-1 = margin-top: 1px; pb-1 = padding-bottom: 1px;
 @each $abbr, $name in ('t': 'top', 'r': 'right', 'b': 'bottom', 'l': 'left') {
   @each $prop, $prop-name in ('m': 'margin', 'p': 'padding') {
-    @for $i from 1 through 100 {
+    @for $i from 0 through 100 {
       .#{$prop}#{$abbr}-#{$i} {
         #{$prop-name}-#{$name}: 1px * $i;
       }
