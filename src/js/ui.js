@@ -235,6 +235,23 @@ var fixedTab = function () {
   })
 }()
 
+// 중간 요소 고정 상단탭
+var staticFixedTab = function () {
+  var staticFixedTab = $('.staticFixedTab')
+  var posY = staticFixedTab.offset().top
+  var headerH = $('header').height()
+  console.log('posy', posY)
+  $(window).on('scroll', function () {
+    var scTop = $(this).scrollTop()
+    console.log('scroll top', scTop)
+    if (scTop > (posY - headerH)) {
+      staticFixedTab.removeClass('static')
+    } else {
+      staticFixedTab.addClass('static')
+    }
+  })
+}
+
 // 게시판 리스트 
 $.fn.boardList = function () {
   var listBody = []
@@ -264,5 +281,8 @@ function loadUi () {
   $('.dropMenu').dropMenu();
   $('.matchingSch').matchingSch();
   $('.boardList').boardList();
+  if ($('.staticFixedTab').length > 0) {
+    staticFixedTab()
+  }
 }
 loadUi ()

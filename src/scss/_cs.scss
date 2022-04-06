@@ -1,0 +1,29 @@
+.notice {
+  padding-top: 30px;
+
+  .notice-visual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    padding-left: 60px;
+    background: url($imgVisual + 'v-notice.jpg') 0 0/100% no-repeat;
+
+    .notice-tit {
+      color: #050505;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1em;
+      letter-spacing: -0.45px;
+    }
+
+    .notice-tit-sub {
+      margin-top: 20px;
+      color: #050505;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1em;
+      letter-spacing: -0.8px;
+    }
+  }
+}
