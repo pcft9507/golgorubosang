@@ -6,8 +6,8 @@
 
     <div class="l-container-hospital hospital-container fixed">
       <h2 class="is-blind">손해사정사 매칭 받기</h2>
-      <div class="hospital rowContent__inner d-flex f-wrap">
-        <aside class="speed-matching-wrap c-scroll-bar">
+      <div class="hospital-content rowContent__inner d-flex f-wrap">
+        <aside class="l-speed-matching-wrap c-scroll-bar">
           <div class="speed-matching">
             <div class="mc-row-cont">
               <h3 class="matching-title theme02">손해사정사 <i class="txt-bg">추천 서비스</i></h3>
@@ -233,9 +233,9 @@
           </div>
         </aside>
 
-        <div class="matching-result">
-          <div class="matching-result-in h-scroll">
-            <div class="matching-sticky-wrap">
+        <div class="hospital-result">
+          <div class="hospital-result-in h-scroll">
+            <div class="hospital-sticky-wrap">
               <!-- hospitalSch -->
               <div class="hospitalSch">
                 <h3 class="hospitalSch__tit">전국 지역 병원 찾기</h3>
@@ -288,8 +288,8 @@
                     <option value="110024">강북구</option>
                     <option value="110025">금천구</option>
                   </select>
-                  <input id="dong" type="text" class="hospitalinput1" placeholder="(선택) 읍,면,동" spellcheck="false" data-ms-editor="true">
-                  <input id="hospitalName" type="text" class="hospitalinput2" placeholder="(선택) 병원명" spellcheck="false" data-ms-editor="true">
+                  <input id="dong" type="text" class="hospitalinput" placeholder="(선택) 읍,면,동" spellcheck="false" data-ms-editor="true">
+                  <input id="hospitalName" type="text" class="hospitalinput" placeholder="(선택) 병원명" spellcheck="false" data-ms-editor="true">
                   <select id="zipCode" class="hospitalselect">
                     <option value="">(선택) 병원분류</option>
                     <option value="2010">종합병원</option>
@@ -347,12 +347,13 @@
                     <option value="23">가정의학과</option>
                     <option value="24">응급의학과</option>
                   </select>
-                  <button class="hospitalSch__submit" onclick="fn_search(1,true)"></button>
+                  <button class="hospitalSch__submit" onclick="fn_search(1,true)">검색하기</button>
                 </div>
               </div>
               <!-- hospitalSch end -->
             
-              <div class="matching-card-list">
+              <!-- card-list-wrap -->
+              <div class="card-list-wrap">
                 <ul class="cardList grid-2 d-flex-s-s f-wrap">
                   <li class="cardList__item">
                     <div class="hospitalCard">
@@ -366,9 +367,120 @@
                         </div>
                       </div>
                       <div class="hospitalCard__info">
-                        <p class="hospitalCard__addr1">서울특별시 강남구 일원로81(일원동, 삼성의료원)</p>
-                        <p class="hospitalCard__addr2">02) 3410-2114</p>
-                        <p class="hospitalCard__addr3">지하철 7,1호선 가산디지털단지역 6번출구 250미터</p>
+                        <p class="hospitalCard__name">병원 이름 들어갑니다.</p>
+                        <p class="hospitalCard__addr">서울특별시 강남구 일원로81(일원동, 삼성의료원)</p>
+                        <p class="hospitalCard__addr">02) 3410-2114</p>
+                        <p class="hospitalCard__addr">지하철 7,1호선 가산디지털단지역 6번출구 250미터</p>
+                        <div class="hospitalCard__btnWrap">
+                          <button class="hospitalCard__btn" onclick="openModal('hospital')">상세보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cardList__item">
+                    <div class="hospitalCard">
+                      <div class="hospitalCard__figWrap">
+                        <figure class="hospitalCard__fig">
+                          <figcaption>병원 사진</figcaption>
+                          <img class="hospitalCard__img" src="@@webRoot/assets/images/common/img-hospital.jpg">
+                        </figure>
+                        <div class="hospitalCard__chip">
+                          <span class="chip-pc">상급종합</span>
+                        </div>
+                      </div>
+                      <div class="hospitalCard__info">
+                        <p class="hospitalCard__name">병원 이름 들어갑니다.</p>
+                        <p class="hospitalCard__addr">서울특별시 강남구 일원로81(일원동, 삼성의료원)</p>
+                        <p class="hospitalCard__addr">02) 3410-2114</p>
+                        <p class="hospitalCard__addr">지하철 7,1호선 가산디지털단지역 6번출구 250미터</p>
+                        <div class="hospitalCard__btnWrap">
+                          <button class="hospitalCard__btn" onclick="openModal('hospital')">상세보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cardList__item">
+                    <div class="hospitalCard">
+                      <div class="hospitalCard__figWrap">
+                        <figure class="hospitalCard__fig">
+                          <figcaption>병원 사진</figcaption>
+                          <img class="hospitalCard__img" src="@@webRoot/assets/images/common/img-hospital.jpg">
+                        </figure>
+                        <div class="hospitalCard__chip">
+                          <span class="chip-pc">상급종합</span>
+                        </div>
+                      </div>
+                      <div class="hospitalCard__info">
+                        <p class="hospitalCard__name">병원 이름 들어갑니다.</p>
+                        <p class="hospitalCard__addr">서울특별시 강남구 일원로81(일원동, 삼성의료원)</p>
+                        <p class="hospitalCard__addr">02) 3410-2114</p>
+                        <p class="hospitalCard__addr">지하철 7,1호선 가산디지털단지역 6번출구 250미터</p>
+                        <div class="hospitalCard__btnWrap">
+                          <button class="hospitalCard__btn" onclick="openModal('hospital')">상세보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cardList__item">
+                    <div class="hospitalCard">
+                      <div class="hospitalCard__figWrap">
+                        <figure class="hospitalCard__fig">
+                          <figcaption>병원 사진</figcaption>
+                          <img class="hospitalCard__img" src="@@webRoot/assets/images/common/img-hospital.jpg">
+                        </figure>
+                        <div class="hospitalCard__chip">
+                          <span class="chip-pc">상급종합</span>
+                        </div>
+                      </div>
+                      <div class="hospitalCard__info">
+                        <p class="hospitalCard__name">병원 이름 들어갑니다.</p>
+                        <p class="hospitalCard__addr">서울특별시 강남구 일원로81(일원동, 삼성의료원)</p>
+                        <p class="hospitalCard__addr">02) 3410-2114</p>
+                        <p class="hospitalCard__addr">지하철 7,1호선 가산디지털단지역 6번출구 250미터</p>
+                        <div class="hospitalCard__btnWrap">
+                          <button class="hospitalCard__btn" onclick="openModal('hospital')">상세보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cardList__item">
+                    <div class="hospitalCard">
+                      <div class="hospitalCard__figWrap">
+                        <figure class="hospitalCard__fig">
+                          <figcaption>병원 사진</figcaption>
+                          <img class="hospitalCard__img" src="@@webRoot/assets/images/common/img-hospital.jpg">
+                        </figure>
+                        <div class="hospitalCard__chip">
+                          <span class="chip-pc">상급종합</span>
+                        </div>
+                      </div>
+                      <div class="hospitalCard__info">
+                        <p class="hospitalCard__name">병원 이름 들어갑니다.</p>
+                        <p class="hospitalCard__addr">서울특별시 강남구 일원로81(일원동, 삼성의료원)</p>
+                        <p class="hospitalCard__addr">02) 3410-2114</p>
+                        <p class="hospitalCard__addr">지하철 7,1호선 가산디지털단지역 6번출구 250미터</p>
+                        <div class="hospitalCard__btnWrap">
+                          <button class="hospitalCard__btn" onclick="openModal('hospital')">상세보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cardList__item">
+                    <div class="hospitalCard">
+                      <div class="hospitalCard__figWrap">
+                        <figure class="hospitalCard__fig">
+                          <figcaption>병원 사진</figcaption>
+                          <img class="hospitalCard__img" src="@@webRoot/assets/images/common/img-hospital.jpg">
+                        </figure>
+                        <div class="hospitalCard__chip">
+                          <span class="chip-pc">상급종합</span>
+                        </div>
+                      </div>
+                      <div class="hospitalCard__info">
+                        <p class="hospitalCard__name">병원 이름 들어갑니다.</p>
+                        <p class="hospitalCard__addr">서울특별시 강남구 일원로81(일원동, 삼성의료원)</p>
+                        <p class="hospitalCard__addr">02) 3410-2114</p>
+                        <p class="hospitalCard__addr">지하철 7,1호선 가산디지털단지역 6번출구 250미터</p>
                         <div class="hospitalCard__btnWrap">
                           <button class="hospitalCard__btn" onclick="openModal('hospital')">상세보기</button>
                         </div>
@@ -376,8 +488,12 @@
                     </div>
                   </li>
                 </ul>
+
+                <div class="btn-row-wrap">
+                  <button class="more-btn" onclick="viewMoreList()"><span class="txt">더 보 기</span></button>
+                </div>
               </div>
-              <!-- matching-card-list end -->
+              <!-- card-list-wrap end -->
             </div>
             <!-- matching-sticky-wrap -->
           </div>
@@ -386,6 +502,8 @@
     </div>
   </div>
 
+  @@include('../modal/hospital.html')
+
   <script>
     // 매칭리스트 영역 스크롤
     $('.h-scroll').niceScroll({
@@ -393,6 +511,11 @@
       cursorwidth: "10px",
       cursorborder: 0,
     });
+
+    function viewMoreList() {
+      console.log('viewMoreList')
+      $('.cardList').css('overflow' , 'initial').css('overflow' , 'hidden')
+    }
   </script>
 </body>
 </html>

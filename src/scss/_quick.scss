@@ -59,6 +59,163 @@
   }
 }
 
-.hospitalSch {
-  
+.hospital-content {
+  height: 100%;
+  background: #f9f9fa;
+
+  .hospital-result {
+    position: relative;
+    width: 833px;
+    height: 100%;
+    margin: 0 -40px 0 33px;
+    padding-top: 30px;
+
+    &-in {
+      position: relative;
+      height: 100%;
+      padding-right: 40px;
+    }
+  }
+
+  .hospital-sticky-wrap {
+    position: relative;
+    width: 100%;
+  }
+
+  .hospitalSch {
+
+    &__tit {
+      color: #050505;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1em;
+    }
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 18px;
+
+      .hospitalselect {
+        width: 184px;
+        height: 36px;
+        margin-top: 12px;
+        padding-left: 20px;
+        appearance: none;
+        color: #787e85;
+        font-size: 12px;
+        background: #fff url($imgCommon + 'bg-select.png') right 20px top 50%/15px no-repeat;
+        border: 1px solid #d0d3db;
+        border-radius: 4px;
+      }
+
+      .hospitalinput {
+        width: 184px;
+        height: 36px;
+        margin-top: 12px;
+        padding-left: 20px;
+        color: #787e85;
+        font-size: 12px;
+        border: 1px solid #d0d3db;
+        border-radius: 4px;
+
+        &::placeholder {
+          color: #787e85;
+          font-size: 12px;
+        }
+      }
+
+      .hospitalSch__submit {
+        width: 184px;
+        height: 36px;
+        margin-top: 12px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        background: rgba(120, 126, 133, 0.6);
+        border-radius: 4px;
+
+        &:hover {
+          background: rgba(120, 126, 133, 1);
+        }
+      }
+    }
+  }
+
+  .card-list-wrap {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #eee;
+  }
+
+  .cardList.grid-2 .cardList__item {
+    padding: 16px 11px 10px 14px;
+  }
+
+  .hospitalCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__fig {
+      width: 92px;
+      height: 92px;
+    }
+
+    &__chip {
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    &__info {
+      width: calc(100% - 108px);
+    }
+
+    &__name {
+      margin: 6px 0 9px;
+      color: #050505;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1em;
+    }
+
+    &__addr {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-top: 7px;
+      color: #394048;
+      font-size: 12px;
+      line-height: 13px;
+    }
+
+    &__btnWrap {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 14px;
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 32px;
+      color: #787e85;
+      font-weight: 500;
+      font-size: 13px;
+      border: solid 1px #d0d3db;
+      background-color: #f8f9fa;
+      border-radius: 16px;
+    }
+  }
+
+  .btn-row-wrap {
+    margin-top: 20px;
+
+    .more-btn {
+    }
+  }
 }

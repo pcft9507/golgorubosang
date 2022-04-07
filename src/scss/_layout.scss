@@ -291,7 +291,7 @@
         right: 0;
         z-index: -1;
         width: 50%;
-        background: #f2f2f3;
+        background: #f9f9fa;
       }
     }
   }
@@ -707,6 +707,138 @@
     .goTop__txt {
       &::before {
         background-position: -24px 0;
+      }
+    }
+  }
+}
+
+.l-speed-matching-wrap {
+  width: 372px;
+  height: 100%;
+  padding: 30px 0 0;
+  background: #fff;
+  box-sizing: border-box;
+
+  .matching-title {
+    position: relative;
+    padding: 7px 0 0 12px;
+    line-height: 1em;
+    letter-spacing: -0.43px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    &.theme02 {
+
+      &:before {
+        background: $themeColor02;
+      }
+    }
+
+    &.theme03 {
+
+      &:before {
+        background: $themeColor03;
+      }
+    }
+  }
+
+  .mc-row-cont + .mc-row-cont {
+    margin-top: 40px;
+  }
+
+  .btn-recommend {
+    width: 156px;
+    height: 42px;
+    border-radius: 0 21px 21px 0;
+    background: $themeColor02;
+
+    &:hover {
+      background: #14A662;
+    }
+
+    .txt {
+      position: relative;
+      padding-right: 22px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 16px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        right: 0;
+        width: 6px;
+        height: 10px;
+        background: url($imgArrow + 'ico-arrow-w-6x10.png') 0 0/100%;
+      }
+    }
+  }
+
+  .guide-txt {
+    margin-top: 15px;
+    color: #787e85;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.35px;    
+  }
+
+  .speed-sch {
+    width: 340px;
+    margin-top: 20px;
+    padding: 30px 10px 0;
+    background: #f9f9fa;
+    border: 1px solid #e9eaee;
+    border-radius: 0 15px 0 0;
+    overflow: hidden;
+
+    .cont + .cont {
+      margin-top: 30px;
+    }
+
+    .cont-title {
+      color: #050505;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1em;
+      text-align: center;
+      letter-spacing: -0.35px;
+    }
+
+    .chipList {
+      margin: 16px -1px 0;
+    }
+
+    .chipList__item {
+      margin: 3px 2px;
+    }
+
+    .bot-btn-wrap {
+      margin: 17px -11px 0;
+    }
+
+    .btn-speed-sch {
+      width: 100%;
+      height: 42px;
+      background: #fff;
+      border: 1px solid #e9eaee;
+      border-bottom: 0;
+
+      &:last-child {
+        border-left: 0;
+      }
+
+      .txt {
+        color: #787e85;
+        font-size: 14px;
       }
     }
   }

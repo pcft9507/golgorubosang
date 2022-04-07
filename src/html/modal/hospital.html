@@ -1,10 +1,49 @@
 <div class="modal" data-modal="hospital">
   <div class="modal__container">
-    <div class="modal__content w-s">
+    <div class="modal__content w-m">
       <div class="modal__inner">
-        <h3 class="title">개인정보 수집 · 이용 및 제 3자 제공 사전 동의서</h3>
+        <div class="modal-hospital">
+          <h3 class="hospital-name">병원 이름이 들어갑니다</h3>
+          <div class="row-content d-flex-sb-s mt-50">
+            <div id="hospital-map" class="hospital-map"></div>
+            <div class="hospital-summary">
+              <div class="chip-pc">상급종합</div>
+              <div class="summary-row">
+                <p class="hospital-addr">서울 금천구 가산디지털1로 181 가산W센터</p>
+                <p class="hospital-p-num">02) 000-0000</p>
+                <p class="hospital-nearby-station">지하철 7,1호선 가산디지털단지역 6번 출구 도보 1분거리</p>
+              </div>
+              <div class="summary-row">
+                <p class="hospital-c-date">개설일자 : 2021-01-01</p>
+              </div>
+              <div class="summary-row">
+                <p class="doctor-total">의사 총 인원 : 0 명</p>
+                <div class="doctor-type">
+                  <p class="doctor-specialist">의과일반의: 0 명</p>
+                  <p class="doctor-specialist">의과인턴: 0 명</p>
+                  <p class="doctor-specialist">의과레지던트: 0 명</p>
+                  <p class="doctor-specialist">의과전문의: 0 명</p>
+                </div>
+                <div class="doctor-type">
+                  <p class="doctor-specialist">치과일반의: 0 명</p>
+                  <p class="doctor-specialist">치과인턴: 0 명</p>
+                  <p class="doctor-specialist">치과레지던트: 0 명</p>
+                  <p class="doctor-specialist">치과전문의: 0 명</p>
+                </div>
+                <div class="doctor-type">
+                  <p class="doctor-specialist">한방일반의: 0 명</p>
+                  <p class="doctor-specialist">한방인턴: 0 명</p>
+                  <p class="doctor-specialist">한방레지던트: 0 명</p>
+                  <p class="doctor-specialist">한방전문의: 0 명</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <button class="modal__close" onclick="closeModal('hospital')"><span class="is-blind">닫기</span></button>
     </div>
   </div>
 </div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c7de0761cab8833759b89d424e98bd32&libraries=services"></script>
