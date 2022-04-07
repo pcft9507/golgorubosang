@@ -1,0 +1,64 @@
+.compensation-case {
+  padding-top: 30px;
+
+  .visual {
+    position: relative;
+    height: 200px;
+    padding-top: 42px;
+    background: url($imgVisual + 'v-quick.jpg') 50% 0/cover no-repeat;
+
+    &-tit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 32px;
+      margin: 0 auto;
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 2.8px;
+      background: #6c6d70;
+      border-radius: 16px;
+    }
+
+    &-txt1 {
+      margin-top: 20px;
+      color: #fff;
+      font-size: 18px;
+      line-height: 1em;
+      text-align: center;
+      letter-spacing: -0.45px;
+    }
+
+    &-txt2 {
+      margin-top: 15px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1em;
+      text-align: center;
+      letter-spacing: -0.8px;
+    }
+  }
+
+  .chipList {
+    margin: 10px 0 0 -12px;
+
+    &__item {
+      margin: 20px 0 0 12px;
+    }
+  }
+
+  .searchTool {
+    margin-top: 42px;
+  }
+
+  .case-bo-wrap {
+    margin-top: 30px;
+  }
+}
+
+.hospitalSch {
+  
+}

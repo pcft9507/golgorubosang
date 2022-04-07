@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/jquery.nicescroll.min.js"></script>
+  <script defer src="../assets/js/ui.js"></script>
+  <title>골고루 보상</title>
+</head>
+
+
+<body>
+  <div class="wrap">
+    <header class="l-header header-sub">
+  <div class="header-inner rowContent__inner">
+    <h1 class="logo">
+      <a href=".." title="홈으로 이동">
+        <figure>
+          <img class="img" src="../assets/images/common/logo-scrolled.png" alt="골고루보상">
+        </figure>
+      </a>
+    </h1>
+    <nav class="gnb">
+      <ul class="gnbList">
+        <li class="gnbList__item"><a href="@webRoot/matching/matching.html" class="gnbList__link">손해사정사 매칭 받기</a></li>
+        <li class="gnbList__item"><a href="@webRoot/about/introduce.html" class="gnbList__link">서비스 소개</a></li>
+        <li class="gnbList__item"><a href="@webRoot/event/event.html" class="gnbList__link">이벤트</a></li>
+        <li class="gnbList__item"><a href="@webRoot/cs/notice.html" class="gnbList__link">고객센터</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div class="quickMenu">
+    <button class="quickMenu__toggle"><span class="quickMenu__toggleTxt">퀵 숨기기</span></button>
+    <div class="quickMenu__cont">
+      <ul class="qMenuList">
+        <li class="qMenuList__item"><a href="@webRoot/quick/case.html" class="qMenuList__btn"><span class="qMenuList__txt">보상 사고 사례</span></a></li>
+        <li class="qMenuList__item"><a href="@webRoot/about/branch.html" class="qMenuList__btn"><span class="qMenuList__txt">전국 제휴 현황</span></a></li>
+        <li class="qMenuList__item"><a href="@webRoot/quick/search_hospital.html" class="qMenuList__btn"><span class="qMenuList__txt">전국 병원 검색</span></a></li>
+        <li class="qMenuList__item"><a href="@webRoot/matching/matching.html" class="qMenuList__btn"><span class="qMenuList__txt">스피드 매칭</span></a></li>
+        <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">카카오톡 상담</span></a></li>
+      </ul>
+      <span class="quickMenu__callNum">1670 - 2456</span>
+    </div>
+  </div>
+
+</header>
+
+    <div class="l-container-hospital hospital-container fixed">
+      <h2 class="is-blind">손해사정사 매칭 받기</h2>
+      <div class="hospital rowContent__inner d-flex f-wrap">
+        <aside class="speed-matching-wrap c-scroll-bar">
+          <div class="speed-matching">
+            <div class="mc-row-cont">
+              <h3 class="matching-title theme02">손해사정사 <i class="txt-bg">추천 서비스</i></h3>
+              <p class="guide-txt">
+                누구를 선택해야할지 모르겠다고요? 걱정마세요!<br>
+                고객님께 필요한 손해사정사를 매칭해드립니다.
+              </p>
+              <button class="btn-recommend d-flex-c-c mt-23">
+                <span class="txt">무료 추천 받기</span>
+              </button>
+            </div>
+            <div class="mc-row-cont">
+              <h3 class="matching-title theme03">손해사정사 <i class="txt-bg">스피드 검색</i></h3>
+              <p class="guide-txt">
+                상담받고 싶은 분야와 지역을 선택해보세요!<br>
+                전국의 독립 손해사정사가 여러분을 기다립니다.
+              </p>
+              <div class="speed-sch">
+                <div class="cont">
+                  <h4 class="cont-title">01. &nbsp;&nbsp;상담 분야를 선택해주세요</h4>
+                  <ul class="chipList d-flex-s-s f-wrap" data-chip="toggle">
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">실손</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">질병</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">상해</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">어린이</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">태아</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt fs-xxs">차량파손(대물)</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt fs-xxs">교통사고(대인)</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">배상책임</span>
+                      </a>
+                    </li>                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">근로재해</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt fs-xxs">학교안전사고</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">여행자</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">골프</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">치아</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">연금</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">도난</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">화재</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">재난</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">생명</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">침수</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">기타</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cont">
+                  <h4 class="cont-title">02. &nbsp;&nbsp;상담 지역을 선택해주세요</h4>
+                  <ul class="chipList d-flex-s-s f-wrap" data-chip="toggle">
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">서울</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">경기</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">부산</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">대구</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">인천</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">광주</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">대전</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">울산</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">세종</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">강원</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">전북</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">전남</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">충북</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">충남</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">경북</span>
+                      </a>
+                    </li>
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">경남</span>
+                      </a>
+                    </li>                    
+                    <li class="chipList__item">
+                      <a href="#" class="chip rd">
+                        <span class="chip__txt">제주</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="bot-btn-wrap d-flex">
+                  <button class="btn-speed-sch d-flex-c-c js-reset">
+                    <span class="txt">초기화</span>
+                  </button>
+                  <button class="btn-speed-sch d-flex-c-c js-go-sch">
+                    <span class="txt">검색하기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="matching-result">
+          <div class="matching-result-in h-scroll">
+            <div class="matching-sticky-wrap">
+              <!-- hospitalSch -->
+              <div class="hospitalSch">
+                <h3 class="hospitalSch__tit">전국 지역 병원 찾기</h3>
+                <div class="hospitalSch__row">
+                  <select id="sidoCode" class="hospitalselect">
+                    <option value="">(선택) 시도</option>
+                    <option value="110000">서울특별시</option>
+                    <option value="210000">부산광역시</option>
+                    <option value="230000">대구광역시</option>
+                    <option value="220000">인천광역시</option>
+                    <option value="240000">광주광역시</option>
+                    <option value="250000">대전광역시</option>
+                    <option value="260000">울산광역시</option>
+                    <option value="410000">세종특별자치시</option>
+                    <option value="310000">경기도</option>
+                    <option value="320000">강원도</option>
+                    <option value="330000">충청북도</option>
+                    <option value="340000">충청남도</option>
+                    <option value="350000">전라북도</option>
+                    <option value="360000">전라남도</option>
+                    <option value="370000">경상북도</option>
+                    <option value="380000">경상남도</option>
+                    <option value="390000">제주특별자치도</option>
+                  </select>
+                  <select id="sigugunCode" class="hospitalselect">
+                    <option value="">선택</option>
+                    <option value="110001">강남구</option>
+                    <option value="110002">강동구</option>
+                    <option value="110003">강서구</option>
+                    <option value="110004">관악구</option>
+                    <option value="110005">구로구</option>
+                    <option value="110006">도봉구</option>
+                    <option value="110007">동대문구</option>
+                    <option value="110008">동작구</option>
+                    <option value="110009">마포구</option>
+                    <option value="110010">서대문구</option>
+                    <option value="110011">성동구</option>
+                    <option value="110012">성북구</option>
+                    <option value="110013">영등포구</option>
+                    <option value="110014">용산구</option>
+                    <option value="110015">은평구</option>
+                    <option value="110016">종로구</option>
+                    <option value="110017">중구</option>
+                    <option value="110018">송파구</option>
+                    <option value="110019">중랑구</option>
+                    <option value="110020">양천구</option>
+                    <option value="110021">서초구</option>
+                    <option value="110022">노원구</option>
+                    <option value="110023">광진구</option>
+                    <option value="110024">강북구</option>
+                    <option value="110025">금천구</option>
+                  </select>
+                  <input id="dong" type="text" class="hospitalinput1" placeholder="(선택) 읍,면,동" spellcheck="false" data-ms-editor="true">
+                  <input id="hospitalName" type="text" class="hospitalinput2" placeholder="(선택) 병원명" spellcheck="false" data-ms-editor="true">
+                  <select id="zipCode" class="hospitalselect">
+                    <option value="">(선택) 병원분류</option>
+                    <option value="2010">종합병원</option>
+                    <option value="2030">병원</option>
+                    <option value="2040">요양병원</option>
+                    <option value="2050">치과</option>
+                    <option value="2060">한방</option>
+                    <option value="2070">의원</option>
+                    <option value="2080">보건기관</option>
+                    <option value="2090">조산원</option>
+                  </select>
+                  <select id="clCode" class="hospitalselect">
+                    <option value="">(선택) 병원종별</option>
+                    <option value="01">상급종합병원</option>
+                    <option value="11">종합병원</option>
+                    <option value="21">병원</option>
+                    <option value="28">요양병원</option>
+                    <option value="29">정신병원</option>
+                    <option value="31">의원</option>
+                    <option value="41">치과병원</option>
+                    <option value="51">치과의원</option>
+                    <option value="61">조산원</option>
+                    <option value="71">보건소</option>
+                    <option value="72">보건지소</option>
+                    <option value="73">보건진료소</option>
+                    <option value="75">보건의료원</option>
+                    <option value="92">한방병원</option>
+                    <option value="93">한의원</option>
+                  </select>
+                  <select id="dgsbjtCode" class="hospitalselect">
+                    <option value="">(선택) 병원진료과목</option>
+                    <option value="00">일반의</option>
+                    <option value="01">내과</option>
+                    <option value="02">신경과</option>
+                    <option value="03">정신건강의학과</option>
+                    <option value="04">외과</option>
+                    <option value="05">정형외과</option>
+                    <option value="06">신경외과</option>
+                    <option value="07">흉부외과</option>
+                    <option value="08">성형외과</option>
+                    <option value="09">마취통증의학과</option>
+                    <option value="10">산부인과</option>
+                    <option value="11">소아청소년과</option>
+                    <option value="12">안과</option>
+                    <option value="13">이비인후과</option>
+                    <option value="14">피부과</option>
+                    <option value="15">비뇨의학과</option>
+                    <option value="16">영상의학과</option>
+                    <option value="17">방사선종양학과</option>
+                    <option value="18">병리과</option>
+                    <option value="19">진단검사의학과</option>
+                    <option value="20">결핵과</option>
+                    <option value="21">재활의학과</option>
+                    <option value="22">핵의학과</option>
+                    <option value="23">가정의학과</option>
+                    <option value="24">응급의학과</option>
+                  </select>
+                  <button class="hospitalSch__submit" onclick="fn_search(1,true)"></button>
+                </div>
+              </div>
+              <!-- hospitalSch end -->
+            
+              <div class="matching-card-list">
+                <ul class="cardList grid-2 d-flex-s-s f-wrap">
+                  <li class="cardList__item">
+                    <div class="hospitalCard">
+                      <div class="hospitalCard__figWrap">
+                        <figure class="hospitalCard__fig">
+                          <figcaption>병원 사진</figcaption>
+                          <img class="hospitalCard__img" src="../assets/images/common/img-hospital.jpg">
+                        </figure>
+                        <div class="hospitalCard__chip">
+                          <span class="chip-pc">상급종합</span>
+                        </div>
+                      </div>
+                      <div class="hospitalCard__info">
+                        <p class="hospitalCard__addr1">서울특별시 강남구 일원로81(일원동, 삼성의료원)</p>
+                        <p class="hospitalCard__addr2">02) 3410-2114</p>
+                        <p class="hospitalCard__addr3">지하철 7,1호선 가산디지털단지역 6번출구 250미터</p>
+                        <div class="hospitalCard__btnWrap">
+                          <button class="hospitalCard__btn" onclick="openModal('hospital')">상세보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- matching-card-list end -->
+            </div>
+            <!-- matching-sticky-wrap -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 매칭리스트 영역 스크롤
+    $('.h-scroll').niceScroll({
+      cursorcolor: "#bec2c7",
+      cursorwidth: "10px",
+      cursorborder: 0,
+    });
+  </script>
+</body>
+</html>

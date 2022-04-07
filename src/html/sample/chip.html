@@ -22,9 +22,18 @@
   <h1 class="sample-tit">칩 샘플</h1>
 
   <h2 class="sample-tit02">기본형</h2>
-  <a href="#" class="chip rg">
-    <span class="chip__txt">실손</span>
-  </a>
+  <ul class="chipList">
+    <li class="chipList__imte">
+      <a href="#" class="chip rg">
+        <span class="chip__txt">실손</span>
+      </a>
+    </li>
+    <li class="chipList__imte">
+      <a href="#" class="chip checked rg">
+        <span class="chip__txt">실손</span>
+      </a>
+    </li>
+  </ul>
 
   <h2 class="sample-tit02">작은 기본형</h2>
   <a href="#" class="chip rd">
@@ -201,6 +210,77 @@
     </li>
   </ul>
 
+  <h2 class="sample-tit02">케이스 리스트(분야 선택)</h2>
+  <!-- chipList -->
+  <ul class="chipList d-flex-s-s f-wrap">
+    <li class="chipList__item">
+      <a href="#" class="chip checked case" onclick="typeClick(this)">
+        <span class="chip__txt">전체</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">교통사고</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">후유장애 보험금</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">암 진단금</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">산재사고</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">상해사고</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">실손의료비</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">사망보험비</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">생활안전사고</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">질병사고</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">운전자보험</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">질병보험 및 상해보험</span>
+      </a>
+    </li>
+    <li class="chipList__item">
+      <a href="#" class="chip case" onclick="typeClick(this)">
+        <span class="chip__txt">기타</span>
+      </a>
+    </li>
+  </ul>
+  <!-- chipList end -->
+
   <h2 class="sample-tit02">프로필 카테고리</h2>
   <span class="chip-pc">후유장애</span>
 
@@ -213,3 +293,12 @@
     <li><span class="chip-pc">후유장애</span></li>
   </ul>
 </div>
+
+<script>
+    // 분야 선택
+    function typeClick (el) {
+      event.preventDefault()
+      $(el).parent().siblings().children().removeClass('checked')
+      $(el).addClass('checked')
+    }
+</script>
