@@ -216,13 +216,12 @@ function copyText(element){
   var content = $(element).text()
   navigator.clipboard.writeText(content)
     .then(() => {
-    console.log("Text copied to clipboard...")
+    console.log("복사성공")
   })
     .catch(err => {
-    console.log('Something went wrong', err);
+    console.log('복사실패', err);
   })
   alert('복사되었습니다.')
-  console.log('복사된 텍스트:', content)
 }
 
 // 서브 상단탭

@@ -82,6 +82,7 @@
       align-items: center;
       span {
           display: block;
+          min-width: 5px;
           backface-visibility: hidden;
           font-style: normal;
           transition: transform var(--duration) ease;
