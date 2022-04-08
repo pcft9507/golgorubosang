@@ -1,10 +1,17 @@
 .about {
 
   .ani {
-    // opacity: 0;
-    // transform: translateY(-50px);
-    // transition: 0.5s;
-    // transition-timing-function: ease;  
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 0.5s;
+    transition-timing-function: ease-in;  
+  }
+
+  .ani2 {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    transition-timing-function: ease-in;  
   }
   
   .ani-show {
@@ -157,8 +164,25 @@
   }
 
   .section03 {
+    position: relative;
     height: 550px;
-    background: url($imgVisual + 'v-about-2.png') 50% 0/cover no-repeat;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: url($imgVisual + 'v-about-2.png') 50% 50%/cover no-repeat;
+      transition: 1s;
+      opacity: 0;
+    }
+
+    &.active::before {
+      opacity: 1;
+    }
 
     &-inner {
       position: relative;
@@ -253,7 +277,7 @@
     opacity: 0;
     transform: translateY(-50px);
     transition: 0.5s;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in;
   }
   
   .ani-show {
@@ -743,7 +767,7 @@
     opacity: 0;
     transform: translateY(-50px);
     transition: 0.5s;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in;
   }
   
   .ani-show {
@@ -929,7 +953,7 @@
     opacity: 0;
     transform: translateY(-50px);
     transition: 0.5s;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in;
   }
   
   .ani-show {

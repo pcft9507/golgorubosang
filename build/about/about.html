@@ -82,27 +82,27 @@
           <div class="rowContent__inner">
             <h3 class="section02-tit"><span class="txt">기업정보</span></h3>
             <ul class="c-summary d-flex f-wrap">
-              <li class="c-summary-col">
+              <li class="c-summary-col ani">
                 <div class="summary-head"><span class="txt">사&nbsp;&nbsp;&nbsp;&nbsp;명</span></div>
                 <span class="summary-data">(주)골고루보상</span>
               </li>
-              <li class="c-summary-col">
+              <li class="c-summary-col ani">
                 <div class="summary-head"><span class="txt">주요사업</span></div>
                 <span class="summary-data">손해사정업 관련 중개업</span>
               </li>
-              <li class="c-summary-col">
+              <li class="c-summary-col ani">
                 <div class="summary-head"><span class="txt">대표자</span></div>
                 <span class="summary-data">유&nbsp;&nbsp;&nbsp;태&nbsp;&nbsp;&nbsp;석</span>
               </li>
-              <li class="c-summary-col">
+              <li class="c-summary-col ani">
                 <div class="summary-head"><span class="txt">주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</span></div>
                 <span class="summary-data">서울시 금천구 가산디지털1로 181 가산W센터 1603호</span>
               </li>
-              <li class="c-summary-col">
+              <li class="c-summary-col ani">
                 <div class="summary-head"><span class="txt">설립일</span></div>
                 <span class="summary-data">2020년 09월 09일</span>
               </li>
-              <li class="c-summary-col">
+              <li class="c-summary-col ani">
                 <div class="summary-head"><span class="txt">전화번호</span></div>
                 <span class="summary-data">02) 6746 - 1114</span>
               </li>
@@ -113,11 +113,15 @@
         <!-- section03 -->
         <div class="section03 d-flex-c-c">
           <div class="section03-inner rowContent__inner">
-            <h3 class="section03-tit">보험과 보상은 다릅니다.</h3>
-            <p class="section03-txt1">보상업무의 든든한 파트너가 되겠습니다.</p>
-            <p class="section03-txt2">고객님의 소중한 보상금 정확하게심사되어 지급됐는지 궁금하신가요? 손해사정사를 직접 선임하고 싶은데 막상 누구를 택해야할지 막막하신가요?</p>
-            <p class="section03-txt3">골고루보상은 고객님들의 고민을 해결해 드리기 위해 그리고 이 모든 것을 무료로 도와드리고자 탄생했습니다.</p>
-            <p class="section03-txt4">
+            <div class="ani2">
+              <h3 class="section03-tit">보험과 보상은 다릅니다.</h3>
+              <p class="section03-txt1">보상업무의 든든한 파트너가 되겠습니다.</p>
+            </div>
+            <div class="ani2">
+              <p class="section03-txt2">고객님의 소중한 보상금 정확하게심사되어 지급됐는지 궁금하신가요? 손해사정사를 직접 선임하고 싶은데 막상 누구를 택해야할지 막막하신가요?</p>
+              <p class="section03-txt3">골고루보상은 고객님들의 고민을 해결해 드리기 위해 그리고 이 모든 것을 무료로 도와드리고자 탄생했습니다.</p>
+            </div>
+            <p class="section03-txt4 ani2">
               고객님의 상황에 맞는 상담사례 및 독립손해사정사를 찾고, 상담을 시작하세요.<br>
               상담을 예약하면 독립손해사정사가 전화를 드려 해결책을 제시해 드립니다.
             </p>
@@ -1217,18 +1221,36 @@ function uploadFile() {
     // 텍스트 애니메이션 효과
     var aboutTxtAni = function () {
       var aniIdx = 0
+      var section01PosY = $('.section01 .ani').offset().top
+      var section02PosY = $('.section02 .ani').offset().top
       setInterval(function () {
-        $('.visual .ani').eq(aniIdx).addClass('ani-show')
+        $('.about-visual .ani').eq(aniIdx).addClass('ani-show')
         aniIdx ++
       }, 500)
       $(window).on('scroll', function () {
         var scTop = $(this).scrollTop()
+        console.log(scTop, section01PosY)
         if (scTop > 0) {
           var aniIdx2 = 0
           setInterval(function () {
             $('.section01 .ani').eq(aniIdx2).addClass('ani-show')
             aniIdx2 ++
-          }, 500)
+          }, 300)
+        } 
+        if (scTop > section01PosY) {
+          var aniIdx3 = 0
+          setInterval(function () {
+            $('.section02 .ani').eq(aniIdx3).addClass('ani-show')
+            aniIdx3 ++
+          }, 300)
+        }
+        if (scTop > section02PosY) {
+          $('.section03').addClass('active')
+          var aniIdx4 = 0
+          setInterval(function () {
+            $('.section03 .ani2').eq(aniIdx4).addClass('ani-show')
+            aniIdx4 ++
+          }, 300)
         }
       })
     }()
