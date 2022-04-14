@@ -112,14 +112,24 @@
   }
 
   &.no-bg {
+    transition: 0.3s;
 
     .fixedTab__btn {
       color: #394048;
       background: #fff;
 
+      &:hover {
+        font-weight: 500;
+        color: #006df6;
+      }
+
       &--active {
         color: #fff;
         background: #006df6;
+
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }

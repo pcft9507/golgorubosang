@@ -38,10 +38,10 @@
     <button class="quickMenu__toggle"><span class="quickMenu__toggleTxt">퀵 숨기기</span></button>
     <div class="quickMenu__cont">
       <ul class="qMenuList">
-        <li class="qMenuList__item"><a href="@webRoot/quick/case.html" class="qMenuList__btn"><span class="qMenuList__txt">보상 사고 사례</span></a></li>
-        <li class="qMenuList__item"><a href="@webRoot/about/branch.html" class="qMenuList__btn"><span class="qMenuList__txt">전국 제휴 현황</span></a></li>
-        <li class="qMenuList__item"><a href="@webRoot/quick/search_hospital.html" class="qMenuList__btn"><span class="qMenuList__txt">전국 병원 검색</span></a></li>
-        <li class="qMenuList__item"><a href="@webRoot/matching/matching.html" class="qMenuList__btn"><span class="qMenuList__txt">스피드 매칭</span></a></li>
+        <li class="qMenuList__item"><a href="../quick/case.html" class="qMenuList__btn"><span class="qMenuList__txt">보상 사고 사례</span></a></li>
+        <li class="qMenuList__item"><a href="../about/branch.html" class="qMenuList__btn"><span class="qMenuList__txt">전국 제휴 현황</span></a></li>
+        <li class="qMenuList__item"><a href="../quick/search_hospital.html" class="qMenuList__btn"><span class="qMenuList__txt">전국 병원 검색</span></a></li>
+        <li class="qMenuList__item"><a href="../matching/matching.html" class="qMenuList__btn"><span class="qMenuList__txt">스피드 매칭</span></a></li>
         <li class="qMenuList__item"><a href="#" class="qMenuList__btn"><span class="qMenuList__txt">카카오톡 상담</span></a></li>
       </ul>
       <span class="quickMenu__callNum">1670 - 2456</span>
@@ -310,23 +310,23 @@
                 
                 <!-- 검색후 키워드 -->
                 <div class="searched-key d-flex-sb-s">
-                  <ul class="chipList d-flex-s-s f-wrap" data-chip="toggle">
+                  <ul class="chipList d-flex-s-s f-wrap">
                     <li class="chipList__item">
                       <a href="#" class="chip rd del">
                         <span class="chip__txt">배상책임</span>
-                        <button class="chip__del"><span class="is-blind">삭제</span></button>
+                        <button class="chip__del" onclick="delKeyWrod()"><span class="is-blind">삭제</span></button>
                       </a>
                     </li>
                     <li class="chipList__item">
                       <a href="#" class="chip rd del">
                         <span class="chip__txt">여행자</span>
-                        <button class="chip__del"><span class="is-blind">삭제</span></button>
+                        <button class="chip__del" onclick="delKeyWrod()"><span class="is-blind">삭제</span></button>
                       </a>
                     </li>
                     <li class="chipList__item">
                       <a href="#" class="chip rd del">
                         <span class="chip__txt">서울</span>
-                        <button class="chip__del"><span class="is-blind">삭제</span></button>
+                        <button class="chip__del" onclick="delKeyWrod()"><span class="is-blind">삭제</span></button>
                       </a>
                     </li>
                   </ul>
@@ -702,6 +702,11 @@
     // 키워드 리셋
     function keyReset () {
       console.log('키워드 리셋')
+    }
+
+    // 키워드 삭제
+    function delKeyWrod () {
+      console.log('키워드 삭제')
     }
 
   </script>

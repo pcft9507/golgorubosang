@@ -287,7 +287,7 @@
 
   &__name {
     display: block;
-    margin-top: 13px;
+    margin-top: 7px;
     color: #050505;
     font-weight: 600;
     font-size: 16px;
@@ -314,6 +314,7 @@
     &Item {
       margin-top: 7px;
       color: #394048;
+      font-weight: 500;
       font-size: 12px;
       line-height: 1em;
       white-space: nowrap;
@@ -538,7 +539,7 @@
     &:hover {
 
       .boardList__tit {
-        font-weight: 500;
+        font-weight: 600;
         color: #050505;
         text-decoration: underline;
       }
@@ -552,20 +553,27 @@
       }
 
       .boardList__txt {
-        font-weight: 500;
-        color: #050505;
-        text-decoration: underline;
+
+        p {
+          font-weight: 500;
+          color: #050505;
+          text-decoration: underline;
+        }
 
         &::before {
           background: #050505;
         }
+      }
+
+      .boardList__schKw {
+        font-weight: 600;
       }
     }
 
     &.open {
 
       .boardList__tit {
-        font-weight: 500;
+        font-weight: 600;
         text-decoration: none;
       }
 
@@ -590,20 +598,26 @@
       
       .boardList__txt {
         padding-right: 102px;
-        font-weight: 400;
-        color: #050505;
-        text-decoration: none;
-        display: block; 
-        word-wrap:break-word; 
-        height: auto;
-    
         &::before {
           display: none;
+        }
+
+        p {
+          display: block;
+          text-decoration: none;
+          word-wrap:break-word; 
+          height: auto;
+          font-weight: 400;
+          color: #050505;
         }
       }
       
       .boardList__close {
         display: flex;
+      }
+
+      .boardList__schKw {
+        font-weight: 600;
       }
     }
   }
@@ -636,11 +650,13 @@
 
   &__tit {
     color: #050505;
+    font-weight: 500;
     font-size: 18px;
   }
 
   &__schKw {
     color: #f01165;
+    font-weight: 500;
     text-decoration: underline;
   }
 
@@ -676,16 +692,6 @@
 
   &__txt {
     position: relative;
-    color: rgba(5, 5, 5, 0.6);
-    font-size: 14px;
-    line-height: 24px;
-    display:-webkit-box; 
-    word-wrap:break-word; 
-    -webkit-line-clamp: 2; 
-    -webkit-box-orient:vertical; 
-    overflow:hidden; 
-    text-overflow:ellipsis;
-    height: 48px;
 
     &::before {
       content: '';
@@ -695,6 +701,19 @@
       width: 15px;
       height: 1px;
       background: rgba(5, 5, 5, 0.6);
+    }
+
+    p {
+      color: rgba(5, 5, 5, 0.6);
+      font-size: 14px;
+      line-height: 24px;
+      display:-webkit-box; 
+      word-wrap:break-word; 
+      -webkit-line-clamp: 2; 
+      -webkit-box-orient:vertical; 
+      overflow:hidden; 
+      text-overflow:ellipsis;
+      height: 48px;
     }
   }
 
@@ -712,6 +731,14 @@
     font-size: 16px;
     border: 1px solid #d0d3db;
     background: #fff;
+  }
+
+
+  &.has-date {
+
+    .boardList__txt {
+      padding-right: 200px;
+    }
   }
 }
 

@@ -1,0 +1,102 @@
+@@include('../include/head.html')
+
+<body>
+  <div class="wrap">
+    @@include('../include/header_sub.html')
+
+    <div class="l-container-sub">
+      @@include('../include/fixed_tab_about_w.html')
+      <div class="branch rowContent__inner">
+        <div class="searchTool d-flex-sb-s">
+          <div class="searchTool__sch">
+            <input type="text" class="searchTool__schInp" placeholder="손해사정사를 검색하세요">
+            <button class="searchTool__schBtn"><img src="@@webRoot/assets/images/common/ico-sch-tool-sch.png" alt="검색"></button>
+          </div>
+          <div class="searchTool__rst d-flex-c-c">
+            <p class="searchTool__rstTxt">
+              <span class="point">‘홍길수’</span> 검색결과 <span class="point">‘0건’</span>을 찾았습니다.
+            </p>
+          </div>
+        </div>
+        <!-- searchTool -->
+        <div class="branch-content d-flex-s-s f-wrap mt-48">
+          <div class="map">
+            <img src="@@webRoot/assets/images/about/img-national-map.png">
+            <span class="map-info kw">강원도(123)</span>
+            <span class="map-info ic">인천(123)</span>
+            <span class="map-info seoul">서울(123)</span>
+            <span class="map-info gg">경기(123)</span>
+            <span class="map-info cb">충북(123)</span>
+            <span class="map-info kb">경북(123)</span>
+            <span class="map-info dj">대전(123)</span>
+            <span class="map-info cn">충남(123)</span>
+            <span class="map-info dg">대구(123)</span>
+            <span class="map-info us">울산(123)</span>
+            <span class="map-info jb">전북(123)</span>
+            <span class="map-info kn">경남(123)</span>
+            <span class="map-info kj">광주(123)</span>
+            <span class="map-info bs">부산(123)</span>
+            <span class="map-info jn">전남(123)</span>
+            <span class="map-info jj">제주도(123)</span>
+          </div>
+          <div class="branch-agent-wrap">
+            <ul class="branch-agent">
+              <li class="agent-item">
+                <div class="agent-header">
+                  <p class="agent-name"><span>1.</span>홍길동 손해사정사</p>
+                  <a href="matching_detail.html" class="chip rd"><span class="chip__txt">상세보기</span></a>
+                </div>
+                <p class="agent-txt">회사주소가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아회사주소가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아...</p>
+                <p class="agent-txt">02)000-0000</p>
+              </li>
+              <li class="agent-item">
+                <div class="agent-header">
+                  <p class="agent-name"><span>2.</span>홍길동 손해사정사</p>
+                  <a href="matching_detail.html" class="chip rd"><span class="chip__txt">상세보기</span></a>
+                </div>
+                <p class="agent-txt">회사주소가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아회사주소가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아...</p>
+                <p class="agent-txt">02)000-0000</p>
+              </li>
+              <li class="agent-item">
+                <div class="agent-header">
+                  <p class="agent-name"><span>3.</span>홍길동 손해사정사</p>
+                  <a href="matching_detail.html" class="chip rd"><span class="chip__txt">상세보기</span></a>
+                </div>
+                <p class="agent-txt">회사주소가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아회사주소가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아...</p>
+                <p class="agent-txt">02)000-0000</p>
+              </li>
+              <li class="agent-item">
+                <div class="agent-header">
+                  <p class="agent-name"><span>4.</span>홍길동 손해사정사</p>
+                  <a href="matching_detail.html" class="chip rd"><span class="chip__txt">상세보기</span></a>
+                </div>
+                <p class="agent-txt">회사주소가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아회사주소가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아...</p>
+                <p class="agent-txt">02)000-0000</p>
+              </li>
+            </ul>
+            <div class="btn-row-wrap mt-40">
+              <button class="more-btn" onclick="viewMoreList()"><span class="txt">더 보 기</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- dictionary -->
+    </div>
+    @@include('../include/footer_sub.html')
+  </div>
+  <!-- wrap -->
+
+  <script>
+    // gnb 현재 페이지 활성화
+    var page = 'about'
+
+    // 탭 메뉴 활성화
+    $('.fixedTab__btn').eq(4).addClass('fixedTab__btn--active')
+
+    // 더보기
+    function viewMoreList() {
+      console.log('viewMoreList')
+    }
+  </script>
+</body>
+</html>
