@@ -89,6 +89,7 @@
   box-sizing: border-box;
 
   &__txt {
+    font-weight: 500;
 
     &.fs-s {
       --font-size: 12px;
@@ -106,6 +107,10 @@
 
   &:hover {
     border-color: #394048;
+
+    .chip__txt {
+      font-weight: 600;
+    }
   }
 
   &.checked {
@@ -734,7 +739,7 @@
   }
 
 
-  &.has-date {
+  &.has-txt {
 
     .boardList__txt {
       padding-right: 200px;

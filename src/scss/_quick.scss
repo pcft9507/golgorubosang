@@ -209,6 +209,12 @@
       border: solid 1px #d0d3db;
       background-color: #f8f9fa;
       border-radius: 16px;
+
+      &:hover {
+        color: #fff;
+        border-color: #394048;
+        background: #394048;
+      }
     }
   }
 

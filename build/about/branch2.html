@@ -77,22 +77,22 @@
         <div class="branch-content d-flex-s-s f-wrap mt-48">
           <div class="map">
             <img src="../assets/images/about/img-national-map.png">
-            <span class="map-info kw">강원도(123)</span>
-            <span class="map-info ic">인천(123)</span>
-            <span class="map-info seoul">서울(123)</span>
-            <span class="map-info gg">경기(123)</span>
-            <span class="map-info cb">충북(123)</span>
-            <span class="map-info kb">경북(123)</span>
-            <span class="map-info dj">대전(123)</span>
-            <span class="map-info cn">충남(123)</span>
-            <span class="map-info dg">대구(123)</span>
-            <span class="map-info us">울산(123)</span>
-            <span class="map-info jb">전북(123)</span>
-            <span class="map-info kn">경남(123)</span>
-            <span class="map-info kj">광주(123)</span>
-            <span class="map-info bs">부산(123)</span>
-            <span class="map-info jn">전남(123)</span>
-            <span class="map-info jj">제주도(123)</span>
+            <button class="map-info kw">강원도(123)</button>
+            <button class="map-info ic">인천(123)</button>
+            <button class="map-info seoul">서울(123)</button>
+            <button class="map-info gg">경기(123)</button>
+            <button class="map-info cb">충북(123)</button>
+            <button class="map-info kb">경북(123)</button>
+            <button class="map-info dj">대전(123)</button>
+            <button class="map-info cn">충남(123)</button>
+            <button class="map-info dg">대구(123)</button>
+            <button class="map-info us">울산(123)</button>
+            <button class="map-info jb">전북(123)</button>
+            <button class="map-info kn">경남(123)</button>
+            <button class="map-info kj">광주(123)</button>
+            <button class="map-info bs">부산(123)</button>
+            <button class="map-info jn">전남(123)</button>
+            <button class="map-info jj">제주도(123)</button>
           </div>
           <div class="branch-agent-wrap">
             <ul class="branch-agent">
@@ -141,9 +141,9 @@
   <div class="fs-top">
     <div class="fs-top-inner rowContent__inner d-flex-sb-c">
       <ul class="fs-board-link d-flex-s-c">
-        <li class="link-item"><a href="notice.html" class="btn-link">공지사항</a></li>
-        <li class="link-item"><a href="notice.html" class="btn-link">자주 묻는 질문</a></li>
-        <li class="link-item"><a href="notice.html" class="btn-link">고객센터</a></li>
+        <li class="link-item"><a href="../cs/notice.html" class="btn-link">공지사항</a></li>
+        <li class="link-item"><a href="../cs/faq.html" class="btn-link">자주 묻는 질문</a></li>
+        <li class="link-item"><a href="../cs/contact_us.html" class="btn-link">고객센터</a></li>
       </ul>
       <ul class="fs-quick d-flex-e-c">
         <li class="link-item"><a href="matching.html" class="btn-link btn-link1 btn-step-chg">손해사정사 무료 상담</a></li>
@@ -244,6 +244,12 @@
     function viewMoreList() {
       console.log('viewMoreList')
     }
+
+    // 지역 클릭
+    $('.map-info').on('click', function () {
+      var thisTxt = $(this).text()
+      console.log('클릭된 지역: ' + thisTxt)
+    })
   </script>
 </body>
 </html>
