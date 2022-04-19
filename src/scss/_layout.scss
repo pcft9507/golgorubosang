@@ -412,7 +412,7 @@
   }
 
   .footerMain__slide {
-    border-right: 1px solid#eee;
+    border-right: 1px solid #eee;
     box-sizing: border-box;
   }
 
@@ -420,9 +420,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 184px;
+    width: 100%;
     height: 78px;
     box-sizing: border-box;
+
+    figure {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .footerMain__nav {
