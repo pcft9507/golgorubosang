@@ -285,9 +285,18 @@
     width: 94px;
   }
 
-  &__img {
+  &__fig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 94px;
     height: 94px;
-    border-radius: 50%;
+    border-radius: 10px;
+  }
+
+  &__img {
+    width: 100%;
   }
 
   &__name {
@@ -388,15 +397,23 @@
 
   &__body {
     position: relative;
-    height: 240px;
+    height: 288px;
     padding: 20px;
     background: url($imgCommon + 'bg-card-detail.png') 0 48px/275px no-repeat;
   }
 
+  &__fig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 142px;
+    height: 142px;
+    border-radius: 10px;
+  }
+
   &__img {
-    width: 94px;
-    height: 94px;
-    border-radius: 50%;
+    width: 100%;
   }
 
   &__company {
@@ -429,7 +446,7 @@
 
   &__tm {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     position: absolute;
     top: 0;
     bottom: 0;
