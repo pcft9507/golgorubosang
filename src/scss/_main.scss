@@ -288,6 +288,14 @@
         display: block;
         font-size: 0;
       }
+
+      
+      &:hover {
+
+        .name {
+          background: rgba(0, 0, 0, 0.8);
+        }
+      }
     }
   
     .name {

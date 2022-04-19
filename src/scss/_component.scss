@@ -301,13 +301,14 @@
 
   &__name {
     display: block;
-    margin-top: 7px;
+    margin-top: 12px;
     color: #050505;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1em;
     text-align: center;
     letter-spacing: 6px;
+    text-indent: 6px;
   }
 
   &__info {
@@ -323,7 +324,7 @@
   }
 
   &__summary {
-    margin-top: 11px;
+    margin-top: 10px;
 
     &Item {
       margin-top: 7px;
@@ -343,7 +344,7 @@
 
   &__btnWrap {
     display: flex;
-    margin-top: 14px;
+    margin-top: 20px;
   }
 
   &__btn {
