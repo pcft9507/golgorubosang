@@ -312,6 +312,13 @@
       border: 1px solid #dadada;
       border-top: 0;
     }
+
+    #pAuthConfirm {
+      margin: 32px 0 0 15px;
+      color: $themeColor03;
+      font-size: 14px;
+      font-weight: 500;
+    }
   }
 
   // 접수 완료

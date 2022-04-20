@@ -58,6 +58,14 @@
 
     .chip__txt {
       color: #fff;
+      --weight: 500;
+      font-weight: var(--weight)
+    }
+    
+    &:hover {
+      .chip__txt {
+        font-weight: var(--weight)
+      }
     }
   }
 
@@ -621,7 +629,10 @@
       }
       
       .boardList__txt {
+        display: block;
+        height: auto;
         padding-right: 102px;
+
         &::before {
           display: none;
         }
@@ -633,6 +644,7 @@
           height: auto;
           font-size: initial;
           font-family: initial;
+          line-height: initial;
         }
       }
       
@@ -642,6 +654,16 @@
 
       .boardList__schKw {
         font-weight: 600;
+      }
+    }
+
+    &:not(.open) {
+      .boardList__txt {
+        p {
+          font-size: 14px !important;
+          font-family: "S-CoreDream", serif !important;
+          line-height: 24px !important;
+        }
       }
     }
   }
@@ -735,11 +757,6 @@
       width: 15px;
       height: 1px;
       background: rgba(5, 5, 5, 0.6);
-    }
-
-    p {
-      font-size: 14px !important;
-      font-family: "S-CoreDream", serif !important;
     }
   }
 
