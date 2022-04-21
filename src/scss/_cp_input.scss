@@ -202,7 +202,6 @@
     box-sizing: border-box;
     outline: none;
     color: #050505;
-    font-weight: 200;
     font-size: 14px;
 
     &[disabled] {
@@ -215,7 +214,7 @@
     }
 
     &:focus {
-      border-color: $themeColor03;
+      border-color: $themeColor03 !important;
     }
   }
   
