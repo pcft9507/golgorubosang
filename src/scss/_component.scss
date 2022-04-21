@@ -728,7 +728,18 @@
   }
 
   &__cont {
+    position: relative;
     padding: 15px 7px 30px 102px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 102px;
+      width: 15px;
+      height: 1px;
+      background: rgba(5, 5, 5, 0.6);
+    }
           
     img {
       display: none;
@@ -748,16 +759,6 @@
     overflow:hidden; 
     text-overflow:ellipsis;
     height: 48px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: -15px;
-      left: 0;
-      width: 15px;
-      height: 1px;
-      background: rgba(5, 5, 5, 0.6);
-    }
   }
 
   &__close {

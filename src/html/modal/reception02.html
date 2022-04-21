@@ -392,7 +392,7 @@ function selectFile(fileObject) {
     alert('파일 첨부는 3개까지 가능합니다.')
   } else {
     // 기존등록된 파일 갯수
-    var registeredLeng = $('#fileList .formInp__fileRow').length;
+    var registeredLeng = $('#fileList .fileList__row').length;
     console.log('files.length', files.length, registeredLeng)
 
     if ((registeredLeng + files.length) > 3) {
