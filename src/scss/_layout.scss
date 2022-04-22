@@ -591,9 +591,16 @@
 
       .center-menu {
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
         height: 70px;
+      }
+
+      .item {
+        margin-top: 11px;
+
+        &:first-child {
+          margin-top: 0;
+        }
       }
 
       .link-btn {
