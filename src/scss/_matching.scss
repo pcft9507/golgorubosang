@@ -177,6 +177,8 @@
 
         &-txt {
           position: relative;
+          width: 260px;
+          word-break: keep-all;
           padding-left: 25px;
           color: #394048;
           font-weight: 500;
@@ -243,6 +245,7 @@
       }
 
       .comment {
+        padding: 0 60px;
         color: #394048;
         font-size: 16px;
         font-weight: 500;
