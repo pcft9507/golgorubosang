@@ -515,12 +515,14 @@
       background: url($imgMain + 'img-main-vod-container.png') 0 0/997px 736px no-repeat;
     }
   
-    .swiper {
-  
-      &.swiper {
-        width: 792px;
-        margin: 0 auto;
-        padding-top: 20px;
+    .vod-swiper {
+      width: 792px;
+      margin: 0 auto;
+      padding-top: 20px;
+
+      .swiper-slide {
+        height: 452px;
+        background: #000;
       }
     }
   
