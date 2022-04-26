@@ -317,13 +317,13 @@
               <div class="swiper vod-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <iframe width="794" height="452" src="https://www.youtube.com/embed/xFp7LMAiwd4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="794" height="452" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   <div class="swiper-slide">
-                    <iframe width="794" height="452" src="https://www.youtube.com/embed/mgsSgqAm1Hk?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="794" height="452" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   <div class="swiper-slide">
-                    <iframe width="794" height="452" src="https://www.youtube.com/embed/9YkhWf6PO74?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="794" height="452" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>         
@@ -586,7 +586,21 @@
   });  
 
   // 골고루 티비
-  var swiper = new Swiper(".vod-swiper", {
+  const vodSrcList = [
+    {
+      src : 'https://www.youtube.com/embed/xFp7LMAiwd4?rel=0'
+    },
+    {
+      src : 'https://www.youtube.com/embed/mgsSgqAm1Hk?rel=0'
+    },
+    {
+      src : 'https://www.youtube.com/embed/9YkhWf6PO74?rel=0'
+    }
+  ]
+
+  $('.vod-swiper .swiper-slide').eq(0).find('iframe').attr('src', vodSrcList[0].src)
+
+  var vodSwiper = new Swiper(".vod-swiper", {
     // autoplay: {
     //   delay: 3000,
     //   disableOnInteraction: false,
@@ -600,7 +614,13 @@
       el: ".vod-pagenation",
       clickable: true
     },
-  });  
+  }); 
+  vodSwiper.on('slideChange', function () {
+    const currentIndex = vodSwiper.realIndex
+    console.log('changed vod', currentIndex)
+    $('.vod-swiper .swiper-slide iframe').attr('src', '')
+    $('.vod-swiper .swiper-slide[data-swiper-slide-index="' + currentIndex + '"]').find('iframe').attr('src', vodSrcList[currentIndex].src)
+  })
 </script>
 </body>
 </html>
