@@ -1101,7 +1101,8 @@
   }
 
   .app-down {
-    padding: 53px 45px 0;
+    width: 387px;
+    padding: 53px 43px 0;
     background: #1b2432;
 
     &-tit {
@@ -1154,6 +1155,7 @@
       font-weight: 200;
       font-size: 14px;
       text-align: center;
+      letter-spacing: -0.3px;
     }
   }
 }
