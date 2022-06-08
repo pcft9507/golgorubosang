@@ -1063,20 +1063,14 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 32px;
-        padding: 0 7px;
+        height: 36px;
+        padding: 0 4px;
         color: #111;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         background: #fff;
         border: 1px solid #111;
-        border-radius: 4px;
-
-        &::after {
-          content: '';
-          position: absolute;
-          z-index: -1;
-        }
+        border-radius: 8px;
 
         &:hover {
           color: #fff;
@@ -1084,216 +1078,87 @@
         }
 
         &.kw {
-          top: 78px;
-          left: 303px;
-
-          &::after {
-            top: 30px;
-            left: 50%;
-            width: 8px;
-            height: 27px;
-            margin-left: -4px;
-            background: url($imgAbout + 'ico-pin01.png') 0 0/100%;
-          }
+          top: 88px;
+          left: 302px;
         }
 
         &.ic {
-          top: 109px;
-          left: 119px;
-
-          &::after {
-            top: 20px;
-            right: 4px;
-            width: 8px;
-            height: 27px;
-            background: url($imgAbout + 'ico-pin01.png') 0 0/100%;
-          }
+          top: 123px;
+          left: 140px;
         }
 
         &.seoul {
-          top: 109px;
-          left: 211px;
-
-          &::after {
-            top: 30px;
-            left: 32px;
-            width: 8px;
-            height: 27px;
-            background: url($imgAbout + 'ico-pin01.png') 0 0/100%;
-          }
+          top: 107px;
+          left: 220px;
         }
 
         &.gg {
-          top: 161px;
-          left: 154px;
-
-          &::after {
-            top: 20px;
-            right: 4px;
-            width: 8px;
-            height: 27px;
-            background: url($imgAbout + 'ico-pin01.png') 0 0/100%;
-          }
+          top: 148px;
+          left: 255px;
         }
 
         &.cb {
-          top: 172px;
-          left: 292px;
+          top: 192px;
+          left: 287px;
+        }
 
-          &::after {
-            top: 20px;
-            left: 50%;
-            width: 8px;
-            height: 27px;
-            margin-left: -4px;
-            background: url($imgAbout + 'ico-pin01.png') 0 0/100%;
-          }
+        &.sj {
+          top: 204px;
+          left: 210px;
         }
 
         &.kb {
-          top: 208px;
-          left: 370px;
-
-          &::after {
-            top: 20px;
-            left: 15px;
-            width: 8px;
-            height: 27px;
-            background: url($imgAbout + 'ico-pin01.png') 0 0/100%;
-          }
-        }
-
-        &.dj {
           top: 217px;
-          left: 233px;
-
-          &::after {
-            top: 30px;
-            left: 50%;
-            width: 8px;
-            height: 27px;
-            margin-left: -4px;
-            background: url($imgAbout + 'ico-pin01.png') 0 0/100%;
-          }
+          left: 380px;
         }
 
         &.cn {
-          top: 233px;
-          left: 115px;
-
-          &::after {
-            top: 14px;
-            right: -27px;
-            width: 27px;
-            height: 16px;
-            background: url($imgAbout + 'ico-pin02.png') 0 0/100%;
-          }
+          top: 235px;
+          left: 136px;
         }
         &.dg {
           top: 259px;
           left: 317px;
-
-          &::after {
-            top: 30px;
-            left: 50%;
-            width: 8px;
-            height: 27px;
-            margin-left: -4px;
-            background: url($imgAbout + 'ico-pin01.png') 0 0/100%;
-          }
         }
 
         &.us {
           top: 295px;
           left: 384px;
-
-          &::after {
-            top: 30px;
-            left: 20px;
-            width: 8px;
-            height: 27px;
-            background: url($imgAbout + 'ico-pin01.png') 0 0/100%;
-          }
         }
 
         &.jb {
-          top: 305px;
-          left: 148px;
+          top: 297px;
+          left: 171px;
+        }
 
-          &::after {
-            top: 14px;
-            right: -27px;
-            width: 27px;
-            height: 16px;
-            background: url($imgAbout + 'ico-pin02.png') 0 0/100%;
-          }
+        &.dj {
+          top: 293px;
+          left: 271px;
         }
 
         &.kn {
-          top: 327px;
+          top: 337px;
           left: 285px;
-
-          &::after {
-            top: 20px;
-            left: 50%;
-            width: 8px;
-            height: 27px;
-            margin-left: -4px;
-            background: url($imgAbout + 'ico-pin01.png') 0 0/100%;
-          }
         }
 
         &.kj {
           top: 359px;
-          left: 121px;
-
-          &::after {
-            top: 12px;
-            right: -30px;
-            width: 30px;
-            height: 8px;
-            background: url($imgAbout + 'ico-pin03.png') 0 0/100%;
-          }
+          left: 135px;
         }
 
         &.bs {
-          top: 397px;
-          left: 340px;
-
-          &::after {
-            top: -24px;
-            left: 50%;
-            width: 8px;
-            height: 24px;
-            margin-left: -4px;
-            background: url($imgAbout + 'ico-pin04.png') 0 0/100%;
-          }
+          top: 396px;
+          left: 380px;
         }
 
         &.jn {
-          top: 403px;
-          left: 121px;
-
-          &::after {
-            top: 12px;
-            right: -30px;
-            width: 30px;
-            height: 8px;
-            background: url($imgAbout + 'ico-pin03.png') 0 0/100%;
-          }
+          top: 404px;
+          left: 163px;
         }
 
         &.jj {
-          top: 471px;
-          left: 256px;
-
-          &::after {
-            top: 12px;
-            left: -30px;
-            width: 30px;
-            height: 8px;
-            background: url($imgAbout + 'ico-pin05.png') 0 0/100%;
-          }
+          top: 473px;
+          left: 251px;
         }
       }
     }
