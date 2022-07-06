@@ -44,6 +44,19 @@
         font-size: 54px;
         line-height: 1;
       }
+  
+      &__txt4 {
+        position: relative;
+        top: -20px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1.2;
+
+        em {
+          color: yellow;
+        }
+      }
     }
   
     .mainSimpleBan {
